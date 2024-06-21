@@ -1,0 +1,944 @@
+.btn-nav 
+    border: 1px solid #fff
+    border-radius: 100%
+    width: size-pc(50,rem)
+    height: size-pc(50,rem)
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 8px
+    transition: all .3s ease
+    &.swiper-button-disabled
+        opacity: 0.5
+    &:hover 
+        background-color: $color-2
+        border-color: $color-2
+    
+    
+.home-banner
+    position: relative
+    padding-top: size-pc(180,rem)
+    min-height: 100vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media screen and ( max-width: 767.82px )
+        padding-top: size-pc(110,rem)
+    .descript-banner
+        align-self: flex-end
+        position: relative
+        z-index: 3
+        display: flex
+        background-color: rgba($color-primary,0.5)
+        width: 100%
+        left: 0
+        justify-content: flex-end
+        .content 
+            background-color: $color-primary
+            color: #fff
+            max-width: size-pc(700,rem)
+            padding: size-pc(50,rem) size-pc(60,rem)
+            .nav-banner
+                display: flex
+                margin: 0 -8px
+                
+        .rec-end
+            background-color: $color-2
+            width: size-pc(90,rem)
+            // height: 100%
+            display: flex
+            min-width: 5%
+    .swiper-banner-img
+        z-index: 1
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        .banner-img 
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            &::after
+                background: #AFAFAF
+                mix-blend-mode: multiply
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                content: ''
+            img 
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                object-fit: cover
+                object-position: bottom
+                z-index: 1
+                transform-origin: center
+                transition: all 1.5s ease
+                transform: scale(1.1)
+        .swiper-slide
+            overflow: hidden
+            &-active
+                z-index: 3
+                .banner-img 
+                    img 
+                        transition-delay: .5s
+                        transform: scale(1)
+    .content-banner
+        position: relative
+        z-index: 2
+        // max-width: 1340px
+        width: fit-content
+        margin: auto
+        // margin-top: 0
+        padding: size-pc(50,rem) size-pc(30,rem)
+        h3 
+            font-size: size-pc(22,rem)
+            color: #fff
+            font-family: $font-body
+            text-transform: uppercase
+            font-weight: 600
+            letter-spacing: size-pc(6,rem)
+            margin-bottom: size-pc(40,rem)
+        h1
+            font-size: size-pc(120,rem)
+            font-family: $font-title
+            line-height: 1
+            font-weight: 400
+            color: #fff
+            text-transform: uppercase
+            letter-spacing: size-pc(15,rem)
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(100,rem)
+            @media screen and ( max-width: 575.82px )
+                font-size: size-pc(80,rem)
+                
+            span 
+                display: flex
+                align-items: center
+                margin-left: size-pc(90,rem)
+                @media screen and ( max-width: 767.82px )
+                    margin-left: size-pc(50,rem)
+                @media screen and ( max-width: 575.82px )
+                    margin-left: size-pc(20,rem)
+                &::before
+                    content: ''
+                    width: size-pc(150,rem)
+                    height: size-pc(3,rem)
+                    background-color: #fff
+                    margin-right: size-pc(50,rem)
+
+.adventure
+    &-section
+        padding: size-pc(120,rem) 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(80,rem) 0 0
+    &-desc
+        max-width: size-pc(1400,rem)
+        padding: 0 20px
+        margin: auto
+        text-transform: uppercase
+        font-size: size-pc(36,rem)
+    &-img
+        position: relative
+        width: fit-content
+        margin-left: auto
+        margin-right: 0
+        margin-top: size-pc(80,rem)
+        .text-animation 
+            position: absolute
+            perspective: 40vw
+            top: 5%
+            right: 32%
+            z-index: 2
+            color: $color-primary
+            @media screen and ( max-width: 767.82px )
+                top: size-pc(-250,rem)
+                right: unset
+                left: 3%
+            @media screen and ( max-width: 575.82px )
+                top: size-pc(-70,rem)
+            
+        .col-img
+            width: 60vw
+            margin-left: auto
+            margin-right: 0
+            @media screen and ( max-width: 767.82px )
+                width: 100vw
+                margin-top: size-pc(260,rem)
+            @media screen and ( max-width: 575.82px )
+                margin-top: size-pc(150,rem)
+        &-box 
+            position: relative
+            @include thumb-img(68%,cover)
+            z-index: 3
+            overflow: hidden
+            @media screen and ( max-width: 767.82px )
+                @include thumb-img(100%,cover)
+            .imago
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+            img 
+                z-index: 2
+                height: 120%
+                transition: unset
+            .text-animation 
+                color: #fff
+                z-index: 3
+.tour
+    &-section
+        background: linear-gradient(to right, $color-primary 70%, $color-2 70%)
+        overflow: unset
+        margin-top: size-pc(100,rem)
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(0,rem)
+            background: linear-gradient(to right, $color-primary 95%, $color-2 95%)
+    &-content
+        .content
+            position: relative
+            z-index: 2
+            width: 100%
+            max-width: size-pc(1000,rem)
+            padding: size-pc(60,rem)
+            color: #fff
+            @media screen and ( max-width: 767.82px )
+                padding: 30px 20px
+            h3 
+                color: $color-2
+            h2 
+                color: #fff
+                text-transform: uppercase
+                // font-weight: 300
+            p 
+                max-width: size-pc(500,rem)
+            .btn 
+                width: fit-content
+        .number-slide
+            position: absolute
+            z-index: 19
+            bottom: size-pc(10,rem)
+            color: #fff
+            left: 62%
+            @media screen and ( max-width: 767.82px )
+                left: 15px
+            .swiper-pagination
+                display: flex
+                span
+                    margin: 0 15px
+                
+    &-img 
+        position: absolute
+        width: 65%
+        right: 0
+        top: size-pc(-100,rem)
+        bottom: size-pc(80,rem)
+        z-index: 1
+        @media screen and ( max-width: 767.82px )
+            position: relative
+            width: 100%
+            top: 0
+            bottom: 0
+            height: 100vw
+        
+        .text-animation
+            position: absolute
+            z-index: 3
+            color: #fff
+            perspective: 40vw
+            top: -4%
+            right: 0%
+            z-index: 2
+
+        .swiper-img-tour
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            position: absolute
+            &::after
+                position: absolute
+                z-index: 2
+                width: 28%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                background-color: $color-primary
+                opacity: 0.5
+            .swiper-slide
+                overflow: hidden
+                &-active
+                    z-index: 3
+            .img 
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                
+                img 
+                    width: 120%
+                    height: 120%
+                    position: absolute
+                    top: -10%
+                    transition: unset
+                    left: 0
+                    object-fit: cover
+                    z-index: 1
+.discover
+    &-section
+        padding: size-pc(120,rem) 0
+        // margin: size-pc(120,rem) 0
+        overflow: unset
+        position: relative
+        background-color: #EFE5D0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(90,rem) 0 size-pc(50,rem) 
+        &::before
+            background-image: url(../images/bg.jpeg)
+            background-repeat: repeat
+            background-size: 100%
+            position: absolute
+            content: ''
+            width: 100%
+            height: 100%
+            top: 0
+            opacity: 0.3
+            left: 0
+            mix-blend-mode: multiply
+    &-content 
+        max-width: size-pc(960,rem)
+        margin: 0 auto
+        padding: 0 20px 
+        position: relative
+        z-index: 2
+        p 
+            text-transform: uppercase
+            font-size: size-pc(34,rem)
+            font-weight: 300
+        .btn 
+            margin-top: size-pc(50,rem)
+            width: fit-content
+    &-title 
+        margin: size-pc(120,rem) 0
+        position: relative
+        @media screen and ( max-width: 767.82px )
+            margin: size-pc(50,rem) 0 size-pc(70,rem) 
+        .text-animation
+            position: absolute
+            z-index: 3
+            color: $color-primary
+            z-index: 1
+            top: -5%
+            left: 50%
+            transform: translateX(-50%)
+            white-space: nowrap
+            @media screen and ( max-width: 767.82px )
+                left: 52%
+    &-img 
+        display: flex
+        mask-image: url(../images/mask.png)
+        mask-repeat: no-repeat
+        mask-size: 100%
+        height: 40vw
+        position: relative
+        overflow: unset
+        z-index: 2
+        .text-animation
+            color: #fff
+        .box-img
+            width: 33.333333%
+            position: relative
+        img 
+            position: absolute
+            top: -10%
+            width: 120%
+            object-fit: cover
+            height: 120%
+            // &:nth-child(1)
+            //     margin-top: 7.5%
+            // &:nth-child(2)
+            //     margin-top: 15%
+                
+        // .img
+        //     // position: relative
+        //     overflow: hidden 
+        //     margin: 0 size-pc(50,rem)
+        //     z-index: 2
+        //     .text-animation
+        //         color: #fff
+        //         z-index: 1
+        //     &.__1
+        //         margin-top: size-pc(100,rem)
+        //     &.__2
+        //         margin-top: size-pc(200,rem)
+                
+.choose
+    &-section 
+        padding: size-pc(120,rem) 0 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(90,rem) 0 0
+        .row-item
+            [class*='col-']
+                margin-top: size-pc(110,rem)
+                @media screen and ( max-width: 991.82px )
+                    margin-top: size-pc(40,rem)
+                &:nth-child(2)
+                    margin-top: 0
+                    @media screen and ( max-width: 991.82px )
+                        margin-top: size-pc(40,rem)
+        .content 
+            margin-bottom: size-pc(110,rem)  
+            @media screen and ( max-width: 767.82px )
+                   margin-bottom: size-pc(10,rem)   
+    &-item
+        @include thumb-img(120%,cover)
+        overflow: hidden
+        img 
+            width: 120%
+            height: 120%
+            top: -10%
+            transition: unset
+        h3 
+            font-size: size-pc(60,rem)
+            
+        &:hover 
+            .choose-title
+                opacity: 0
+                visibility: hidden
+            .choose-content
+                opacity: 1
+                visibility: visible
+    &-title 
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #fff
+        transition: all .3s ease
+        visibility: visible
+        text-align: center
+        background-color: rgba($color-primary , 0.4)
+    &-content
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(#316B7F,0.7)
+        color: #fff
+        backdrop-filter: blur(3px)
+        padding: size-pc(40,rem)
+        display: flex
+        flex-direction: column
+        transition: all .3s ease
+        opacity: 0
+        visibility: hidden
+        a 
+            margin: auto
+            margin-bottom: 0
+            margin-left: 0
+            color: #fff
+            font-size: size-pc(32,rem)
+            font-family: $font-title
+            font-weight: bold
+            display: flex
+            align-items: center
+            i 
+                border: 1px solid #fff
+                width: size-pc(45,rem)
+                height: size-pc(45,rem)
+                font-size: size-pc(22,rem)
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-right: 15px
+    &-img
+        &-content
+            padding-top: size-pc(150,rem)
+            margin-top: size-pc(120,rem)
+            position: relative
+            @media screen and ( max-width: 767.82px )
+                padding-top: size-pc(30,rem)
+                margin-top: size-pc(30,rem) 
+            
+        &-c 
+            background-color: $color-2
+            width: 45%
+            z-index: 3
+            position: relative
+            @media screen and ( max-width: 767.82px )
+                width: 100%
+            
+            .swiper-choose-content
+                margin-left: size-pc(80,rem)
+                background-color: $color-primary
+                @media screen and ( max-width: 767.82px )
+                    margin-left: size-pc(40,rem)
+                .content-box
+                    padding: size-pc(60,rem)
+                    color: #fff
+                    min-height: size-pc(350,rem)
+                    @media screen and ( max-width: 767.82px )
+                        min-height: unset
+                        padding: size-pc(40,rem)
+                    h3 
+                        text-transform: uppercase
+                        font-size: size-pc(22,rem)
+                        font-family: $font-body
+                        font-weight: 600
+                        color: $color-2
+                        letter-spacing: size-pc(6,rem)
+                        margin-bottom: size-pc(25,rem)
+                    h2 
+                        font-family: $font-sign
+                        font-weight: 300
+                        font-size: size-pc(55,rem)
+                    p 
+                        font-size: size-pc(26,rem)
+            .nav-choose
+                padding: size-pc(30,rem) size-pc(60,rem)
+                display: flex
+                color: #fff
+                margin: 0 -8px
+        &-i 
+            position: absolute
+            right: 0
+            bottom: 0
+            top: 0
+            left: 40%
+            z-index: 1
+            @media screen and ( max-width: 767.82px )
+                position: relative
+                left: 0
+                height: 80vw
+            .swiper-choose-img
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                pointer-events: none
+                .swiper-slide
+                    overflow: hidden
+                    .img-box
+                        img 
+                            // transform: scale(1.1)
+                    &-active
+                        z-index: 3
+                &::after
+                    position: absolute
+                    z-index: 2
+                    width: 28%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    content: ''
+                    background-color: $color-primary
+                    opacity: 0.5
+            .img-box
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                img 
+                    width: 120%
+                    height: 120%
+                    position: absolute
+                    top: -10%
+                    transition: unset
+                    left: 0%
+                    object-fit: cover
+                    
+                    z-index: 1
+
+.follow
+    &-section
+        background-color: $color-primary
+        padding: size-pc(120,rem) 0 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(90,rem) 0 0
+    &-title 
+        display: flex
+        justify-content: space-between
+        position: relative
+        z-index: 1
+        .text-animation
+            .stagger-fade-rotate-words
+                color: #fff
+                &:first-child
+                    color: $color-2
+    &-btn 
+        margin-top: size-pc(30,rem)
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(0,rem)
+    &-img 
+        position: relative
+        z-index: 2
+        margin-top: size-pc(-130,rem)
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(20,rem)
+        > * 
+            position: relative
+            z-index: 4
+        &::before
+            position: absolute
+            content: ''
+            width: 100%
+            bottom: 0
+            top: 50%
+            left: 0
+            background: #efe5d0
+            z-index: 2
+        &::after
+            background-image: url(../images/bg.jpeg)
+            background-repeat: repeat
+            background-size: 100%
+            position: absolute
+            content: ''
+            width: 100%
+            bottom: 0
+            top: 50%
+            opacity: 0.3
+            left: 0
+            mix-blend-mode: multiply
+            z-index: 3
+
+        &-el 
+            position: absolute
+            left: 0
+            height: 50%
+            top: 0
+            &.is-inview
+                &::before
+                    height: 75%
+            &::before,&::after
+                position: absolute
+                content: ''
+            &::before
+                height: 0
+                width: size-pc(3,rem)
+                background-color: $color-2 
+                left: size-pc(75,rem) 
+                top: 25%
+                transition: all 1s ease
+                transform-origin: bottom
+                @media screen and ( max-width: 767.82px )
+                   left: size-pc(50,rem) 
+                @media screen and ( max-width: 575.82px )
+                    left: size-pc(35,rem)
+            &::after
+                width: size-pc(150,rem)
+                height: size-pc(150,rem)
+                background-color: $color-2  
+               
+                bottom: 0
+                z-index: 1
+                shape-outside: circle(50% at 50% 100%)
+                clip-path: circle(50% at 50% 100%)
+                @media screen and ( max-width: 767.82px )
+                    width: size-pc(100,rem)
+                    height: size-pc(100,rem)
+                @media screen and ( max-width: 575.82px )
+                    width: size-pc(70,rem)
+                    height: size-pc(70,rem)
+        &-row 
+            [class*='col-']
+                @media screen and ( max-width: 767.82px )
+                    --bs-gutter-x: 1rem
+                &:nth-of-type(2)
+                    margin-top: size-pc(200,rem)
+                    @media screen and ( max-width: 767.82px )
+                        margin-top: size-pc(160,rem)
+                    
+        &-item
+            @include thumb-img(114%,cover)
+            overflow: hidden
+            margin-bottom: calc(var(--bs-gutter-x))
+            img 
+                height: 120%
+                top: -10%
+                transition: unset
+    &-content 
+        position: relative
+        padding: size-pc(100,rem) size-pc(20,rem)
+        background: #efe5d0
+        text-align: center
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(70,rem) size-pc(20,rem)
+        > * 
+            position: relative
+            z-index: 2
+        &::before
+            background-image: url(../images/bg.jpeg)
+            background-repeat: repeat
+            background-size: 100%
+            position: absolute
+            content: ''
+            width: 100%
+            bottom: 0
+            top: 0%
+            opacity: 0.3
+            left: 0
+            mix-blend-mode: multiply
+            z-index: 0
+        h3 
+            max-width: size-pc(1300,rem)
+            margin: 0 auto size-pc(50,rem)
+            text-transform: uppercase
+            color: $color-primary
+            font-size: size-pc(60,rem)
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(50,rem)
+        .btn 
+            margin: auto
+@property --rotate 
+    syntax: "<angle>"
+    initial-value: 132deg
+    inherits: false
+
+@keyframes spin 
+    0% 
+        --rotate: 0deg
+    
+    100% 
+        --rotate: 360deg
+@keyframes background
+    0%
+        background-position: 0% 100%
+    100% 
+        background-position: 200% 100%
+.select2-container
+    font-size: size-pc(22,rem)
+.select2-results__option
+    padding: 10px 
+.ticket
+    &-filter 
+        overflow: unset
+        margin-top: size-pc(80,rem) 
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(80,rem) 
+        &-item
+            margin: 10px 0
+            select,.select2-container--default .select2-selection--single,.select-2,.form-control
+                width: 100%
+                padding: 10px 15px
+                height: 50px
+                display: flex
+                align-items: center
+                border-color: #C2C2C2
+                font-family: $font-body
+                font-size: size-pc(22,rem)
+            .select2-container--default .select2-selection--single .select2-selection__arrow
+                top: 50%
+                right: 6px
+                transform: translateY(-50%)
+            &.input-with-icon
+                position: relative
+                .form-control
+                    padding-left: 45px
+                .input-with-icon-item
+                    position: absolute
+                    top: 0
+                    left: 15px
+                    line-height: 50px
+                    height: 50px
+        &-container 
+            width: 100%
+            padding: 10px size-pc(25,rem)
+            box-shadow: 2px 2px 15px rgba(#000,0.2)
+            border-radius: 10px
+            
+    &-section 
+        padding: size-pc(100,rem) 0 
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(80,rem) 0 
+        .row-ticket
+            margin: 0 -15px
+            [class*='col-']
+                padding-left: 15px
+                padding-right: 15px
+                margin-bottom: 30px
+        .swiper-activities
+            overflow: unset
+        .swiper-navigation-activities
+            display: flex
+            position: relative
+            width: fit-content
+            margin: 0 auto
+            margin-top: size-pc(40,rem)
+            justify-content: center
+            align-items: center
+            &::before,&::after
+                content: ''
+                position: absolute
+                top: calc(50% - 1px)
+                height: 2px 
+                background-color: $color-2
+                width: 100vw
+            &::before
+                right: 100%
+            &::after
+                left: 100%
+            .swiper-btn
+                border-radius: 6px
+                margin: 0 5px
+                width: size-pc(60,rem)
+                height: size-pc(60,rem)
+                border: 1px solid $color-primary
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: size-pc(23,rem)
+                transition: all .3s ease
+                &:hover 
+                    background-color: $color-2 
+                    border-color: $color-2
+                    color: #fff
+    &-title 
+        margin-bottom: size-pc(60,rem)
+    &-box
+        display: flex
+        flex-direction: column
+        position: relative
+        padding: 8px
+        width: 100%
+        box-shadow: 2px 2px 10px rgba(#000,0.2)
+        border-radius: 10px
+        // background-color: #fff
+        // border: 2px solid $color-primary
+        // &::before
+        //     content: ""
+        //     width: 100%
+        //     height: 100%
+        //     border-radius: 10px
+        //     background-image: linear-gradient(var(--rotate),#aa8950, 80%, #fffefc)
+        //     position: absolute
+        //     z-index: -1
+        //     top: 0px
+        //     left: 0px
+        //     animation: spin 2.5s linear infinite
+        transition: all .3s ease
+        &::after
+            border-radius: 10px
+            background-color: #fff
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            content: ''
+            overflow: hidden
+        &:hover 
+            transform: translateY(-10px)
+            box-shadow: 2px 2px 20px rgba($color-2,1)
+        &::before
+            border-radius: 15px 15px 15px 15px
+            overflow: hidden
+            z-index: -1
+            position: absolute
+            width: calc( 100% + 8px )
+            height: calc( 100% + 8px )
+            top: -4px
+            right: -4px
+            content: ''
+            background: repeating-linear-gradient(to right, #4158D0 0%, #C850C0, #FFCC70 ,#C850C0 , #4158D0)
+            animation: background 10s infinite linear
+            background-size: 200%
+            background-position: 0% 100%
+        * 
+            position: relative
+            z-index: 3
+        .thumb-img
+            display: block
+            width: 100%
+            @include thumb-img(52.5%,cover) 
+            border-radius: 8px
+            overflow: hidden
+            margin-bottom: 15px
+        .content
+            padding: 0px 10px 10px 10px
+            flex: 1 0 auto
+            display: flex
+            flex-direction: column
+            .date
+                margin-bottom: 12px
+                font-size: size-pc(19,rem)
+                background-color: $color-text
+                color: #fff
+                width: fit-content
+                padding: 5px 10px
+                border-radius: 8px
+            h5
+                white-space: nowrap
+                text-overflow: ellipsis
+                overflow: hidden
+                word-wrap: break-word
+                margin-bottom: 5px
+                // letter-spacing: 2px
+                font-family: $font-body
+                font-weight: 500
+                font-size: size-pc(30,rem)
+                color: $color-2
+                text-overflow: ellipsis
+                overflow: hidden
+                word-wrap: break-word
+            p
+                white-space: nowrap
+                text-overflow: ellipsis
+                overflow: hidden
+                word-wrap: break-word
+                margin-bottom: 10px
+                font-size: size-pc(22,rem)
+                flex: 1 0 auto
+            .tag
+                display: flex
+                flex-wrap: wrap
+                margin: 0 -5px
+                justify-self: flex-end
+                &-item 
+                    margin: 0 5px
+                    width: fit-content
+                    padding: 6px 10px
+                    border-radius: 10px
+                    font-size: 14px
+                    background-color: $color-2
+                    color: #fff
+    &-list 
+        &-info
+            border: 1px solid rgba(#000,0.1)
+            padding: 8px 0 
+            border-width: 1px 0 1px 0
+            margin-bottom: 15px
+            font-weight: 400
+            color: rgba($color-primary, 1)
+    &-item 
+        &-info
+            margin-bottom: 3px
+            font-size: size-pc(22,rem)
+            &:last-child
+                margin-bottom: 0
+            i 
+                color: $color-2
+                width: 20px
+                font-size: size-pc(22,rem)
+
+    
+

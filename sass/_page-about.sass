@@ -1,0 +1,142 @@
+.about
+    &-section
+        padding: size-pc(120,rem) 0
+        @media screen and ( max-width: 767.8px )
+            padding: size-pc(90,rem) 0 
+    &-img 
+        display: flex
+        margin: 0 -15px
+        @media screen and ( max-width: 767.8px )
+            padding-top: size-pc(50,rem)
+        img 
+            transition: unset
+        .img-1 
+            height: 1px
+            width: 50%
+            flex: 0 0 calc(50% - 30px)
+            margin: 0 15px
+            @include thumb-img(95%,cover)
+            overflow: hidden
+            border-radius: 50px 10px 10px 50px
+            img 
+                transition: unset
+                top: -10%
+                height: 120%
+        .img-2
+            width: 50%
+            flex: 0 0 calc(50% - 30px)
+            margin: 0 10px
+            
+            .img-top
+                @include thumb-img(100%,cover)
+                margin-top: 30px
+                margin-right: 30px
+                margin-bottom: 30px
+                border-radius: 10px 50px 10px 10px
+                overflow: hidden
+                img 
+                    transition: unset
+                    top: -10%
+                    height: 120%
+            .img-bottom
+                @include thumb-img(80%,cover)
+                margin-bottom: 30px
+                border-radius: 10px 10px 50px 10px
+                overflow: hidden
+                img 
+                    transition: unset
+                    top: -10%
+                    height: 120%
+
+    &-bg 
+        position: absolute
+        bottom: 0
+        left: -8%
+        
+        width: 100%
+        z-index: 0
+        opacity: 0.12
+        max-width: size-pc(600,rem)
+.cate
+    &-section
+        display: flex
+        margin: 20px 10px
+        flex-wrap: wrap
+        padding-bottom: size-pc(150,rem)
+
+    &-item
+        margin: 0 10px
+        overflow: hidden
+        position: relative
+        flex: 0 0 calc(50% - 20px)
+        display: flex
+        align-items: center
+        // min-height: 80vh
+        // border-radius: 20px
+        overflow: hidden
+        @media screen and ( max-width: 767.8px )
+            flex: 0 0 calc(100% - 20px)
+            margin-bottom: 20px
+        &-bg 
+            position: absolute
+            width: 120%
+            height: 120%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 1
+            
+            &::after
+                background-color: #316b7f
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                opacity: 0.5
+                transition: all 2s ease
+            img 
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                transition: filter 2s ease
+        &-content 
+            display: block
+            position: relative
+            z-index: 2
+            padding: size-pc(100,rem) size-pc(20,rem)
+            width: 60%
+            margin: auto
+            color: #fff
+            text-align: center
+            @media screen and ( max-width: 767.8px )
+                padding: size-pc(80,rem) size-pc(20,rem)
+                width: 80%
+            h3 
+                font-size: size-pc(60,rem)
+            .text
+                &-img
+                    overflow: hidden
+                    @include thumb-img(130%,cover)
+                    margin: 20px 0
+                    // border-radius: 20px
+                    img 
+                        transition: all 4s linear
+            &:hover 
+                .text
+                    &-img
+                        img 
+                            transform: scale(1.2)
+                ~ .cate-item-bg 
+                    &::after
+                        opacity: 0.7
+                    img 
+                        filter: blur(5px)
+.why
+    &-section
+        padding: size-pc(120,rem) 0
+        @media screen and ( max-width: 767.8px )
+            padding: size-pc(90,rem) 0 

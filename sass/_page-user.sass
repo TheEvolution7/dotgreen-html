@@ -1,0 +1,3776 @@
+.user-section
+    padding: size-pc(80,rem) 0
+    .address-box
+        margin-top: size-pc(30,rem)
+        table 
+            margin-bottom: 15px
+        h2 
+            font-size: size-pc(35,rem)
+            margin-bottom: size-pc(20,rem)
+    .btn-group
+        flex-wrap: wrap
+        .btn-site 
+            margin: 10px 10px 10px 0
+
+
+
+\:root
+  --spacing-unit:4px
+  --spacing-unit-half:2px
+  --spacing-1:calc(var(--spacing-unit) * 1)
+  --spacing-2:calc(var(--spacing-unit) * 2)
+  --spacing-3:calc(var(--spacing-unit) * 3)
+  --spacing-4:calc(var(--spacing-unit) * 4)
+  --spacing-5:calc(var(--spacing-unit) * 5)
+  --spacing-6:calc(var(--spacing-unit) * 6)
+  --spacing-7:calc(var(--spacing-unit) * 7)
+  --spacing-8:calc(var(--spacing-unit) * 8)
+  --spacing-9:calc(var(--spacing-unit) * 9)
+  --spacing-10:calc(var(--spacing-unit) * 10)
+  --spacing-11:calc(var(--spacing-unit) * 11)
+  --spacing-12:calc(var(--spacing-unit) * 12)
+  --spacing-15:calc(var(--spacing-unit) * 15)
+  --spacing-16:calc(var(--spacing-unit) * 16)
+  --spacing-17:calc(var(--spacing-unit) * 17)
+  --spacing-18:calc(var(--spacing-unit) * 18)
+  --spacing-20:calc(var(--spacing-unit) * 20)
+  --spacing-25:calc(var(--spacing-unit) * 25)
+  --spacing-30:calc(var(--spacing-unit) * 30)
+  --box-shadow:0px 4px 6px rgba(0, 0, 0, 0.06)
+  --box-shadow-darker:0px 4px 6px rgba(0, 0, 0, 0.15)
+  --box-shadow-double:0px 1px 2px rgba(0, 0, 0, 0.09), 0px 3px 8px rgba(0, 0, 0, 0.14)
+  --box-shadow-offset-bottom:4px
+  --z-index-bar:300
+  --z-index-header:500
+  --z-index-announcement-bar:510
+  --z-index-drawers:520
+  --z-index-filter-bar-wash:400
+  --z-index-filter-bar:450
+  --z-index-popup:400
+  --z-index-modal-wash:1200
+  --z-index-modal:1300
+  --z-index-theme-editor-offset:2000
+  --z-index-page-transition-overlay:2100
+  --z-index-quick-search:480
+  --space-outer:3.3vw
+  --height-input:48px
+  --quick-buy-button-height:60px
+  --easing:cubic-bezier(0.33, 0, 0, 1)
+  --duration-ultra-fast:100ms
+  --duration-fast:300ms
+  --duration-normal:500ms
+  --duration-slow:1200ms
+  --delay-small:33ms
+  --delay-normal:67ms
+  --delay-long:133ms
+  --color-text: #111111
+  --color-text-8-percent: rgba(17, 17, 17, 0.08)
+  --color-text-alpha: rgba(17, 17, 17, 0.35)
+  --color-text-meta: rgba(17, 17, 17, 0.6)
+  --color-text-link: #000000
+  --color-text-error: #D02F2E
+  --color-text-success: #478947
+  --color-background: #ffffff
+  --color-background-semi-transparent-80: rgba(255, 255, 255, 0.8)
+  --color-background-semi-transparent-90: rgba(255, 255, 255, 0.9)
+  --color-background-transparent: rgba(255, 255, 255, 0)
+  --color-border: #aaaaaa
+  --color-border-meta: rgba(170, 170, 170, 0.6)
+  --color-overlay: rgba(0, 0, 0, 0.7)
+  --color-background-meta: #f5f5f5
+  --color-background-meta-alpha: rgba(245, 245, 245, 0.6)
+  --color-background-darker-meta: #e8e8e8
+  --color-background-darker-meta-alpha: rgba(232, 232, 232, 0.6)
+  --color-background-placeholder: #e8e8e8
+  --color-background-placeholder-lighter: #f0f0f0
+  --color-foreground-placeholder: rgba(17, 17, 17, 0.4)
+  --color-border-input: #aaaaaa
+  --color-border-input-alpha: rgba(170, 170, 170, 0.25)
+  --color-text-input: #111111
+  --color-text-input-alpha: rgba(17, 17, 17, 0.04)
+  --color-text-button: #000000
+  --color-background-button: #c7ff00
+  --color-background-button-alpha: rgba(199, 255, 0, 0.6)
+  --color-background-outline-button-alpha: rgba(199, 255, 0, 0.1)
+  --color-background-button-hover: #abdb00
+  --color-icon: rgba(17, 17, 17, 0.4)
+  --color-icon-darker: rgba(17, 17, 17, 0.6)
+  --color-text-sale-badge: #C31818
+  --color-background-sold-badge: #414141
+  --color-text-sold-badge: #ffffff
+  --color-text-header: #000000
+  --color-text-header-half-transparent: rgba(0, 0, 0, 0.5)
+  --color-background-header: #ffffff
+  --color-background-header-transparent: rgba(255, 255, 255, 0)
+  --color-icon-header: #000000
+  --color-shadow-header: rgba(0, 0, 0, 0.15)
+  --color-background-footer: #000000
+  --color-text-footer: #ffffff
+  --color-text-footer-subdued: rgba(255, 255, 255, 0.7)
+  --color-products-sale-price: #C31818
+  --color-products-rating-star: #000000
+  --color-products-stock-good: #3c9342
+  --color-products-stock-medium: #A77A06
+  --color-products-stock-bad: #A70100
+  --color-products-stock-bad: #A70100
+
+@media (min-width: 960px)
+  \:root
+    --z-index-quick-search:520
+
+@supports (padding: 0 clamp(18px, 3.3vw, 3.3vw))
+  @media (max-width: 719px)
+    \:root
+      --space-outer:clamp(18px, 3.3vw, 3.3vw)
+
+
+
+/* Table of Content
+ *====================
+ ** Custom scrollbar style
+ ** Shop grid (product list)
+ ** Shop tt-Product
+ ** Shop single product
+ ** Shop tt-Product carousel
+ ** Shop sidebar filter widgets
+ ** Shop sliding cart
+ ** Shop shopping cart (page)
+ ** Shop checkout
+ ** Shop order details (thank you page)
+ ** Shop wishlist
+ ** Shop login/register/reset password
+
+/* ------------------------------------------------------------- *
+ *   Shop grid (product list)
+ */
+
+#shop-grid, .shop-grid-header
+  position: relative
+
+/* Shop grid header
+ *====================
+
+body.tt-boxed .tt-wrap .shop-grid-header
+  padding-left: 15px
+  padding-right: 15px
+
+/* Shop grid count
+
+.shop-grid-count
+  display: flex
+  height: 100%
+  font-size: 16px
+  color: $color-text
+  align-items: center
+
+@media (max-width: 767px)
+  .shop-grid-count
+    padding-bottom: 20px
+
+/* Shop grid toolbox 
+ *=====================
+
+.shop-grid-toolbox
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+@media (max-width: 767px)
+  .shop-grid-toolbox
+    justify-content: space-between
+
+.shg-toolbox-item
+  margin-right: 25px
+  font-size: 16px
+  color: $color-text
+
+  &:last-child
+    margin-right: 0
+
+  .tt-form-control
+    font-size: 16px
+    color: $color-text
+
+    &:not(textarea):not([size])
+      height: 40px
+
+/* Shop grid per page
+
+form
+  &.shop-grid-per-page .tt-form-group
+    display: flex
+    align-items: center
+    margin: 0
+
+    label
+      margin-right: 15px
+
+  &.shop-grid-ordering
+    
+    label
+      margin-right: 15px
+      font-weight: 700
+    select.tt-form-control
+      max-width: 260px
+
+    label.sgpp-mobile-label
+      display: none
+
+    .tt-form-group
+      margin: 0
+      padding: 0
+      display: flex
+      align-items: center
+      margin: 0
+
+/* Shop grid ordering
+
+@media (max-width: 1024px)
+  form.shop-grid-ordering
+    display: flex
+    align-items: center
+
+    label.sgpp-mobile-label
+      display: block
+      margin: 0 5px 0 0
+      padding: 0
+
+    .tt-form-group
+      position: relative
+      width: 40px
+      height: 40px
+      overflow: hidden
+
+      &:after
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        line-height: 1
+        font-size: 19px
+        color: $color-text
+        pointer-events: none
+        transform: rotate(90deg)
+        font-family: "Font Awesome 5 Pro"
+        content: "\f362"
+        font-weight: 900
+        font-style: normal
+        font-variant: normal
+        text-rendering: auto
+        -webkit-font-smoothing: antialiased
+
+    select.tt-form-control
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      height: auto !important
+      padding: 0 !important
+      margin: 0 !important
+      background-image: none !important
+      color: transparent !important
+      font-weight: 400 !important
+      font-size: 16px !important
+      outline: none !important
+      box-shadow: none !important
+      -webkit-appearance: none !important
+      -moz-appearance: none !important
+
+/* Shop grid tt-Product
+ *========================
+@media (max-width: 768px)
+  #shop-grid .tt-product
+    margin-bottom: 12%
+
+/* Shop grid columns
+ *=====================
+@media (max-width: 767px) and (min-width: 380px)
+  body.tt-boxed .tt-wrap #shop-grid .tt-grid
+    margin-left: -12px
+    margin-right: -12px
+
+  #shop-grid .tt-grid
+    .tt-grid-item
+      width: 50%
+
+    .ttgr-item-inner
+      margin: 0 2vw 6vw 2vw
+
+/* ------------------------------------------------------------- *
+ *   Shop tt-Product
+ */* -------------------------------------------------------------
+.tt-grid-top
+  padding-bottom: 40px
+.tt-product
+  position: relative
+
+/* Shop product image
+ *======================
+
+.tt-product-image-holder
+  position: relative
+  overflow: hidden
+
+.tt-product-image-wrap
+  display: block
+
+  img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.tt-product-image
+  position: relative
+  display: block
+  width: 100%
+  height: 100%
+  z-index: 1
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out
+
+.tt-product-hover-image
+  position: absolute
+  display: block
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  visibility: hidden
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out
+
+  img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.tt-product-image-holder:hover
+  .tt-product-image
+    opacity: 0
+    visibility: hidden
+
+  .tt-product-hover-image
+    opacity: 1
+    visibility: visible
+
+/* Shop product image fixed heights
+ *====================================
+/* Image fixed height (landscape)
+
+.ttp-fixed-height
+  .tt-product-image-wrap
+    padding-bottom: 100%
+
+  .tt-product-image
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+
+    .anim-zoomin-wrap
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+
+/* Image fixed height (portrait)
+
+.ttp-fixed-height-portrait
+  .tt-product-image-wrap
+    padding-bottom: 140%
+
+  .tt-product-image
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+
+    .anim-zoomin-wrap
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+
+/* Shop product padges
+ *=======================
+
+.tt-product-padges
+  position: absolute
+  top: 15px
+  left: 0px
+  z-index: 2
+
+.pr-padge
+  background-color: #323232
+  margin-bottom: 5px
+  padding: 5px
+  font-size: 14px
+  color: #FFF
+  line-height: 1
+
+  &.pr-sale-padge
+    background-color: #519506
+
+  &.pr-new-padge
+    background-color: #1c5376
+
+  &.pr-hot-padge
+    background-color: #950606
+
+@media (max-width: 768px)
+  .tt-product-padges
+    top: 5px
+
+  .pr-padge
+    margin-bottom: 3px
+    padding: 2px 5px
+    font-size: 13px
+
+/* Sale padge
+
+/* New padge
+
+/* Hot padge
+
+/* Shop product out of stock
+ *=============================
+
+.tt-product-out-of-stock
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  background-color: rgb(0 0 0 / 50%)
+  text-align: center
+  padding: 15px 5px
+  font-size: 16px
+  color: #FFF
+  z-index: 2
+
+/* Shop product additional buttons
+ *===================================
+
+.tt-product-additional-buttons
+  position: absolute
+  display: block
+  top: 15px
+  right: 12px
+  z-index: 2
+  opacity: 0
+  visibility: hidden
+  pointer-events: none
+  transition: all .3s ease-in-out
+  transform: translate3d(10px, 0, 0)
+
+.tt-product:hover .tt-product-additional-buttons
+  opacity: 1
+  visibility: visible
+  transform: translate3d(0, 0, 0)
+
+.tt-product-additional-buttons .tt-pab-btn
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 40px
+  height: 40px
+  background-color: #0a0a0a
+  margin-bottom: 5px
+  font-size: 14px
+  font-weight: 500
+  color: #FFF
+  line-height: 1
+  pointer-events: initial
+  border-radius: 100px
+  transition: background-color .2s ease-in-out
+
+  &:hover
+    background-color: #4c2122
+
+.tt-pr-addit-btn-wrap, .tt-add-to-wishlist-btn, .tt-add-to-compare-btn
+
+.tt-pr-addit-btn-wrap
+  &.active .tt-add-to-wishlist-btn, &:not(.active) .tt-add-to-wishlist-btn-active, &.active .tt-add-to-compare-btn, &:not(.active) .tt-add-to-compare-btn-active
+    display: none
+
+.tt-add-to-wishlist-btn-filled
+  span, &:hover span
+
+.tt-add-to-compare-btn-filled
+  span, &:hover span
+
+/* Shop product info
+ *=====================
+
+.tt-product-info
+  position: relative
+  width: 100%
+  padding-top: 15px
+
+.tt-product-categories
+
+.tt-product-category
+  display: inline-block
+  font-size: 13px
+  color: #888
+
+/* Shop product title
+
+.tt-product-title
+  margin: 0 0 15px 0
+  font-size: 21px
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+body.tt-sidebar-on .tt-product-title
+  font-size: 18px
+
+@media (max-width: 767px)
+  .tt-product-title, body.tt-sidebar-on .tt-product-title
+    margin-bottom: 8px
+    font-size: 16px
+
+.tt-product-title a:hover
+  opacity: .8
+
+/* Shop product info rating
+
+.tt-product-info
+  .tt-product-rating
+    margin: 0 0 15px 0
+
+  .tt-product-rating-stars
+    font-size: 13px
+    color: $color-text
+
+    .far
+      color: $color-text
+
+@media (max-width: 767px)
+  .tt-product-info .tt-product-rating
+    margin-bottom: 8px
+
+/* Shop product rating stars
+
+.tt-product-rating-stars
+  font-size: 13px
+  color: #FCC318
+
+  .far
+    color: #cccccc
+
+/* Shop product price/buttons wrap
+
+.tt-pi-price-btn-wrap
+  position: relative
+  font-size: 16px
+  line-height: 1.4
+  overflow: hidden
+
+@media (max-width: 767px)
+  .tt-pi-price-btn-wrap
+    font-size: 15px
+
+/* Shop product price
+
+.tt-product-price
+  transform: translate3d(0, 0, 0)
+  transition: all .2s ease-in-out
+
+.tt-product:hover .tt-product-price
+  opacity: 0
+  visibility: hidden
+  transform: translate3d(0, -10px, 0)
+
+.tt-product-price
+  .pp-current-price
+    text-decoration: none
+
+  .pp-old-price
+    text-decoration: line-through
+    color: $color-text
+
+/* Shop product buttons
+
+.tt-product-buttons
+  position: absolute
+  display: block
+  left: 0
+  bottom: 0
+  opacity: 0
+  visibility: hidden
+  padding-bottom: 3px
+  font-size: 14px
+  transform: translate3d(0, 10px, 0)
+  transition: all .2s ease-in-out
+
+.tt-product:hover .tt-product-buttons
+  opacity: 1
+  visibility: visible
+  transform: translate3d(0, 0, 0)
+
+.tt-product-btn
+  position: relative
+  padding-bottom: 3px
+  line-height: 1
+
+  &::after
+    position: absolute
+    content: ""
+    left: 0
+    bottom: 0
+    width: 0
+    height: 1px
+    background-color: #FFF
+    transition: width .3s ease-in-out
+    transition-delay: 0.1s
+
+.tt-product:hover .tt-product-btn::after
+  width: 100%
+
+.tt-product-adc-btn, .tt-product-sel-opt-btn
+  padding-left: 20px
+
+.tt-product-adc-btn span
+  &::before, &::after
+    position: absolute
+    top: 3px
+    left: 0
+    font-family: "Font Awesome 5 Pro"
+    font-weight: 900
+    display: inline-block
+    font-style: normal
+    font-variant: normal
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+
+.tt-product-sel-opt-btn span::before
+  position: absolute
+  top: 3px
+  left: 0
+  font-family: "Font Awesome 5 Pro"
+  font-weight: 900
+  display: inline-block
+  font-style: normal
+  font-variant: normal
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+
+.tt-product-adc-btn
+  span
+    &::before
+      /* "Add to cart" icon
+      content: "\f07a"
+
+    &::after
+      /* Loading spinner (disabled by default)
+      content: "\f110"
+      display: none
+      opacity: .8
+
+  &.loading span
+    &::before
+      display: none
+
+    &::after
+      display: inline-block
+      animation: adc-btn-spin 1s infinite linear
+
+@keyframes adc-btn-spin
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(360deg)
+
+.tt-product-sel-opt-btn span::before
+  /* "Select options" icon
+  content: "\f06e"
+
+/* Shop product info inside
+ *============================
+
+.ttp-info-inside .tt-product-info
+  position: absolute
+  left: 0
+  bottom: 0
+  padding: 7%
+  z-index: 9
+  background: rgb(13, 13, 13)
+  background: -moz-linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(13, 13, 13, 0) 100%)
+  background: -webkit-linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(13, 13, 13, 0) 100%)
+  background: linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(13, 13, 13, 0) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d0d",endColorstr="#0d0d0d",GradientType=1)
+
+/* ------------------------------------------------------------- *
+ *   Shop single product
+ */* -------------------------------------------------------------
+
+/* Single product image (no slider)
+ *=========================
+
+.sps-single-image
+  position: relative
+
+/* Single product slider
+ *=========================
+
+.single-product-slider-wrap
+  position: relative
+  z-index: 1
+
+.single-product-slider
+  position: relative
+  width: 100%
+  height: 100%
+
+/* Single product slider image
+
+.sps-image
+  display: block
+  line-height: 0
+
+  > img
+    width: 100%
+    height: auto
+
+/* Single product slider thumbnails 
+ *====================================
+
+.single-product-slider-thumbs
+  position: relative
+  height: 20%
+  padding: 15px 0
+
+  .sps-thumb
+    position: relative
+    height: auto
+    cursor: pointer
+    opacity: .4
+    transition: 0.2s ease-in-out
+
+    &::before
+      content: ""
+      display: block
+      width: 100%
+      padding-bottom: 100%
+
+    &:hover
+      opacity: 1
+
+  .swiper-slide-thumb-active .sps-thumb
+    opacity: 1
+
+  .sps-thumb img
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: contain
+
+/* Single product slider thumbnail
+
+/* Single product slider navigation arrows
+ *===========================================
+
+.sps-nav-prev, .sps-nav-next
+  position: absolute
+  top: 50%
+  z-index: 20
+  transform: translateY(-50%)
+
+.sps-nav-prev
+  left: 0
+
+.sps-nav-next
+  right: 0
+
+.sps-arrow
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 60px
+  height: 60px
+  font-size: 18px
+  color: $color-text
+  cursor: pointer
+  outline: none
+
+.sps-arrow-prev::after, .sps-arrow-next::after
+  line-height: 0
+  font-family: "Font Awesome 5 Pro"
+  font-weight: 400
+  display: inline-block
+  font-style: normal
+  font-variant: normal
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+
+.sps-arrow-prev::after
+  content: "\f053"
+
+.sps-arrow-next::after
+  content: "\f054"
+
+.sps-arrow.sps-arrow-disabled, .tt-portfolio-carousel .swiper-button-lock
+  display: none
+
+/* Nav arrows on hover
+@media (min-width: 992px)
+  .sps-nav-prev, .sps-nav-next
+    opacity: 0
+    visibility: hidden
+    transition: 0.3s ease-in-out
+
+  .single-product-slider-wrap:hover
+    .sps-nav-prev, .sps-nav-next
+      opacity: 1
+      visibility: visible
+
+/* Nav arrows in slider thumbs
+
+.single-product-slider-thumbs .sps-arrow
+  width: 40px
+  height: 40px
+
+/* Single product padges 
+ *=========================
+
+.single-product-padges
+  position: absolute
+  top: 15px
+  left: 0px
+  z-index: 2
+
+.sp-padge
+  background-color: #323232
+  margin-bottom: 5px
+  padding: 5px 10px
+  font-size: 16px
+  color: #FFF
+
+  &.sp-sale-padge
+    background-color: #519506
+
+  &.sp-new-padge
+    background-color: #111
+
+  &.sp-hot-padge
+    background-color: #950606
+
+@media (max-width: 768px)
+  .single-product-padges
+    top: 5px
+
+  .sp-padge
+    margin-bottom: 3px
+    padding: 2px 5px
+    font-size: 13px
+
+/* Sale padge
+
+/* New padge
+
+/* Hot padge
+
+/* Single product summary 
+ *==========================
+
+.single-product-summary
+  padding: 0 0 0 5%
+  font-size: 16px
+
+@media (max-width: 1500px)
+  .single-product-summary
+    padding: 0 4% 0 4%
+
+@media (max-width: 991px)
+  .single-product-summary
+    padding: 8% 4% 0 4%
+
+/* Single product title
+
+.single-product-title
+  margin: 0 0 30px 0
+  font-size: size-pc(45,rem)
+
+/* Single product price
+
+.single-product-price
+  padding-top: 5px
+  font-size: 28px
+  line-height: 1
+  overflow: hidden
+
+.single-product-current-price
+  float: left
+  margin: 0 5px 0 0
+  text-decoration: none
+
+.single-product-old-price
+  float: left
+  margin-top: 5px
+  text-decoration: line-through
+  font-size: 70%
+  color: $color-text
+
+/* Single product availability
+
+.single-product-availability
+  margin-top: 10px
+
+  .spa-in-stock
+    color: #529706
+
+  .spa-out-of-stock
+    color: #c31111
+
+/* Single product short description
+
+.single-product-short-description
+  margin-top: 20px
+
+  p
+    margin-bottom: 15px
+
+/* Single product form
+
+.single-product-form
+  margin-top: 20px
+  margin-bottom: 20px
+
+/* Single product variations
+
+.single-product-variations
+  position: relative
+  max-width: 100%
+  margin-bottom: 20px
+
+  .tt-form-control:not(textarea):not([size])
+    height: 50px
+    font-size: 16px
+
+  .tt-form-group
+    margin: 0 0 15px 0
+
+.single-product-form.tt-form-minimal .single-product-variations .tt-form-group
+  margin: 0 0 15px 0
+
+.single-product-variations .tt-form-group
+  label
+    font-weight: 600
+    font-size: 16px
+
+  &:first-child label
+    padding-right: 50px
+
+/* Single product add to cart container
+
+.single-product-add-to-cart
+  display: flex
+
+@media (max-width: 420px)
+  .single-product-add-to-cart
+    flex-direction: column
+
+/* Single product quantity
+
+.single-product-quantity
+  position: relative
+  max-width: 95px
+  height: 50px
+  overflow: hidden
+  border-radius: 3px
+
+.qtybutton
+  &.inc, &.dec
+    position: absolute
+    right: 0
+    width: 40px
+    height: 50%
+    line-height: 30px
+    background-color: #E2E2E2
+    text-align: center
+    font-size: 16px
+    font-weight: 400
+    color: $color-text
+    cursor: pointer
+    z-index: 2
+    user-select: none
+    transition: all .3s ease
+
+  &.inc
+    top: 0
+
+  &.dec
+    bottom: 0
+
+  &.inc:hover, &.dec:hover
+    background-color: $color-2
+    color: #fff
+
+input.cart-plus-minus-box
+  width: 100%
+  height: 100%
+  background-color: #D9D9D9
+  text-align: center
+  font-size: 16px
+  color: $color-text
+  z-index: 1
+  border: none
+  transform: translateX(-20px)
+
+  &:focus
+    outline: none
+
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+  &[type=number]
+    -moz-appearance: textfield
+
+/* Hide arrows from input number
+
+/* Single product add to cart button
+
+.single-product-adc-button
+  padding-left: 20px
+
+@media (min-width: 992px)
+  .single-product-adc-button
+    width: 100%
+
+@media (max-width: 420px)
+  .single-product-adc-button
+    width: 100%
+    margin-top: 20px
+    padding-left: 0
+
+.sp-adc-btn
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 50px
+  background-color: $color-btn
+  padding: 0 40px
+  text-align: center
+  font-size: 16px
+  font-weight: bold
+  font-weight: 500
+  color: #FFF
+  overflow: hidden
+  cursor: pointer
+  border: none
+  border-radius: 100px
+  z-index: 9
+
+  &.disabled
+    /* If disabled
+    opacity: .6
+    pointer-events: none
+
+.sp-adc-btn-text
+  position: relative
+  transform: translate3d(0, 0, 0)
+  transition: transform 0.3s
+  display: flex
+  align-items: center
+  height: 100%
+  line-height: 1
+
+  &::after
+    display: flex
+    align-items: center
+    height: 100%
+    line-height: 1
+    position: absolute
+    content: attr(data-hover)
+    top: 100%
+    left: 0
+    width: 100%
+
+.sp-adc-btn:hover .sp-adc-btn-text
+  transform: translate3d(0, -100%, 0)
+
+.sp-adc-btn-icon
+  position: relative
+  display: inline-flex
+  width: 24px
+  height: 24px
+
+  &::before, &::after
+    position: absolute
+    top: 3px
+    left: 0
+    font-family: "Font Awesome 5 Pro"
+    font-weight: 900
+    display: inline-block
+    font-style: normal
+    font-variant: normal
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+
+  &::before
+    /* "Add to cart" icon
+    content: "\f07a"
+
+  &::after
+    /* Loading spinner (disabled by default)
+    content: "\f110"
+    display: none
+    opacity: .8
+
+.sp-adc-btn.loading .sp-adc-btn-icon
+  &::before
+    display: none
+
+  &::after
+    display: inline-block
+    animation: adc-btn-spin 1s infinite linear
+
+@keyframes adc-btn-spin
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(360deg)
+
+/* Single product additional buttons
+
+.single-product-additional-buttons
+  display: flex
+  margin-bottom: 30px
+
+.spr-addit-elem
+  margin-right: 20px
+
+  &:last-child
+    margin-right: 0
+
+  .spr-addit-btn
+    display: inline-block
+    font-size: 16px
+
+    &:hover
+      opacity: .8
+
+    span
+      margin-right: 5px
+      font-size: 18px
+
+    a
+      font-size: 15px
+      font-style: italic
+      color: #b9b9b9
+      border-bottom: 1px dotted
+
+.spr-add-to-compare-btn, .spr-add-to-wishlist-btn
+  cursor: pointer
+
+.spr-addit-elem
+  &.active .spr-add-to-wishlist-btn, &:not(.active) .spr-add-to-wishlist-btn-filled, &.active .spr-add-to-compare-btn, &:not(.active) .spr-add-to-compare-btn-filled
+    display: none
+
+.spr-add-to-wishlist-btn-filled span, .spr-add-to-compare-btn-filled span
+
+/* Single product meta
+
+.single-product-meta
+  margin-bottom: 20px
+
+.single-product-sku .sku
+  color: #888
+
+.single-product-categories a, .single-product-tags a
+  color: #888
+
+  &:hover
+    opacity: .8
+
+  ~ a:not(:empty)::before
+    content: ", "
+    margin-left: -4px
+
+/* Single product share
+
+.single-product-share
+
+/* Single product rating
+
+.single-product-rating-wrap
+  margin-top: 5px
+
+@media (min-width: 576px)
+  .single-product-rating-wrap
+    text-align: right
+
+.single-product-review-count
+  font-size: 15px
+  color: #888
+
+  &:hover
+    opacity: .8
+
+/* Single product tabs 
+ *=======================
+
+.tt-tabs.single-product-tabs, #single-product-reviews
+
+/* Single product reviews 
+ *==========================
+
+.spr-heading
+  margin: 0 0 40px 0
+  font-size: clamp(19px, 2vw, 21px)
+
+/* Single product reviews list
+
+.sp-reviews-list
+  margin-top: 60px
+
+/* Single product review body
+
+.sp-review-body
+  margin-bottom: 60px
+
+/* Single product review avatar
+
+.sp-review-avatar
+  position: relative
+  display: inline-block
+  float: left
+  width: 50px
+  height: 50px
+  margin-right: 20px
+  overflow: hidden
+  border-radius: 100px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: 50% 50%
+
+/* Single product review info
+
+.sp-review-info
+  position: relative
+
+@media (min-width: 769px)
+  .sp-review-info
+    padding-right: 130px
+
+@media (max-width: 768px)
+  .sp-review-info
+    display: table
+
+/* Single product review meta
+
+.sp-review-meta
+  margin-bottom: 20px
+
+.sp-review-author
+  margin: 0 0 5px 0
+  text-transform: none
+  letter-spacing: 0
+  font-size: 19px
+  color: #e9e9e9
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.sp-review-time
+  margin-bottom: 6px
+  font-size: 14px
+  font-weight: normal
+  color: $color-text
+
+/* Single product review text
+
+.sp-review-text
+  clear: both
+  color: #b9b9b9
+
+@media (min-width: 769px)
+  .sp-review-text
+    margin-left: 70px
+
+@media (max-width: 768px)
+  .sp-review-text
+    font-size: 16px
+
+/* Single product review rating
+@media (min-width: 769px)
+  .sp-review-rating
+    position: absolute
+    top: 20px
+    right: 20px
+    text-align: right
+    z-index: 9
+
+/* Single product review form 
+ *==============================
+
+#single-product-review-form
+  max-width: 1100px
+  margin: 140px auto 0 auto
+
+@media (max-width: 991px)
+  #single-product-review-form
+    margin: 80px auto 0 auto
+
+.sprf-heading
+  margin: 0 0 10px 0
+  font-size: clamp(30px, 2vw, 36px)
+
+/* Single product review form rating
+
+.sprf-rating
+  margin-top: 60px
+  margin-bottom: 60px
+
+.sprf-rating-stars
+  position: relative
+  display: flex
+  height: 22px
+  font-size: 19px
+
+  a
+    color: #706f6c
+    text-indent: -9999px
+    letter-spacing: 4px
+    width: 22px
+    height: 22px
+
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      height: 22px
+      line-height: 1
+      font-family: "Font Awesome 5 Pro"
+      text-indent: 0
+      overflow: hidden
+      white-space: nowrap
+
+    &.active:before, &:hover:before
+      content: "\f005\f005\f005\f005\f005"
+      font-weight: 900
+      color: #ededed
+
+  .star-1
+    z-index: 10
+
+  .star-2
+    z-index: 9
+
+  .star-3
+    z-index: 8
+
+  .star-4
+    z-index: 7
+
+  .start-5
+    z-index: 6
+
+  .star-1:before
+    width: 24px
+
+  .star-2:before
+    width: 49px
+
+  .star-3:before
+    width: 74px
+
+  .star-4:before
+    width: 100px
+
+  .star-5:before
+    content: "\f005\f005\f005\f005\f005"
+
+/* Single product review form info/notes
+
+.sprf-notes
+  margin-top: 5px
+  margin-bottom: 30px
+  font-size: 16px
+  font-weight: 300
+  font-style: italic
+  color: #ababab
+
+.sprf-email-note, .sprf-required-note
+
+/* Single product review save data
+
+.tt-form-text.spr-save-data
+  font-size: 16px
+  font-weight: 300
+  font-style: italic
+  color: #ababab
+
+/* ------------------------------------------------------------- *
+ *   Shop tt-Product carousel
+ */
+
+.tt-product-carousel
+  position: relative
+
+.tt-prc-heading
+  margin: 0 0 50px 0
+  font-size: clamp(28px, 2vw, 34px)
+
+@media (max-width: 991px)
+  .tt-prc-heading
+    margin: 0 0 30px 0
+
+/* Shop tt-Product carousel navigation (arrows)
+ *=======================================
+
+.tt-prc-nav-prev, .tt-prc-nav-next
+  position: absolute
+  top: 55%
+  z-index: 20
+  transform: translateY(-50%)
+
+.tt-prc-nav-prev
+  left: 0
+
+.tt-prc-nav-next
+  right: 0
+
+.tt-prc-arrow
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 60px
+  height: 60px
+  font-size: 18px
+  color: #FFF
+  cursor: pointer
+  outline: none
+
+.tt-prc-arrow-prev::after, .tt-prc-arrow-next::after
+  line-height: 0
+  font-family: "Font Awesome 5 Pro"
+  font-weight: 900
+  display: inline-block
+  font-style: normal
+  font-variant: normal
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+
+.tt-prc-arrow-prev::after
+  content: "\f053"
+
+.tt-prc-arrow-next::after
+  content: "\f054"
+
+.tt-prc-arrow.tt-prc-arrow-disabled
+  opacity: .2
+  pointer-events: none
+
+.tt-product-carousel
+  .swiper-button-lock
+    display: none
+
+  .tt-product-title
+    font-size: 18px
+
+/* Shop tt-Product carousel navigation positions
+ *=================================================
+/* Position outside
+@media (min-width: 1420px)
+  .prc-nav-outside
+    .tt-prc-nav-prev
+      left: -80px
+
+    .tt-prc-nav-next
+      right: -80px
+
+/* Position top
+@media (min-width: 992px)
+  .prc-nav-top
+    .tt-prc-nav-prev, .tt-prc-nav-next
+      top: 20px
+      transform: none
+
+    .tt-prc-nav-prev
+      left: auto
+      right: 65px
+
+    .tt-prc-nav-next
+      right: 0
+
+/* Shop tt-Product carousel product info
+ *=========================================
+
+/* ------------------------------------------------------------- *
+ *   Shop sidebar filter widgets
+ */
+
+.shop-filter-form
+
+.sidebar-widget.shop-filter-widget
+  position: relative
+  margin-bottom: 0
+  padding-bottom: 0
+
+  .sidebar-heading
+    padding-right: 30px
+
+/* Shop filter widget content
+
+.shop-filter-widget-content
+  min-height: 1px
+
+.shop-fwc-inner
+  width: 100%
+  max-height: 220px
+  overflow-y: auto
+  margin-bottom: 50px
+  padding-bottom: 1px
+
+  /* important for FireFox
+
+/* Shop filter widget caret
+
+.shop-fw-caret
+  position: absolute
+  top: 10px
+  right: 0
+  font-size: 14px
+  color: #FFF
+  opacity: .5
+  cursor: pointer
+
+  &:hover
+    opacity: 1
+
+  &:before
+    font-family: "Font Awesome 5 Pro"
+    content: "\f077"
+    font-weight: 900
+    display: inline-block
+    font-style: normal
+    font-variant: normal
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    transition: transform 0.3s
+
+.shop-filter-widget.hidden .shop-fw-caret:before
+  transform: rotate(180deg)
+
+/* Shop filter price range 
+ *===========================
+
+.sidebar-price-range
+
+.shop-fw-price-range
+  display: flex
+  align-items: center
+  color: $color-text
+
+  .tt-form-control
+    padding-left: 18px !important
+    height: 40px !important
+    font-size: 17px !important
+    color: $color-text !important
+
+.shop-fw-price-box
+  position: relative
+  width: 100%
+
+.shop-fw-price-box-currency
+  position: absolute
+  top: 8px
+  left: 7px
+  font-size: 17px
+  color: $color-text
+
+.shop-fw-price-range-separator
+  margin: 0 8px
+
+.shop-fw-price-range .tt-btn
+  height: 40px
+  margin: 0 0 0 10px
+  padding: 0 15px
+  font-size: 14px
+  border-radius: 3px
+
+  button
+    padding: 0 15px
+
+/* Hide arrows from input number
+
+.shop-fw-price-box input
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+  &[type=number]
+    -moz-appearance: textfield
+
+/* Shop filter radio/check list 
+ *================================
+
+.shop-filter-widget
+  .tt-form-check:last-child
+    margin-bottom: 0
+
+  .tt-form-radio
+    &:last-child
+      margin-bottom: 0
+
+    > label
+      width: 100%
+      font-weight: normal
+      font-size: size-pc(22,rem)
+      color: $color-text
+      transition: all 0.2s ease-in-out
+
+  .tt-form-check > label
+    width: 100%
+    font-weight: normal
+    font-size: size-pc(22,rem)
+    color: $color-text
+    transition: all 0.2s ease-in-out
+
+  .tt-form-radio > label:hover, .tt-form-check > label:hover
+    color: $color-primary
+
+  .tt-form-radio > label > span, .tt-form-check > label > span
+    float: right
+    margin: 4px 15px 0 0
+    font-size: 13px
+
+.sidebar-radio-list, .sidebar-check-list, .shop-filter-submit-btn
+
+
+.shop-filter-submit-btn .btn-site 
+  width: 100%
+/* Shop filter submit button 
+ *=============================
+
+/* ------------------------------------------------------------- *
+ *   Shop sliding cart
+ */* -------------------------------------------------------------
+
+.tt-sliding-cart-trigger
+  pointer-events: initial
+  cursor: pointer
+
+.tt-sliding-cart-wrap
+  position: relative
+  z-index: 9999
+  pointer-events: initial
+
+.tt-sliding-cart
+  position: fixed
+  top: 0
+  right: 0
+  width: 400px
+  height: 100vh
+  background-color: #1b1b1b
+  font-size: 16px
+  z-index: 2
+  transform: translate3d(100%, 0, 0)
+  transition: transform 0.4s ease-in-out
+
+@media (max-width: 768px)
+  .tt-sliding-cart
+    width: 90%
+
+body.tt-sliding-cart-open
+  .tt-sliding-cart
+    transform: translate3d(0, 0, 0)
+
+  overflow-y: hidden !important
+
+.tt-sliding-cart-cover
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgb(0 0 0 / 75%)
+  z-index: 1
+  opacity: 0
+  visibility: hidden
+  transition: opacity 0.3s, visibility 0.3s
+
+body.tt-sliding-cart-open
+  .tt-sliding-cart-cover
+    opacity: 1
+    visibility: visible
+    pointer-events: initial
+
+  .scrollbar-track
+    display: none !important
+
+.tt-sliding-cart-close
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  top: 20px
+  right: 15px
+  width: 30px
+  height: 30px
+  background-color: rgb(51, 51, 51)
+  font-size: 16px
+  cursor: pointer
+  border-radius: 50px
+  transition: transform 0.3s ease 0s
+
+  &:hover
+    transform: rotate(90deg)
+
+/* Shop sliding cart inner
+
+.tt-sliding-cart-inner
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100%
+  background-color: #222
+
+/* Shop sliding cart content
+
+.tt-sliding-cart-content
+  height: 100%
+  overflow-y: auto
+  padding: 0% 6% 8% 6%
+
+.tt-sliding-cart-heading
+  margin: 0
+  padding: 40px 0 20px 0
+  margin: 0 6% 30px 6%
+  font-size: 26px
+  border-bottom: 2px solid rgb(120 120 120 / 25%)
+
+/* Shop sliding cart product list
+
+.tt-sliding-cart-product-list
+  padding: 0
+  margin: 0
+  list-style: none
+
+  > li
+    padding: 15px 0
+    border-bottom: 1px dashed rgb(120 120 120 / 30%)
+
+    &:first-child
+      padding-top: 0
+
+    &:last-child
+      padding-bottom: 0
+      border: none
+
+/* Shop sliding cart product
+
+.tt-sliding-cart-product
+  position: relative
+  display: flex
+  padding-right: 25px
+
+.tt-sc-product-thumb
+  display: block
+  margin-right: 15px
+
+  &:hover
+    opacity: .8
+
+  img
+    max-width: 60px
+    height: auto
+
+.tt-sc-product-info
+
+.tt-sc-product-title
+  display: block
+  font-size: 14px
+  font-weight: 500
+  line-height: 1.3
+
+  &:hover
+    opacity: .8
+
+.tt-sc-product-variations
+  margin: 5px 0
+
+.tt-scp-variation
+  font-weight: normal
+  font-weight: 300
+  font-size: 13px
+  color: #ccc
+  line-height: 1.2
+
+.tt-sc-product-quantity-pricing
+
+.tt-sc-product-quantity, .tt-sc-product-price
+  display: inline-block
+  font-size: 14px
+
+.tt-sc-product-remove
+  position: absolute
+  display: flex
+  top: 0px
+  right: 0px
+  width: 20px
+  height: 20px
+  font-size: 12px
+  opacity: .8
+  justify-content: center
+  align-items: center
+
+  &:hover
+    opacity: 1
+
+/* Shop sliding cart total
+
+.tt-sliding-cart-total
+  display: flex
+  justify-content: space-between
+  padding: 20px 0 5px 0
+  text-align: right
+  border-top: 2px solid rgb(120 120 120 / 25%)
+
+  bdi
+    font-size: 21px
+    font-weight: bold
+    font-weight: 500
+
+/* Shop sliding cart footer
+
+.tt-sliding-cart-footer
+  padding: 20px 6% 30px 6%
+
+body.is-mobile .tt-sliding-cart-footer
+  padding-bottom: 60px
+
+/* Shop sliding cart empty
+ *========================
+
+.tt-sliding-cart-empty
+  padding: 10%
+  text-align: center
+
+.tt-sliding-cart-empty-icon
+  font-size: clamp(48px, 6vw, 68px)
+  opacity: .3
+
+.tt-sliding-cart-empty-text
+
+.tt-sliding-cart-empty-button
+  margin-top: 30px
+
+/* ------------------------------------------------------------- *
+ *   Shop shopping cart (page)
+ */
+#shop-cart-list
+  position: relative
+
+.shop-cart-form
+
+/* Shop cart list empty
+ *========================
+
+.shop-cart-empty
+  background-color: rgb(129 129 129 / 5%)
+  padding: 5%
+  margin-bottom: 20px
+  text-align: center
+  border-radius: 5px
+  border: 1px solid rgb(120 120 120 / 20%)
+
+.shop-cart-empty-icon
+  font-size: clamp(68px, 6vw, 100px)
+  opacity: .5
+
+.shop-cart-empty-text
+  font-size: 19px
+
+.shop-cart-empty-button
+  margin-top: 30px
+
+/* Shopping cart table 
+ *=======================
+
+table.shop-cart-table
+
+tbody.shop-cart-table-body
+  position: relative
+
+/* Item remove button
+
+td
+  &.cti-product-remove
+    text-align: center
+
+    a:hover
+      opacity: .8
+
+  &.cti-product-thumb
+    text-align: center
+
+    a
+      display: inline-block
+      width: 80px
+      height: auto
+      // background-color: #363636
+      line-height: 0
+
+      &:hover
+        opacity: .8
+
+  &.cti-product-title
+    font-weight: bold
+    font-weight: 500
+    line-height: 1.3
+    color: $color-primary
+
+    a:hover
+      opacity: .8
+
+/* Product thumbnail
+
+/* Product title
+
+/* Product options
+
+.cti-product-variations
+  margin: 5px 0 0 0
+  font-weight: normal
+  font-weight: 300
+  font-size: 14px
+  color: #565656
+  line-height: 1.2
+
+.ctip-variation
+
+/* Product quantity
+
+table.shop-cart-table
+  .sumary-price
+    text-align: right
+    h4 
+      font-size: 20px
+      font-weight: 600
+      font-family: $font-body
+    .price-total 
+      color: $color-2
+      font-size: 22px
+      font-weight: 600
+  .cti-price
+    text-align: center
+  .scth-product-title
+    width: 100%
+  .scth-price,.scth-quantity,.scth-subtotal
+    text-align: center
+  .single-product-quantity
+    width: 100px
+    height: 34px
+  .scth-subtotal
+    min-width: 180px
+    text-align: right
+  .cti-subtotal
+    text-align: right
+  input.cart-plus-minus-box
+    text-align: center
+    font-size: 14px
+    transform: none
+  .shop-cart-table-buttons
+    .btn-group
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+    .tt-btn 
+      display: inline-flex
+      .btn-site 
+        margin-bottom: 10px 
+        margin-top: 10px
+      .btn 
+        margin-bottom: 0
+      &:last-child
+        margin-left: auto
+        margin-right: 0
+  .qtybutton
+    &.inc, &.dec
+      position: absolute
+      top: 0
+      width: 30px
+      height: 100%
+      line-height: 30px
+
+    &.inc
+      right: 0
+
+    &.dec
+      left: 0
+      right: auto
+
+/* Product subtotal
+
+td.cti-subtotal bdi
+  font-weight: bold
+  font-weight: 600
+
+/* Shopping cart table on small screens 
+ *========================================
+
+/* Shopping cart box 
+ *=====================
+
+.shop-cart-box
+  background-color: #eee
+  padding: 5%
+  margin-bottom: 20px
+  border-radius: 5px
+  border: 1px solid rgb(120 120 120 / 20%)
+
+.shop-cart-box-heading
+  margin: 0 0 25px 0
+  font-size: 28px
+
+/* Shopping cart totals 
+ *========================
+
+.shop-cart-totals
+
+.sc-totals-total bdi
+  font-size: 24px
+  font-weight: 600
+  color: $color-primary
+
+table.shop-cart-totals-table
+  margin-bottom: 30px
+
+  tr
+    border-bottom: 1px dashed rgb(120 120 120 / 25%)
+
+  td
+    text-align: right
+
+  th, td
+    padding: 8px 5px
+    font-size: 16px
+    vertical-align: middle
+
+/* Shopping cart discount code 
+ *===============================
+
+.shop-cart-discount
+
+/* ------------------------------------------------------------- *
+ *   Shop checkout
+ */
+
+.shop-checkout-form
+  position: relative
+
+.shop-checkout-box
+  padding: 5%
+  margin-bottom: 20px
+  border-radius: 5px
+  border: 1px solid rgb(120 120 120 / 20%)
+
+.shop-checkout-box-heading
+  margin: 0 0 25px 0
+  font-size: 28px
+
+/* Shop checkout billing details 
+ *=================================
+
+.shop-billing-details, .shop-additional-info
+  background-color: rgb(129 129 129 / 5%)
+  margin-bottom: 40px
+
+/* Shop additional info
+
+.shop-additional-info-heading
+  margin: 0 0 25px 0
+  font-size: 28px
+
+/* Shop checkout order review 
+ *==============================
+
+.shop-order-review
+  background-color: rgb(129 129 129 / 12%)
+  margin-bottom: 20px
+
+table.shop-order-review-table
+  margin: 0
+
+  th
+    font-weight: 600
+
+  thead
+    border-bottom: 2px solid rgb(120 120 120 / 25%)
+
+th.sor-table-head-subtotal
+  text-align: right
+
+table.shop-order-review-table
+  th, td
+    padding: 10px 5px
+    font-size: 16px
+    vertical-align: middle
+
+/* Shop checkout cart item
+
+tr.sor-cart-item
+  border-bottom: 1px dashed rgb(120 120 120 / 30%)
+
+  &:first-child .sor-product-wrap
+    padding-top: 20px
+
+  &:last-child .sor-product-wrap
+    padding-bottom: 20px
+
+.sor-product
+
+.sor-product-title
+  font-size: 15px
+  font-weight: normal
+  line-height: 1.3
+
+.sor-product-quantity
+  display: inline
+  font-weight: bold
+  font-weight: 600
+  white-space: nowrap
+
+.sor-product-variations
+  margin: 5px 0 0 0
+
+.sorp-variation
+  font-weight: normal
+  font-weight: 300
+  font-size: 13px
+  color: #ccc
+  line-height: 1.2
+
+td.sor-product-subtotal
+  text-align: right
+
+/* Shop checkout order review foot
+
+table.shop-order-review-table tfoot
+  border-top: 2px solid rgb(120 120 120 / 25%)
+
+  td
+    text-align: right
+
+  tr
+    line-height: 1.3
+    border-bottom: 1px dashed rgb(120 120 120 / 30%)
+
+    &:first-child, &:last-child
+      border-bottom: none
+
+tr.sor-table-foot-total bdi
+  font-size: 21px
+  font-size: bold
+  font-weight: 600
+  color: #2ca904
+
+/* Shop checkout payment methods 
+ *=================================
+
+.shop-payment-methods
+  background-color: rgb(129 129 129 / 12%)
+
+ul.shop-payment-methods-list
+  margin: 0
+  padding: 10px 0 0 0
+  list-style: none
+
+  > li
+    margin-bottom: 5px
+
+.shop-payment-methods-list
+  .tt-form-radio label img, .tt-form-check label img
+    max-height: 32px
+    margin-bottom: -8px
+
+/* ------------------------------------------------------------- *
+ *   Shop order details (thank you page)
+ */
+
+.shop-thankyou-order-review
+  margin-bottom: 10px
+
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+    li
+      display: inline-block
+      margin-right: 20px
+      padding-right: 20px
+      margin-bottom: 30px
+      border-right: 1px dotted rgb(120 120 120 / 70%)
+
+      &:last-child
+        margin-right: none
+        padding-right: none
+        border: none
+
+.stor-item
+  font-size: 16px
+
+.stor-item-heading
+
+.stor-item-cont
+  color: $color-primary
+  font-weight: $font-semibold
+
+/* Shop order details box 
+ *==========================
+
+.shop-order-details
+  position: relative
+  background-color: rgb(129 129 129 / 12%)
+  margin-bottom: 20px
+  padding: 4%
+  border-radius: 5px
+  border: 1px solid rgb(120 120 120 / 20%)
+
+.shop-order-details-heading
+  margin: 0 0 30px 0
+  font-size: 32px
+
+/* Shop order details table 
+ *============================
+
+table.shop-order-details-table
+  margin: 0
+
+  th, td
+    max-width: 50%
+    width: 50%
+    padding: 20px 5px
+
+  th
+    font-weight: 600
+
+  thead
+    font-size: 19px
+    border-bottom: 2px solid rgb(120 120 120 / 25%)
+
+    th
+      font-size: 19px
+
+  tr
+    th:last-child, td:last-child
+      text-align: right
+
+  tbody tr
+    border-bottom: 1px dashed rgb(120 120 120 / 30%)
+
+/* Shop order details table product
+
+.sod-product
+
+.sod-product-title
+  font-size: 15px
+  font-weight: $font-semibold
+  line-height: 1.3
+
+  &:hover
+    opacity: .8
+    color: $color-primary
+
+.sod-product-quantity
+  display: inline
+  font-weight: bold
+  font-weight: 600
+  white-space: nowrap
+
+.sod-product-variations
+  margin: 5px 0 0 0
+
+.sodp-variation
+  font-weight: normal
+  font-weight: 300
+  font-size: 13px
+  color: #333
+  line-height: 1.2
+
+/* Shop order details table foot
+
+table.shop-order-details-table tfoot
+  border-top: 2px solid rgb(120 120 120 / 25%)
+
+  td
+    text-align: right
+
+  tr
+    border-bottom: 1px dashed rgb(120 120 120 / 30%)
+
+    &:first-child, &:last-child
+      border-bottom: none
+
+tr.sod-table-foot-total bdi
+  font-size: 21px
+  font-weight: $font-bold
+  color: $color-primary
+
+/* ------------------------------------------------------------- *
+ *   Shop wishlist
+ */
+
+#shop-wishlist
+  position: relative
+
+/* Shop wishlist empty 
+ *=======================
+
+.shop-wishlist-empty
+  background-color: rgb(129 129 129 / 5%)
+  padding: 5%
+  margin-bottom: 20px
+  text-align: center
+  border-radius: 5px
+  border: 1px solid rgb(120 120 120 / 20%)
+
+.shop-wishlist-empty-icon
+  font-size: clamp(68px, 6vw, 100px)
+  opacity: .5
+
+.shop-wishlist-empty-text
+  font-size: 19px
+
+.shop-wishlist-empty-button
+  margin-top: 30px
+
+/* Shop wishlist table 
+ *=======================
+
+table.shop-wishlist-table
+  position: relative
+
+tbody.shop-wishlist-table-body
+
+/* Item remove button
+
+td
+  &.swti-product-remove
+    text-align: center
+
+    a:hover
+      opacity: .8
+
+  &.swti-product-thumb
+    text-align: center
+
+    a
+      display: inline-block
+      width: 80px
+      height: auto
+      background-color: #363636
+      line-height: 0
+
+      &:hover
+        opacity: .8
+
+  &.swti-product-title
+    font-weight: bold
+    font-weight: 500
+    line-height: 1.3
+
+    a:hover
+      opacity: .8
+
+  &.swti-price
+
+/* Product thumbnail
+
+/* Product title
+
+/* Product price
+
+.swti-price-sale
+
+.swti-current-price
+  text-decoration: none
+
+.swti-old-price
+  text-decoration: line-through
+  color: #888
+
+/* Product stock status
+
+td.swti-stock-status, .swti-in-stock, .swti-out-of-stock
+
+/* Product action
+
+td.swti-action
+  text-align: center
+
+/* Shop wishlist table on small screens 
+ *========================================
+
+
+/* ------------------------------------------------------------- *
+ *   Shop login/register/reset password
+ */
+
+.slr-box
+  position: relative
+  padding: 5%
+  margin-bottom: 30px
+  border-radius: 5px
+  border: 1px solid rgb(120 120 120 / 20%)
+
+.slr-heading
+  margin: 0 0 20px 0
+  font-size: 28px
+
+.tt-login-form, .tt-register-form, .tt-reset-password-form
+  padding-top: 30px
+
+.shop-login-box, .shop-register-box, .shop-reset-password-box
+  background-color: rgb(129 129 129 / 5%)
+
+.shop-goto-login-box, .shop-goto-register-box
+  background-color: rgb(129 129 129 / 5%)
+
+
+/* ------------------------------------------------------------- *
+ *   Sidebar widgets
+ */
+
+.sidebar-widget
+  padding-bottom: 25px
+  margin-bottom: 25px
+
+/* Sidebar headings
+
+.sidebar-heading
+  position: relative
+  margin-bottom: 40px
+  font-size: size-pc(30,rem)
+  font-weight: 700
+
+  &:after
+    position: absolute
+    display: block
+    content: ""
+    left: 0
+    bottom: -15px
+    width: 35px
+    height: 2px
+    background-color: #555
+
+/* Sidebar search 
+ *==================
+
+.sidebar-search
+
+/* Sidebar categories 
+ *======================
+
+.sidebar-categories > ul > li
+  padding: 0
+
+  > a
+    display: block
+    text-decoration: none
+    font-size: size-pc(23,rem)
+    font-weight: normal
+    color: $color-text
+    line-height: 1
+    padding: 10px 0px
+    transition: all 0.2s ease-in-out 0s
+
+    &:hover
+      color: $color-primary
+
+    span
+      position: relative
+      float: right
+      top: -5px
+      background-color: rgba(#313131,22%)
+      padding: 8px 9px 8px 9px
+      text-align: center
+      font-size: 13px
+      font-weight: normal
+      color: $color-text
+      overflow: hidden
+      z-index: 1
+      border-radius: 100px
+      transition: all .2s ease-in-out
+
+    &:hover span
+      background-color: $color-primary
+      color: #fff
+
+/* Sidebar post list 
+ *=====================
+
+.sidebar-post-list > ul > li
+  list-style: none
+  overflow: hidden
+  padding-bottom: 10px
+  margin-bottom: 10px
+
+  &:last-child
+    margin: 0
+    padding: 0
+    border: 0
+
+.sidebar-post-data
+
+.sidebar-post-title
+  margin: 0 0 5px 0
+  font-size: 18px
+  font-weight: bold
+  font-weight: 500
+  line-height: 1.4
+
+  a
+    color: $color-text
+    display: inline
+    background-repeat: no-repeat
+    background-image: -o-linear-gradient(transparent calc(100% - 1px), currentColor 1px)
+    background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px)
+    background-image: -ms-linear-gradient(transparent 96%, currentColor 1px)
+    transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1)
+    background-size: 0 96%
+
+    &:hover
+      background-size: 100% 96%
+      color: #FFF
+
+.sidebar-post-author
+  display: block
+  font-size: 14px
+  color: #777
+  line-height: 15px
+
+  a
+    color: #777
+
+    &:hover
+      opacity: .8
+
+.sidebar-post-date
+  display: block
+  font-size: 13px
+  color: #777
+
+/* Sidebar post comments list 
+ *==============================
+
+.sidebar-comments-list ul
+  margin: 0
+
+/* Sidebar comment
+
+.sidebar-comment
+  padding-bottom: 15px
+  margin-bottom: 15px
+
+  &:last-child
+    margin: 0
+    padding: 0
+    border: none
+
+/* Sidebar comment meta
+
+.sidebar-comment-meta
+  overflow: hidden
+
+/* Sidebar comment data
+
+.sidebar-comment-data
+
+.sidebar-comment-author
+  display: block
+  font-size: 15px
+  font-weight: 500
+  line-height: 1.2
+
+  a
+    position: relative
+    color: #CCC
+    display: inline
+    background-repeat: no-repeat
+    background-image: -o-linear-gradient(transparent calc(100% - 1px), currentColor 1px)
+    background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px)
+    background-image: -ms-linear-gradient(transparent 96%, currentColor 1px)
+    transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1)
+    background-size: 0 96%
+
+    &:hover
+      background-size: 100% 96%
+      color: #FFF
+
+.sidebar-comment-date
+  display: block
+  font-size: 13px
+  color: #777
+
+/* Sidebar comment text
+
+.sidebar-comment-text
+  margin-top: 5px
+  font-size: 16px
+  line-height: 1.4
+  font-style: italic
+  color: #FFF
+
+  a
+    color: $color-text
+
+    &:hover
+      opacity: .8
+
+  p
+    margin-bottom: 0
+
+/* Sidebar tags 
+ *================
+
+.sidebar-tags
+
+.sidebar-tags-list
+  &::after
+    /* Clear
+    content: ""
+    display: table
+    clear: both
+
+  > ul
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    padding: 0
+    margin: 0
+
+    > li
+      margin: 3px
+
+  a
+    position: relative
+    display: block
+    background-color: rgb(160 160 160 / 12%)
+    padding: 2px 10px
+    font-size: 13px
+    font-weight: 300
+    color: #cacaca
+    overflow: hidden
+    z-index: 1
+    border-radius: 50px
+    transition: all .2s ease-in-out
+
+    &:hover
+      background-color: rgb(160 160 160 / 35%)
+      color: #FFF
+
+/* Sidebar meta 
+ *================
+
+.sidebar-meta ul > li > a
+  position: relative
+  margin: 3px 0
+  font-size: 16px
+  color: $color-text
+  display: inline
+  background-repeat: no-repeat
+  background-image: -o-linear-gradient(transparent calc(100% - 1px), currentColor 1px)
+  background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px)
+  background-image: -ms-linear-gradient(transparent 96%, currentColor 1px)
+  transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1)
+  background-size: 0 96%
+
+  &:hover
+    background-size: 100% 96%
+    color: #FFF
+
+/* ------------------------------------------------------------- *
+ *   Forms
+ */
+
+.tt-form-control
+  display: block
+  width: 100%
+  background-color: transparent
+  padding: 5px 15px
+  font-size: 14px
+  font-weight: normal
+  color: $color-text
+  border: 1px solid rgb(136 136 136 / 65%)
+  border-radius: 3px
+
+  &:focus
+    color: $color-text
+    background-color: transparent
+    border-color: rgb(204 204 204 / 85%)
+    outline: none
+    box-shadow: none
+
+  + .tt-form-control
+    margin-top: 20px
+
+  &:disabled, &[readonly]
+    background-color: rgb(176 176 176 / 6%)
+    opacity: .4
+    cursor: not-allowed
+
+  &:not(textarea):not([size])
+    /* tt-form-control height
+    height: 40px
+
+.tt-form-text
+  display: block
+  margin-top: 5px
+  font-style: italic
+  color: $color-text
+
+label
+  display: inline-block
+  margin-bottom: 8px
+  font-size: 15px
+  font-weight: bold
+  font-weight: 500
+
+  .required
+    opacity: .8
+
+  ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder
+    color: $color-text !important
+
+/* form group
+
+.tt-form-group
+  margin-bottom: 20px
+
+/* checkbox/radio
+
+input
+  &[type=checkbox], &[type=radio]
+    box-sizing: border-box
+    padding: 0
+    cursor: pointer
+
+/* textarea
+
+textarea
+  padding: 15px
+
+  &.tt-form-control
+    padding: 15px
+
+/* select
+
+select
+  cursor: pointer
+  color: $color-text
+  &.tt-form-control
+    cursor: pointer
+    color: $color-text
+    appearance: none
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E")
+    background-size: 10px
+    background-position: calc(100% - 1px) center
+    background-repeat: no-repeat
+
+  option
+    background-color: #131212
+    color: #FFF
+
+    &[value=""][disabled]
+      display: none
+
+  &[multiple] option
+    background-color: transparent
+    color: #FFF
+
+  option[disabled], &[multiple] option[disabled], &:required:invalid
+    color: $color-text
+
+/* range slider
+
+input[type=range]
+  width: 100%
+
+/* Form inline 
+ *===============
+@media (min-width: 1025px)
+  /* Form inline
+
+  form.tt-form-inline
+    display: flex
+    align-items: center
+    margin-bottom: 0
+
+    .tt-form-group
+      margin: 0 15px 0 0
+
+    .tt-btn
+      margin: 40px 0 0 0
+
+  /* Form group inline
+
+  .tt-form-group.tt-form-inline
+    display: flex
+    align-items: center
+    margin: 0
+
+    label
+      display: flex
+      margin: 0 15px 0 0
+
+      span
+        margin: 0 0 0 4px
+
+  form.tt-form-inline .tt-btn.tt-form-inline
+    margin: 0
+
+/* Custom forms 
+ *================
+/* Custom checkbox/radio
+
+.tt-form-check, .tt-form-radio
+  position: relative
+  display: block
+  margin: 0 0 10px 5px
+  line-height: 1.2
+
+.tt-form-check input, .tt-form-radio input
+  position: absolute
+  top: 50%
+  opacity: 0
+  cursor: pointer
+  transform: translate3d(0, -50%, 0)
+
+.tt-form-check label, .tt-form-radio label
+  position: relative
+  display: inline
+  margin-bottom: 10px
+  padding-left: 26px
+  vertical-align: middle
+  font-size: 17px
+  cursor: pointer
+
+.tt-form-check label::before, .tt-form-radio label::before
+  position: absolute
+  top: 1px
+  left: -0
+  display: block
+  width: 18px
+  height: 18px
+  pointer-events: none
+  content: ""
+  background-color: #DFDFDF
+  border-radius: 3px
+  transition: background-color 0.2s
+
+.tt-form-check:hover label::before, .tt-form-radio:hover label::before
+  background-color: $color-primary
+
+.tt-form-check label::after, .tt-form-radio label::after
+  position: absolute
+  display: none
+  content: ""
+  top: 4px
+  left: 6px
+  width: 5px
+  height: 10px
+  border: solid #313131
+  border-width: 0 2px 2px 0
+  transform: rotate(45deg)
+
+.tt-form-check input:checked ~ label::after
+  display: block
+
+.tt-form-radio
+  input:checked ~ label::after
+    display: block
+
+  label
+    &::before
+      border-radius: 100px
+
+    &::after
+      top: 9px
+      left: 6px
+      width: 4px
+      height: 4px
+      background-color: #FFF
+      border-radius: 100%
+
+.tt-form-check input:disabled, .tt-form-radio input:disabled
+  cursor: not-allowed
+
+.tt-form-check input:disabled ~ label, .tt-form-radio input:disabled ~ label
+  cursor: not-allowed
+  opacity: .3
+
+.tt-form-check.tt-form-check-inline, .tt-form-radio.tt-form-radio-inline
+  display: inline-block
+  margin-right: 10px
+
+/* Custom file upload
+
+.tt-form-file
+
+.btn-file
+  vertical-align: middle
+
+  > * input
+    position: absolute
+    left: 50%
+    width: 1%
+    opacity: 0
+
+.tt-file-info
+  width: 75%
+  background-color: transparent
+  border: none
+  outline: none
+  font-size: 14px
+  color: #777
+  line-height: 1
+
+/* Custom form with button inside
+
+.tt-form-btn-inside
+  position: relative
+
+  .tt-form-control
+    padding-right: 60px !important
+
+  button
+    position: absolute
+    top: 1px
+    right: 1px
+    width: 60px
+    height: 54px
+    background-color: transparent
+    font-size: 19px
+    color: $color-text
+    border: none
+    outline: none
+    cursor: pointer
+    border-radius: 0 3px 3px 0
+
+    &:hover
+      color: #FFF
+
+/* Form extra styles 
+ *=====================
+/* form style filled
+
+.tt-form-filled
+  label
+
+  .tt-form-control
+    background-color: rgb(136 136 136 / 10%)
+    color: #FFF
+    border: none
+
+    &:focus
+      box-shadow: inset 0 0 0 1px rgb(136 136 136 / 60%)
+
+    &:disabled, &[readonly]
+      opacity: .3
+
+/* form style minimal
+
+.tt-form-minimal
+  .tt-form-group label
+    margin-bottom: 0px
+
+  .tt-form-control:not(select)
+    background-color: transparent
+    padding-left: 0
+    padding-right: 0
+    font-size: 15px
+    border-width: 0 0 1px 0
+    border-style: solid
+    border-radius: 0px
+
+  select.tt-form-control:not([multiple])
+    background-color: transparent
+    padding-left: 0
+    padding-right: 0
+    font-size: 17px
+    border-width: 0 0 1px 0
+    border-style: solid
+    border-radius: 0px
+    padding-right: 15px
+
+  .tt-form-control
+    &:focus
+      border-color: $color-primary
+      color: $color-primary
+
+    &:disabled, &[readonly]
+      opacity: .2
+
+    border-color: rgba(#313131, 60%)
+
+    select
+      border-color: rgba(#313131, 60%)
+
+/* Form sizes 
+ *==============
+/* form sm
+
+.tt-form-sm .tt-form-control:not(textarea):not([size]), .tt-form-control.tt-form-sm, .tt-form-btn-inside .tt-form-control.tt-form-sm + button
+  height: 40px !important
+  font-size: 80%
+
+.tt-form-sm .tt-form-btn-inside button
+  height: 38px !important
+
+/* form lg
+
+.tt-form-lg .tt-form-control:not(textarea):not([size]), .tt-form-control.tt-form-lg, .tt-form-btn-inside .tt-form-control.tt-form-lg + button
+  height: 70px !important
+
+.tt-form-lg .tt-form-btn-inside button
+  height: 68px !important
+
+
+/* ------------------------------------------------------------- *
+ *   Pagination (tt-pagination)
+ */* -------------------------------------------------------------
+
+.tt-pagination
+  display: flex
+  margin-top: 20px
+  padding: 20px 3%
+
+body.tt-boxed .tt-wrap .tt-pagination
+  padding-left: 0
+  padding-right: 0
+
+.tt-pagin-numbers
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+.tt-pagin-item
+  width: 50px
+  height: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  line-height: 1
+  font-size: 28px
+  font-weight: bold
+  color: $color-text
+  opacity: .4
+  transition: opacity 0.3s
+
+  &:hover, &.active
+    opacity: 1
+
+@media (max-width: 480px)
+  .tt-pagin-item
+    width: 40px
+    height: 40px
+    font-size: 21px
+
+.tt-pagin-prev
+  margin-right: 3%
+
+.tt-pagin-next
+  margin-left: 3%
+
+/* Align center
+
+.tt-pagination.tt-pagin-center
+  justify-content: space-between
+  text-align: center
+/* ------------------------------------------------------------- *
+ *   Table
+ */* -------------------------------------------------------------
+
+table
+  width: 100%
+  empty-cells: show
+  word-wrap: break-word
+  margin: 0 0 30px 0
+  text-align: left
+  font-size: 16px
+  border-spacing: 0
+  border-collapse: collapse
+  border: none
+
+th
+  font-weight: bold
+  font-weight: 400
+  color: $color-text
+  padding: 8px 5px
+  font-size: 16px
+  vertical-align: middle
+
+td
+  padding: 8px 5px
+  font-size: 16px
+  vertical-align: middle
+
+/* tt-Table (styled table)
+ *============
+
+table.tt-table
+  th, td
+    border: 1px solid rgb(0 0 0 / 10%)
+  .ticket-c-info
+    
+     
+    // margin-top: 10px
+    
+    .ticket-c-info-content 
+      font-size: 16px
+      border-radius: 0
+      font-weight: 300
+      padding: 5px 20px
+      i 
+        margin-right: 7px
+        color: $color-2
+    td 
+      padding: 0
+      background-color: #e6e6e6
+  tbody tr
+    background-color: rgb(250 249 244 / 60%)
+
+    &:nth-of-type(odd)
+      background-color: rgb(240 239 235 / 60%)
+
+  thead
+    background-color: rgb(250 249 244 / 60%)
+
+    th, td
+      padding: 16px 20px
+
+  tbody
+    th, td
+      padding: 12px 20px
+
+  tfoot
+    background-color: rgb(133 133 133 / 15%)
+
+    th, td
+      padding: 16px 20px
+
+/* thead
+
+/* tbody
+
+/* tfoot
+
+/* ------------------------------------------------------------- *
+ *   tt-Tabs 
+ */* -------------------------------------------------------------
+
+.tt-tabs
+  position: relative
+
+/* tt-Tabs buttons
+
+.tt-tabs-buttons
+  border-radius: 3px
+  overflow: hidden
+
+  ul
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    list-style: none
+
+  > ul > li
+    margin: 0 5px 5px 0
+
+.tt-tab-btn
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 60px
+  background-color: #eee
+  padding: 10px 40px
+  text-align: center
+  font-size: 19px
+  color: #A0A0A0
+  cursor: pointer
+  border: none
+  outline: none
+  transition: .2s ease-in-out
+
+  &:hover
+    background-color: $color-primary
+    color: #FFF
+
+  &.active
+    background-color: $color-primary
+    color: #FFF
+
+/* tt-Tabs buttons on small screens
+@media (max-width: 991px)
+  .tt-tabs-buttons
+    ul
+      display: block
+
+    > ul > li
+      margin: 0 0 2px 0
+
+  .tt-tab-btn
+    height: 60px
+
+/* tt-Tabs content
+
+.tt-tab-content
+  display: none
+
+  /* hide all content
+  padding-top: 30px
+
+  &.active
+    display: block
+
+/* tt-Tabs styles
+ *==================
+
+/* Tabs minimal style
+
+.tt-tabs.tt-tabs-minimal
+  .tt-tabs-buttons
+    border-bottom: 1px solid #333
+
+  .tt-tab-btn
+    height: 60px
+    background-color: transparent
+    padding: 10px 0
+    border: none
+
+@media (min-width: 992px)
+  .tt-tabs.tt-tabs-minimal
+    .tt-tabs-buttons > ul > li
+      margin: 0 40px 0 0
+
+    .tt-tab-btn.active::after
+      position: absolute
+      content: ""
+      bottom: 0
+      z-index: 0
+      width: 100%
+      height: 3px
+      background-color: #FFF
+
+@media (max-width: 991px)
+  .tt-tabs.tt-tabs-minimal .tt-tab-btn
+    border-top: 1px solid #333
+
+/* Tabs justified style
+@media (min-width: 992px)
+  .tt-tabs.tt-tabs-justified
+    .tt-tabs-buttons
+      ul
+        flex-wrap: nowrap
+
+      > ul > li
+        width: 100%
+        margin: 0 2px 0 0
+
+    .tt-tab-btn
+      padding: 10px 0
+
+.t-tabs-center
+
+
+
+/* ------------------------------------------------------------- *
+ *   Social buttons
+ */* -------------------------------------------------------------
+
+.social-buttons
+  ul
+    display: inline-flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    list-style: none
+
+    > li
+      display: flex
+      justify-content: center
+      align-items: center
+      float: left
+      margin: 0 2px
+
+      &:first-child
+        margin-left: 0
+
+      &:last-child
+        margin-right: 0
+
+  > ul > li a
+    display: block
+    width: 50px
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    line-height: 1
+    font-size: 15px
+    font-weight: 600
+    color: $color-text
+    transition: opacity 0.2s
+
+@media (max-width: 991px)
+  .social-buttons ul > li
+    margin: 0px
+
+body:not(.tt-magic-cursor) .social-buttons > ul
+  &:hover > li a
+    opacity: .5
+
+  > li a:hover
+    opacity: 1
+
+
+/* ------------------------------------------------------------- *
+ *   tt-Accordion
+ */* -------------------------------------------------------------
+
+.tt-accordion, .tt-accordion-item
+  position: relative
+
+/* Accordion heading 
+ *=====================
+
+.tt-accordion-heading
+  position: relative
+  padding: 10px 13% 10px 0
+  cursor: pointer
+
+.tt-accordion-item:first-child .tt-accordion-heading
+  padding-top: 0
+
+.tt-ac-head-title
+  margin: 0
+  font-size: 32px
+  line-height: 1.2
+
+@media (max-width: 991px)
+  .tt-ac-head-title
+    font-size: 28px
+
+/* Accordion heading subtext
+
+.tt-accordion-subtext
+  margin-top: 10px
+  font-size: 19px
+  font-weight: normal
+  color: #999
+
+/* Accordion heading caret
+
+.tt-accordion-caret-wrap
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translate3d(0, -50%, 0)
+
+.tt-accordion-caret
+  position: relative
+  width: 15px
+  height: 15px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+  color: $color-text
+  cursor: pointer
+  z-index: 2
+  opacity: .9
+  transition: opacity 0.3s
+
+.tt-accordion-item:not(.active) .tt-accordion-heading:hover .tt-accordion-caret
+  opacity: 1
+
+.tt-accordion-caret
+  &:hover
+    opacity: 1
+
+  &::before, &::after
+    position: absolute
+    display: block
+    content: ""
+    background-color: $color-text
+
+  &::before
+    width: 1px
+    height: 100%
+    transition: height 0.3s
+
+  &::after
+    width: 100%
+    height: 1px
+
+.tt-accordion-item.active .tt-accordion-caret::before
+  height: 0
+
+/* Accordion content 
+ *=====================
+
+.tt-accordion-content
+  padding-bottom: 40px
+  color: $color-text
+
+  &:not(.is-open)
+    display: none
+
+  p:last-child
+    margin-bottom: 0
+
+/* Accordion styles 
+ *====================
+/* borders
+
+.tt-accordion
+  &.tt-ac-borders
+    .tt-accordion-heading
+      padding-top: 15px
+      padding-bottom: 15px
+      border-top: 1px solid rgb(125 125 125 / 40%)
+
+    .tt-accordion-item:last-child
+      border-bottom: 1px solid rgb(125 125 125 / 40%)
+
+  &.tt-ac-sm .tt-ac-head-title
+    font-size: calc(20px + 0.1vw)
+
+  &.tt-ac-lg .tt-ac-head-title
+    font-size: calc(24px + 1vw)
+
+  &.tt-ac-xlg
+    .tt-accordion-heading
+      padding-top: 45px
+      padding-bottom: 45px
+
+    .tt-ac-head-title
+      font-size: calc(24px + 1.5vw)
+
+  &.tt-ac-xxlg
+    .tt-accordion-heading
+      padding-top: 60px
+      padding-bottom: 60px
+
+    .tt-ac-head-title
+      font-size: calc(24px + 2vw)
+
+/* Accordion sizes 
+ *===================
+
+.tt-accordion
+  &.tt-ac-sm .tt-ac-head-title
+    font-size: calc(18px + 0.1vw)
+
+  &.tt-ac-lg .tt-ac-head-title
+    font-size: calc(24px + 1vw)
+
+  &.tt-ac-xlg
+    .tt-accordion-heading
+      padding-top: 45px
+      padding-bottom: 45px
+
+    .tt-ac-head-title
+      font-size: calc(24px + 1.5vw)
+
+  &.tt-ac-xxlg
+    .tt-accordion-heading
+      padding-top: 60px
+      padding-bottom: 60px
+
+    .tt-ac-head-title
+      font-size: calc(24px + 2vw)
+.margin-top-bottom-20
+  margin-bottom: 20px
+  margin-top: 20px
+
+.product__color-swatches
+  .product__color-swatches--inner
+    display: flex
+    flex-wrap: wrap
+    margin: calc(4px * -1)
+    margin: calc(var(--spacing-unit) * -1)
+
+  .product__color-swatch
+    margin: 4px
+    margin: var(--spacing-unit)
+    box-shadow: 0 0 0 1px #aaaaaa inset, 0 0 0 4px #fff inset
+    transition: box-shadow 0.3s ease-in-out
+    background-position: center center
+    background-size: contain
+
+    &:hover:not(.selected)
+      box-shadow: 0 0 0 1px #111 inset, 0 0 0 4px #fff inset
+
+    &.selected
+      box-shadow: 0 0 0 2px #111 inset, 0 0 0 5px #fff inset
+
+    &::before
+      position: absolute
+      content: ""
+      left: 0
+      top: 50%
+      right: 0
+      width: 100%
+      border-top: 1px solid
+      border-color: transparent
+      transform: rotate(-45deg) translateY(-50%)
+      transition: border-color 0.2s ease
+
+    &[data-shape="rectangle"]
+      &[data-size="small"]::before
+        width: 115%
+        left: -7%
+        transform: rotate(-32deg) translateY(-50%)
+
+      &[data-size="medium"]::before
+        width: 112%
+        left: -6%
+        transform: rotate(-29deg) translateY(-50%)
+
+      &[data-size="large"]::before
+        width: 112%
+        left: -6%
+        transform: rotate(-28deg) translateY(-50%)
+
+    &[data-shape="square"]::before
+      width: 136%
+      left: -18%
+
+    &[data-shape="round"]::before
+      width: 99%
+      left: 1%
+
+    &.product__color-swatch--sibling-product
+      background-size: cover
+
+    &[data-size="small"]
+      width: calc(7.5 * 4px)
+      width: calc(7.5 * var(--spacing-unit))
+      height: calc(7.5 * 4px)
+      height: calc(7.5 * var(--spacing-unit))
+
+      &[data-shape="rectangle"]
+        width: calc(11 * 4px)
+        width: calc(11 * var(--spacing-unit))
+        height: calc(7 * 4px)
+        height: calc(7 * var(--spacing-unit))
+
+    &[data-size="medium"]
+      width: calc(9.5 * 4px)
+      width: calc(9.5 * var(--spacing-unit))
+      height: calc(9.5 * 4px)
+      height: calc(9.5 * var(--spacing-unit))
+
+      &[data-shape="rectangle"]
+        width: calc(15 * 4px)
+        width: calc(15 * var(--spacing-unit))
+        height: calc(8.5 * 4px)
+        height: calc(8.5 * var(--spacing-unit))
+
+    &[data-size="large"]
+      width: calc(12 * 4px)
+      width: calc(12 * var(--spacing-unit))
+      height: calc(12 * 4px)
+      height: calc(12 * var(--spacing-unit))
+
+      &[data-shape="rectangle"]
+        width: calc(18 * 4px)
+        width: calc(18 * var(--spacing-unit))
+        height: calc(10 * 4px)
+        height: calc(10 * var(--spacing-unit))
+
+    &[data-shape="round"]
+      border-radius: 100%
+.single-product-color
+  margin-top: 20px
+@media (max-width: 768px)
+  thead.shop-cart-table-head
+    display: none
+
+  table.shop-cart-table tbody.shop-cart-table-body tr
+    &:last-child
+      background-color: transparent
+    &:nth-of-type(odd)
+      background-color: transparent
+
+    td
+      padding: 10px 0 
+      font-size: 16px
+      border: none
+      border-bottom: 1px dotted rgb(120 120 120 / 40%)
+      &:last-child
+        border: none
+        border-bottom: 1px dotted rgb(120 120 120 / 0%)
+
+  tr.shop-cart-table-item
+    position: relative
+    display: block
+    // padding-left: 95px
+    // margin-bottom: 15px
+    // padding-bottom: 15px
+    // border-bottom: 2px solid rgb(135 135 135 / 45%)
+
+    td
+      display: flex
+      align-items: center
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+
+  tbody.shop-cart-table-body tr td.cti-product-remove
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1
+    padding: 0
+
+  td.cti-product-remove a
+    padding: 7px
+    line-height: 0
+
+  tbody.shop-cart-table-body tr td.cti-product-thumb
+    position: absolute
+    top: 0
+    left: 0
+    padding: 10px 0 0 0 !important
+    border-bottom: none !important
+
+  .cti-product-thumb a
+    width: 80px
+
+  table.shop-cart-table tbody.shop-cart-table-body tr td.cti-product-title
+    // padding-right: 50px
+
+  .cti-product-title-inner
+    padding-bottom: 0px
+    text-align: right
+
+  tbody.shop-cart-table-body tr td
+    &.cti-mobile-price, &.cti-mobile-quantity
+      border-bottom: 1px dashed rgb(120 120 120 / 45%)
+
+  td
+    &.cti-price, &.cti-quantity, &.cti-subtotal
+      color: #313131
+
+    &.cti-product-title:before,&.cti-price:before, &.cti-quantity:before, &.cti-subtotal:before
+      content: attr(data-title)
+      color: #313131
+
+@media (max-width: 768px)
+  thead.shop-wishlist-table-head
+    display: none
+
+  table.shop-wishlist-table tbody tr
+    &:nth-of-type(odd)
+      background-color: transparent
+
+    td
+      padding: 5px
+      font-size: 15px
+      border: none
+      border-bottom: 1px dotted rgb(120 120 120 / 40%)
+
+      &:last-child
+        border: none
+        border-bottom: 1px dotted rgb(120 120 120 / 0%)
+    
+  tr.shop-wishlist-table-item
+    position: relative
+    display: block
+    padding-left: 95px
+    margin-bottom: 25px
+    padding-bottom: 25px
+    border-bottom: 2px solid rgb(135 135 135 / 45%)
+
+    td
+      display: flex
+      align-items: center
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+  table.tt-table
+    .ticket-c-info
+      border-bottom: 2px solid $color-primary
+      margin-bottom: 15px 
+      padding-bottom: 10px
+      display: block
+      width: 100%
+      td 
+        display: block
+        width: 100%
+        padding: 0!important
+      
+      .ticket-c-info-content 
+        font-size: 14px
+        border-radius: 0
+        font-weight: 300
+        padding: 5px 5px
+        i 
+          margin-right: 7px
+          color: $color-2
+  td
+    &.swti-product-remove
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 1
+      padding: 0
+
+      a
+        padding: 7px
+        line-height: 0
+
+    &.swti-product-thumb
+      position: absolute
+      top: 0
+      left: 0
+      padding: 10px 0 0 0 !important
+      border-bottom: none !important
+
+  .swti-product-thumb a
+    width: 80px
+
+  table.shop-wishlist-table td.swti-product-title
+    padding-right: 50px
+    padding-bottom: 15px
+
+  td
+    &.swti-price, &.swti-stock-status
+      color: #CCC
+
+    &.swti-price:before, &.swti-stock-status:before
+      content: attr(data-title)

@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Green</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Package -->
+    <link rel="stylesheet" href="assets/packages/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/packages/select2.min.css">
+    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css">
+    <link rel="stylesheet" href="assets/packages/animate.min.css">
+    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/packages/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/packages/locomotive.min.css">
+    <!-- Style -->
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body class="subpage-body">
+
+    <header class="site-header">
+
+        <div class="logo-header container">
+            <div class="site-header-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo-w.svg" alt="" class="">
+                </a>
+            </div>
+            <div class="menu-left">
+                <div class="site-header-menu">
+                    <div class="site-header-link">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Buy Tickets</a>
+                                <ul>
+                                    <li><a href="#">Virtual Race</a></li>
+                                    <li><a href="#">Events in Vietnam</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Infomation</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                   
+                    
+                </div>
+                
+                
+                <div class="logo-header-menu">
+                    <ul>
+                        <li>
+                            <a class="btn btn-light-outline" href="#"><span>Login</span></a>
+                        </li>
+                        <li class="language-menu">
+                            <a href="#">Eng</a>
+                            <ul>
+                                <li><a href="#">Vn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="site-header-ham">
+                        <a href="#" class="ham-btn">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="menu-mobile-container">
+        <button class="mobile__close-btn" id="mobile__close-btn">
+            <span><i class="fal fa-times"></i></span>
+        </button>
+        <div class="logo mb-40">
+            <a href="index.html">
+                <img src="assets/images/logo/logo-w.svg" alt="logo">
+            </a>
+        </div>
+        <div class="mobile-menu">
+        
+        </div>
+    </div>
+
+  
+    <div class="body-overlay"></div>
+
+
+
+    <main>
+
+        <section class="subpage-banner _ticket-detail _banner-nocontent">
+            <div class="subpage-banner-img">
+                <img src="assets/images/ticket/bn-2.jpeg" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- <div class="content">
+                            <div class="list-tag">
+                                <ul>
+                                    <li><a class="tag-color-1" href="#">On sale</a></li>
+                                    <li><a class="tag-color-2" href="#">Marathon</a></li>
+                                </ul>
+                            </div>
+                            <h1>Trang An Marathon 2023</h1>
+                            <div class="list-info">
+                                <ul>
+                                    <li><i class="far fa-calendar-alt"></i>12/11/2023</li>
+                                    <li><i class="far fa-map-marker-alt"></i>Hoa Lu Ancient Capital, Ninh Binh</li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="curve">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 0 0 C15 120 35 120 100 0 L 100 100 Z" fill="#fff"></path></svg>
+            </div> -->
+        </section>
+        <section class="ticket-detail-menu">
+            <ul>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#introduce" data-id="introduce">
+                        Giới thiệu 
+                    </a>
+                </li>
+
+                <li>
+                    <a class="ticket-detail-menu-link" href="#personal" data-id="personal">
+                        Mua cá nhân
+                    </a>
+                </li>
+
+                <li>
+                    <a class="ticket-detail-menu-link" href="#group" data-id="group">
+                        Mua nhóm
+                    </a>
+                </li>
+
+                <li>
+                    <a class="ticket-detail-menu-link" href="#table-price" data-id="table-price">
+                        Bảng giá
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#timeline" data-id="timeline">
+                        Lịch trình
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#racekit" data-id="racekit">
+                        Racekit
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#map" data-id="map">
+                        Bản đồ
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#reward" data-id="reward">
+                        Phần thưởng
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#rule" data-id="rule">
+                        Quy định
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#organizing" data-id="organizing">
+                        Ban tổ chức
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="ticket-content">
+            <div class="container">
+                <div class="row" id="menu-action-container">
+                    <div class="col-md-8 order-1 order-md-0">
+                        <div class="ticket-content-text card" id="introduce">
+                            <div class="ticket-content-header">
+                                <h3>Giới thiệu</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <img width="50%" src="https://s3-ap-southeast-1.amazonaws.com/vietnamjoy-cdn-dev/images/63f9cab494d3bb000122788f.png" alt="event logo">
+                                <div class="quote mb-4">Đã bao lâu rồi bạn chưa trở về với thiên nhiên? <br>Bạn đã sẵn sàng để các giác quan được đánh thức?<br>Đó là cảm giác hít thở bầu không khí trong lành, ngắm nhìn bình minh, tĩnh tại lắng nghe tiếng xào xạc của lá, tiếng ríu rít của chim…<br> Cảm nhận sự mát lạnh thuần khiết của hơi thở núi rừng. <br>...Và cuối cùng là vị ngọt, chua, đắng, mặn từ trái cây cùng những món ăn ta được thưởng thức nơi vùng cao này.<br>Hãy cùng VietnamJoy tạo nên chuyến hành trình của riêng bạn.</div>
+                                <p>Đơn thuần bắt đầu từ sự yêu thích chạy bộ, song hành là niềm đam mê đi khắp nơi khám phá thiên nhiên tươi đẹp hùng vĩ của đất nước Việt Nam, chúng tôi - VietnamJoy là tập thể với mong muốn mang con người trở về với thiên nhiên. Qua những cung đường xuyên rừng, những cảnh thác đổ cheo leo hay những đỉnh núi xuyên mây huyền ảo sẽ mang lại những khung cảnh mới mẻ, những trải nghiệm thú vị. </p>
+                                <p>Chạy địa hình không chỉ là thử thách sự dẻo dai của cơ thể mà còn là thách thức lòng quyết tâm của bạn. Lâm Đồng Trail ra đời - đánh dấu là sự kiện mở đầu cho chuỗi các giải chạy của VietnamJoy trong tương lai. Hi vọng rằng tiết trời se lạnh, sương mù tinh khiết, rừng thông bạt ngàn và dòng suối ngọt mát của cao nguyên Lâm Đồng sẽ để lại một dấu ấn trong lòng các vận động viên tham gia giải chạy lần này nhé!</p>
+                                <p>Cung đường của Lâm Đồng Trail 2023 có độ dốc không quá lớn, đây sẽ là một cuộc dạo chơi để bạn có cơ hội được thưởng thức cảnh đẹp của vườn quốc gia đầu tiên tại Việt Nam với Hệ sinh thái vô cùng đa dạng và phong phú. Đồng thời đây cũng là cơ hội để các Vận Động Viên có thể tìm hiểu thêm về các hoạt động sinh thái từ đó nâng cao kiến thức về việc bảo vệ môi trường, bảo vệ thiên nhiên.</p>
+
+                                <h3 id="mcetoc_1ge8jojju1">Thông tin mở rộng:&nbsp;</h3>
+                                <p><strong>15km</strong>| Nếu bạn mới bắt đầu tập chạy, đây là cự ly hoàn toàn thích hợp để trải nghiệm. Đặc biệt, cự ly 15km là vừa đủ để rủ gia đình, bạn bè, đồng nghiệp cùng nhau trải nghiệm môn chạy bộ và gắn kết mối quan hệ tích cực hơn.&nbsp;</p>
+                                <p><strong>25km</strong>|Cự ly thách thức hơn và thú vị hơn với địa hình cao nguyên đa dạng rừng cây. Cự ly phù hợp cho bạn đã chạy bộ được một thời gian hoặc hoàn thành 25km đường nhựa và muốn thử thách ở địa hình tự nhiên. Thử đi, rồi bạn sẽ mê đấy.&nbsp;</p>
+                                <p><strong>45km</strong>|Cự ly dành cho người có kinh nghiệm. Cung đường sẽ dẫn bạn đi sâu hơn vào trong rừng thông, rừng nguyên sinh của cao nguyên Lâm Đồng. Không khí lạnh mát, mùi hương đặc trưng của rừng thông, đất đỏ Bazan trải dài trên các con dốc lên xuống sẽ khiến hành trình đáng để chinh phục hơn nữa.&nbsp;</p>
+                                <p><strong>75km</strong>| Cự ly siêu dài chỉ dành riêng cho các VĐV đã có kinh nghiệm &amp; thể lực tốt. Hãy chuẩn bị thật chu đáo trước khi bước vào cự ly thử thách nhất, khó nhất của Lâm Đồng Trail 2023. Sức bền, đồ đạc, đồ ăn, nước uống là chưa đủ. Trên hết bạn cần một tinh thần thép để chinh phục cự ly siêu dài này.&nbsp;</p>
+                                <p><strong>Kids trail (5km)</strong>| Là đường chạy trải nghiệm đầu tiên của các thiên thần nhỏ. Không khí vui vẻ, thoải mái vận độngcùng gia đình mình là những gì đường chạy này mang lại.&nbsp;</p>
+                                <p><strong>Family Trail Run (5km)</strong>| Dành cho bố/mẹ chạy cùng bé ( Gói chạy này có BIB và túi rút dành cho bố mẹ,&nbsp; không có áo và những bộ vật phẩm khác không được áp dụng trong vé Family Trail Run). Vé chỉ áp dụng cho người từ 18-60 tuổi.</p>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="personal">
+                            <div class="ticket-content-header">
+                                <h3>Mua cá nhân</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="table-responsive">
+                                    
+                                    <table class="table table-hover table-bordered table-price">
+                                        <thead>
+                                            <tr>
+                                                <th>Cự ly</th>
+                                                
+                                                  
+                                                  
+                                                  <th class="expired-price">
+                                                    Early Bird
+                                                    <br>
+                                                    <small><i>(10/03 - 02/07)</i></small>
+                                                  </th>
+                                                
+                                                  
+                                                  
+                                                  <th class="expired-price">
+                                                    Regular
+                                                    <br>
+                                                    <small><i>(03/07 - 30/09)</i></small>
+                                                  </th>
+                                                
+                                                  
+                                                  
+                                                  <th class="expired-price">
+                                                    Late
+                                                    <br>
+                                                    <small><i>(01/10 - 30/10)</i></small>
+                                                  </th>
+                                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                                        <tr>
+                                                <th>Family Trail Run (5Km)</th>
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    499,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    599,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    699,000đ
+                                                  </td>
+                                  
+                                                            </tr>
+                                                        <tr>
+                                                <th>Kids Trail (5Km)</th>
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    499,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    599,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    699,000đ
+                                                  </td>
+                                  
+                                                            </tr>
+                                                        <tr>
+                                                <th>15km</th>
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    777,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    999,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    1,999,000đ
+                                                  </td>
+                                  
+                                                            </tr>
+                                                        <tr>
+                                                <th>25km</th>
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    1,444,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    1,888,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    2,222,000đ
+                                                  </td>
+                                  
+                                                            </tr>
+                                                        <tr>
+                                                <th>45km</th>
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    1,666,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    2,222,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    2,666,000đ
+                                                  </td>
+                                  
+                                                            </tr>
+                                                        <tr>
+                                                <th>75km</th>
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    2,222,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    2,666,000đ
+                                                  </td>
+                                  
+                                                
+                                                  
+                                                  
+                                                  <td class="expired-price">
+                                                    2,999,000đ
+                                                  </td>
+                                  
+                                                            </tr>
+                                                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-3 wrap-price-personal">
+                                    <div class="col-12">
+                                        <a href="#" class="btn w-100"><span>Mua ngay</span></a>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="group">
+                            <div class="ticket-content-header">
+                                <h3>Mua nhóm</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered table-price table-discount-group">
+                                        <thead>
+                                            <tr>
+                                                <th>Thành viên</th>
+                                                <th>Tặng thêm</th>
+                                                <th>Giảm giá</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="item-discount-group" data-min="10" data-max="30" data-amount="5"
+                                                data-from_date="2023-07-01 00:00:00" data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>10</b> to <b>20</b></span>
+                                                </td>
+                                                <td>
+                                                    <!-- 01/07/2023, 00:00 - 01/11/2023, 23:59 -->
+                                                </td>
+                                                <td>10%</td>
+                                            </tr>
+                                            <tr class="item-discount-group" data-min="31" data-max="50" data-amount="10"
+                                                data-from_date="2023-07-01 00:00:00" data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>20</b> to <b>30</b></span>
+                                                </td>
+                                                <td>
+                                                    <div class="description">
+                                                        - 01 vé tặng cự ly 15km hoặc 25km <br> 
+                                                        - In Logo CLB trên BIB
+                                                    </div>
+                                                </td>
+                                                <td>15%</td>
+                                            </tr>
+                                            <tr class="item-discount-group" data-min="51" data-max="100"
+                                                data-amount="15" data-from_date="2023-07-01 00:00:00"
+                                                data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>30+</b></span>
+                                                </td>
+                                                <td>
+                                                    <div class="description">- 02 vé tặng cự ly 15km hoặc 25km  <br> - In Logo CLB trên BIB<br> - Bài truyền thông giới thiệu về CLB trên fanpage<br> - Logo CLB có trên backdrop sự kiện</div>
+                                                </td>
+                                                <td>20%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-3 wrap-price-personal">
+                                    <div class="col-12">
+                                        <a href="#" class="btn w-100"><span>Mua ngay</span></a>
+                                    </div>
+                                    
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="table-price">
+                            <div class="ticket-content-header">
+                                <h3>Bảng giá</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <h4 id="mcetoc_1gqtfqkn00">Thông tin giá vé</h4>
+                                <p><strong>Vé cá nhân</strong></p>
+                                <p><strong><img src="https://irace.vn/wp-content/uploads/2023/03/gia-ve.png" alt="" width="100%"></strong><strong></strong></p>
+                                <p><span style="color: #ff0000;"><b>Ưu đãi giảm 30% cho Học sinh/sinh viên</b></span></p>
+                                <p>Để nhận ưu đãi dành cho HSSV, bạn cần chụp ảnh 2 mặt CMND/CCCD và thẻ HSSV còn hiệu lực và gửi về email <a href="mailto:support@dotgreen.vn">support@dotgreen.vn</a> để kiểm tra thông tin, sau khi xác nhận thông tin của bạn là chính xác, iRace.vn sẽ cấp mã cho các bạn.</p>
+                                <p><img src="https://irace.vn/wp-content/uploads/2023/10/ưudainhom-ldt-web.png" alt="" width="100%"></p>
+                                <p><strong>Vé nhóm</strong></p>
+                                <ul>
+                                <li>Nhóm 10+: Giảm 10%</li>
+                                <li>Nhóm 20+: Giảm 15%</li>
+                                <li>Nhóm 30+: Giảm 20%</li>
+                                </ul>
+                                <p><img src="https://irace.vn/wp-content/uploads/2023/03/bang-gia-ve-lam-dong-trail-2.png" alt="" width="100%"></p>
+                           
+                                <h3 id="mcetoc_1gqtfqkn02"><strong>Chính sách thay đổi thông tin</strong><google-sheets-html-origin style="color: #000000; font-size: medium;"></google-sheets-html-origin></h3>
+                                <table border="1" cellpadding="0" cellspacing="0" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;"><colgroup><col><col><col></colgroup>
+                                <tbody>
+                                <tr>
+                                <td colspan="1" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;CHÍNH SÁCH&quot;}" rowspan="9">
+                                <div style="text-align: center;"><strong>CHÍNH SÁCH</strong></div>
+                                </td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;QUY ĐỊNH&quot;}" style="text-align: center;"><strong>QUY ĐỊNH</strong></td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;MÔ TẢ CHI TIẾT&quot;}" style="text-align: center;"><strong>MÔ TẢ CHI TIẾT</strong></td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;HỦY ĐĂNG KÝ&quot;}" rowspan="1" style="text-align: center;"><strong>HỦY ĐĂNG KÝ</strong></td>
+                                </tr>
+                                <tr>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;VĐV tự ý hủy đăng ký&quot;}">VĐV tự ý hủy đăng ký</td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Không hoàn trả phí đăng ký&quot;}">Không hoàn trả phí đăng ký</td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;QUY ĐỊNH VỀ ĐỔI TRẢ&quot;}" rowspan="1" style="text-align: center;"><strong>QUY ĐỊNH VỀ ĐỔI TRẢ</strong></td>
+                                </tr>
+                                <tr>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1. Phí chuyển nhượng vé&quot;}">1. Phí chuyển nhượng vé</td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;250.000VNĐ/lần.&quot;}">250.000VNĐ/lần.</td>
+                                </tr>
+                                <tr>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;2. Phí upgrade vé&quot;}">2. Phí upgrade vé</td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;250,000 VNĐ/lần + Phí chênh lệch của cự ly đã đăng ký so với cự ly mong muốn đổi.&quot;}">250,000 VNĐ/lần + Phí chênh lệch của cự ly đã đăng ký so với cự ly mong muốn đổi.</td>
+                                </tr>
+                                <tr>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;3. Phí downgrade vé&quot;}">3. Phí downgrade vé</td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;250,000 VNĐ/lần và không hoàn tiền phần chênh lệch.&quot;}">250,000 VNĐ/lần và không hoàn tiền phần chênh lệch.</td>
+                                </tr>
+                                <tr>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;4. Trường hợp giải phải hoãn vì các tình huống bất khả kháng:&quot;}">4. Trường hợp giải phải hoãn vì các tình huống bất khả kháng:</td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Giải sẽ lùi ngày tổ chức và thông báo chính thức trên fanpage của chương trình. \n Không hoàn tiền vé và sẽ hỗ trợ chi phí chuyển nhượng vé cho vận động viên nếu cần nhưng chỉ được một lần duy nhất.&quot;}">Giải sẽ lùi ngày tổ chức và thông báo chính thức trên fanpage của chương trình.<br>Không hoàn tiền vé và sẽ hỗ trợ chi phí chuyển nhượng vé cho vận động viên nếu cần nhưng chỉ được một lần duy nhất.</td>
+                                </tr>
+                                <tr>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thời gian hạn chót thay đổi thông tin &quot;}"><strong>Thời gian hạn chót thay đổi thông tin</strong></td>
+                                <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DỰ KIẾN 22/10/2023&quot;}"><strong>DỰ KIẾN 23/10/2023</strong></td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                <ul>
+                                <li><span class="_7ebf6 rich-text-inline">Đóng thời hạn thay đổi thông tin (thông tin cá nhân, chuyển nhượng, thay đổi cự ly): 23h59' ngày 23.10 </span></li>
+                                <li><span class="_7ebf6 rich-text-inline"> </span><span class="_7ebf6 rich-text-inline">Sau ngày 25.10 BTC sẽ không ghi nhận thông tin đăng ký tên trên BIB, những VĐV đăng ký sau ngày 25 tức ngày 26.10 sẽ để BIB trắng</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="timeline">
+                            <div class="ticket-content-header">
+                                <h3>Lịch trình</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <h4 id="mcetoc_1gg6mqa2q0">Địa điểm chạy</h4>
+                                <ul>
+                                    <li>TTC World - Thung Lũng Tình Yêu</li>
+                                </ul>
+                                <br>
+                                <h4 id="mcetoc_1ge8jp1dj2">Lịch trình sự kiện:&nbsp;&nbsp;</h4>
+                                <p><strong>Lưu ý</strong>: Đây là lịch trình tạm thời. Lịch trình chính thức sẽ được Ban Tổ Chức thông báo sớm nhất vào 1 tháng trước sự kiện.</p>
+                                <table border="1" cellpadding="0" cellspacing="0" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;"><colgroup><col style="text-align: center;"><col style="text-align: center;"><col style="text-align: center;"><col style="text-align: center;"></colgroup>
+                                    <tbody>
+                                    <tr>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;THỜI GIAN&quot;}" style="text-align: center;"><strong>THỜI GIAN</strong></td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;HOẠT ĐỘNG&quot;}" style="text-align: center;"><strong>HOẠT ĐỘNG</strong></td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;ĐỊA ĐIỂM&quot;}" rowspan="1" style="text-align: center;"><strong>ĐỊA ĐIỂM</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="4" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thứ 6, ngày 10/11/2023&quot;}" rowspan="1" style="text-align: center;"><strong>Thứ 6, ngày 10/11/2023</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.3333333333333333}" style="text-align: center;">08:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Expo mở cửa chào đón vận động viên&quot;}" style="text-align: center;">Expo mở cửa chào đón vận động viên</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.3541666666666667}" style="text-align: center;">08:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Vận động viên các cự ly đến nhận bộ vật phẩm&quot;}" style="text-align: center;">Vận động viên các cự ly đến nhận bộ vật phẩm</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.3958333333333333}" style="text-align: center;">09:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Lễ khai mạc giải chạy địa hình Lâm Đồng Trail 2023&quot;}" style="text-align: center;">Lễ khai mạc giải chạy địa hình Lâm Đồng Trail 2023</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.6041666666666666}" style="text-align: center;">14:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Chương trình giao lưu theo chủ đề&quot;}" style="text-align: center;">Chương trình giao lưu theo chủ đề</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.6458333333333334}" style="text-align: center;">15:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Chương trình Talkshow “Về với thiên nhiên\&quot;&quot;}" style="text-align: center;">Chương trình Talkshow “Về với thiên nhiên"</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.6875}" style="text-align: center;">16:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Tóm tắt đường chạy Lâm Đồng Trail&quot;}" style="text-align: center;">Tóm tắt đường chạy Lâm Đồng Trail</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.7291666666666666}" style="text-align: center;">17:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Tiệc chào đón dành cho vận động viên 70Km&quot;}" style="text-align: center;">Tiệc chào đón dành cho vận động viên 75Km</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.875}" style="text-align: center;">21:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Kết thúc hoạt động Expo và phát bộ vật phẩm&quot;}" style="text-align: center;">Kết thúc hoạt động Expo và phát bộ vật phẩm</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="4" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thứ 7, ngày 11/11/2023&quot;}" rowspan="1" style="text-align: center;"><strong>Thứ 7, ngày 11/11/2023</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.08333333333333333}" style="text-align: center;">02:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Bãi giữ xe bắt đầu hoạt động&quot;}" style="text-align: center;">Bãi giữ xe bắt đầu hoạt động</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.08333333333333333}" style="text-align: center;">02:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Mở quầy gửi đồ&quot;}" style="text-align: center;">Mở quầy gửi đồ</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.16666666666666666}" style="text-align: center;">04:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Cự ly 75km xuất phát&quot;}" style="text-align: center;">Cự ly 75km xuất phát</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Trung tâm Văn hoá Thể thao Huyện Lạc Dương&quot;}" rowspan="1" style="text-align: center;">Trung tâm Văn hoá Thể thao Huyện Lạc Dương</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.25}" style="text-align: center;">06:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Cự ly 45km xuất phát&quot;}" style="text-align: center;">Cự ly 45km xuất phát</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Trung tâm Văn hoá Thể thao Huyện Lạc Dương&quot;}" rowspan="1" style="text-align: center;">Trung tâm Văn hoá Thể thao Huyện Lạc Dương</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.3333333333333333}" style="text-align: center;">08:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Cự ly 25km xuất phát&quot;}" style="text-align: center;">Cự ly 25km xuất phát</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.3541666666666667}" style="text-align: center;">08:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Cự ly 15km xuất phát&quot;}" style="text-align: center;">Cự ly 15km xuất phát</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.3958333333333333}" style="text-align: center;">09:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Chào đón vận động viên về đích&quot;}" style="text-align: center;">Chào đón vận động viên về đích</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.6458333333333334}" style="text-align: center;">15:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Trao giải các Vận động viên cự ly 15km, 25km, 45km và 75km&quot;}" style="text-align: center;">Trao giải các Vận động viên cự ly 15km, 25km, 45km và 75km</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.8958333333333334}" style="text-align: center;">21:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Đóng đường chạy tất cả các cự ly&quot;}" style="text-align: center;">Đóng đường chạy tất cả các cự ly</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="4" data-sheets-numberformat="{&quot;1&quot;:5,&quot;2&quot;:&quot;dddd, \&quot;ngày \&quot;d/m/yyyy&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:45242}" rowspan="1" style="text-align: center;"><strong>Chủ Nhật, ngày 12/11/2023</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.2916666666666667}" style="text-align: center;">07:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Chào đón Vận động viên Kids Trail và Family Trail Run&quot;}" style="text-align: center;">Chào đón Vận động viên Kids Trail và Family Trail Run</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.3541666666666667}" style="text-align: center;">08:30</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Xuất phát cự ly Kids Trail và Family Trail Run&quot;}" style="text-align: center;">Xuất phát cự ly Kids Trail và Family Trail Run</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-numberformat="{&quot;1&quot;:6,&quot;2&quot;:&quot;hh:mm&quot;,&quot;3&quot;:1}" data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:0.4166666666666667}" style="text-align: center;">10:00</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Đóng đường chạy Kids Trail và Family Trail Run&quot;}" style="text-align: center;">Đóng đường chạy Kids Trail và Family Trail Run</td>
+                                    <td colspan="2" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Thung Lũng Tình Yêu - TTC World&quot;}" rowspan="1" style="text-align: center;">Thung Lũng Tình Yêu - TTC World</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="racekit">
+                            <div class="ticket-content-header">
+                                <h3>Racekit</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <h5 id="mcetoc_1gg6mqa2q0"><span>Thông tin bộ vật phẩm:&nbsp;&nbsp;</span></h5>
+                                <p><img src="https://irace.vn/wp-content/uploads/2023/07/racekit-lam-dong.png" width="100%" caption="false"></p>
+                                <p id="mcetoc_1f8s1l4m81"><strong>Bộ vật phẩm</strong></p>
+                                <p style="font-size: 14px; font-weight: 400;">Vận động viên khi tham gia giải chạy được cung cấp một bộ vật phẩm. Bộ vật phẩm này không chỉ&nbsp; cần thiết trên đường chạy mà còn là món quà kỷ niệm đánh dấu hành trình của bạn đến với Vietnam Joy - Lâm Đồng Trail lần này. Hãy giữ món quà này cẩn thận nhé!</p>
+                                <p style="font-size: 14px; font-weight: 400;"><strong>Lưu ý</strong>: Racekit cho gói trẻ em chỉ nhận được áo size trẻ em. Cha/mẹ khi đăng ký cho bé nhớ chọn size áo cho trẻ.</p>
+                                <h5 id="mcetoc_1h4ni9ig60"><strong>QUY TRÌNH NHẬN RACEKIT</strong></h5>
+                                <ul>
+                                    <li>Bước 1: Xuất trình CMND/ CCCD/ Passport và mã QR để kiểm tra thông tin</li>
+                                    <li>Bước 2: VĐV ký waiver trực tuyến từ BTC</li>
+                                    <li>Bước 3: VĐV nhận bộ Racekit bao gồm: số BIB và các vật phẩm</li>
+                                    <li>Bước 4: VĐV kiểm tra thiết bị chip tính giờ</li>
+                                    </ul>
+                                    <br>
+                                <h5 id="mcetoc_1gqtfqkn01">Size áo</h5> 
+                                <p><google-sheets-html-origin style="color: #000000; font-size: medium;"></google-sheets-html-origin><strong>Trẻ em</strong></p>
+                                <table border="1" cellpadding="0" cellspacing="0" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;"><colgroup><col><col><col><col></colgroup>
+                                    <tbody>
+                                    <tr>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;SIZE ÁO &quot;}" style="text-align: center;"><strong>SIZE ÁO</strong></td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;CHIỀU DÀI &quot;}" style="text-align: center;"><strong>CHIỀU DÀI</strong></td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;CHIỀU CAO &quot;}" style="text-align: center;"><strong>CHIỀU CAO</strong></td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;CÂN NẶNG &quot;}" style="text-align: center;"><strong>CÂN NẶNG</strong></td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Số 1&quot;}" style="text-align: center;">Số 1</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;54cm&quot;}" style="text-align: center;">54cm</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1m - 1m3&quot;}" style="text-align: center;">1m - 1m3</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;20kg - 40kg&quot;}" style="text-align: center;">20kg - 40kg</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Số 2&quot;}" style="text-align: center;">Số 2</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;56cm&quot;}" style="text-align: center;">56cm</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1m2 - 1m5&quot;}" style="text-align: center;">1m2 - 1m5</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;40kg - 50kg&quot;}" style="text-align: center;">40kg - 50kg</td>
+                                    </tr>
+                                    <tr>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Số 3&quot;}" style="text-align: center;">Số 3</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;60cm&quot;}" style="text-align: center;">60cm</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;1m4 - 1m6&quot;}" style="text-align: center;">1m4 - 1m6</td>
+                                    <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;53kg - 63kg&quot;}" style="text-align: center;">53kg - 63kg</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <p><strong></strong></p>
+                                    <p><strong>Người lớn</strong></p>
+                                    <table border="1" cellpadding="0" cellspacing="0" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;"><colgroup><col style="text-align: center;"><col style="text-align: center;"><col style="text-align: center;"><col style="text-align: center;"><col style="text-align: center;"><col style="text-align: center;"></colgroup>
+                                        <tbody>
+                                        <tr>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;SIZE ÁO&quot;}" style="text-align: center;"><strong>SIZE ÁO</strong></td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DÀI ÁO&quot;}" style="text-align: center;"><strong>DÀI ÁO</strong></td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;NGANG VAI&quot;}" style="text-align: center;"><strong>NGANG VAI</strong></td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;NGANG NGỰC&quot;}" style="text-align: center;"><strong>NGANG NGỰC</strong></td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;CHIỀU CAO&quot;}" style="text-align: center;"><strong>CHIỀU CAO</strong></td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;CÂN NẶNG&quot;}" style="text-align: center;"><strong>CÂN NẶNG</strong></td>
+                                        </tr>
+                                        <tr>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;S&quot;}" style="text-align: center;">S</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:60}" style="text-align: center;">60</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:36}" style="text-align: center;">36</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:40}" style="text-align: center;">40</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;146 - 158&quot;}" style="text-align: center;">146 - 158</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;40 - 46kg&quot;}" style="text-align: center;">40 - 46kg</td>
+                                        </tr>
+                                        <tr>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;M&quot;}" style="text-align: center;">M</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:64}" style="text-align: center;">64</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:40}" style="text-align: center;">40</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:44}" style="text-align: center;">44</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;155 - 165&quot;}" style="text-align: center;">155 - 165</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;47 - 55kg&quot;}" style="text-align: center;">47 - 55kg</td>
+                                        </tr>
+                                        <tr>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;L&quot;}" style="text-align: center;">L</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:68}" style="text-align: center;">68</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:44}" style="text-align: center;">44</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:48}" style="text-align: center;">48</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;163 - 171&quot;}" style="text-align: center;">163 - 171</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;55 - 60kg&quot;}" style="text-align: center;">55 - 60kg</td>
+                                        </tr>
+                                        <tr>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;XL&quot;}" style="text-align: center;">XL</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:70}" style="text-align: center;">70</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:45}" style="text-align: center;">45</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:50}" style="text-align: center;">50</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;164 - 175&quot;}" style="text-align: center;">164 - 175</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;61 - 69kg&quot;}" style="text-align: center;">61 - 69kg</td>
+                                        </tr>
+                                        <tr>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;XXL&quot;}" style="text-align: center;">XXL</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:72}" style="text-align: center;">72</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:47}" style="text-align: center;">47</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:52}" style="text-align: center;">52</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;168 - 182&quot;}" style="text-align: center;">168 - 182</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;69 - 80kg&quot;}" style="text-align: center;">69 - 80kg</td>
+                                        </tr>
+                                        <tr>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;XXXL&quot;}" style="text-align: center;">XXXL</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:74}" style="text-align: center;">74</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:49}" style="text-align: center;">49</td>
+                                        <td data-sheets-value="{&quot;1&quot;:3,&quot;3&quot;:54}" style="text-align: center;">54</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;170 - 185&quot;}" style="text-align: center;">170 - 185</td>
+                                        <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;80 - 87kg&quot;}" style="text-align: center;">80 - 87kg</td>
+                                        </tr>
+                                        </tbody>
+                                        </table>
+                                        <p><em>* Lưu ý: Các thông số trên là tạm tính, có thể thay đổi trong thời gian tới</em>&nbsp;</p>
+
+                            </div>
+
+                        </div>
+                        <div class="ticket-content-text card" id="map">
+                            <div class="ticket-content-header">
+                                <h3>Bản đồ</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="card-body">
+                                    <p><strong>Kids trail (5km)</strong> | Là đường chạy trải nghiệm đầu tiên của các thiên thần nhỏ. Không khí vui vẻ, thoải mái vận động cùng gia đình mình là những gì đường chạy này mang lại.</p>
+                                    <p><strong>Family Trail Run(5km)</strong> | Cung đường trải nghiệm dành cho gia đình. Nơi phụ huynh có thể cùng chinh phục và lưu giữ những khoảnh khắc bên cạnh các bé. Đây sẽ là nơi để gia đình có thể tận hưởng và kết nối với thiên nhiên một cách trọn vẹn nhất.</p>
+                                    <ul>
+                                    <li><strong>Ngày thi đấu</strong>: 12/11/2023</li>
+                                    <li><strong>Điểm xuất phát</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li><strong>Điểm về đích</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li><strong>Giờ xuất phát (dự kiến)</strong>: 07:30&nbsp;</li>
+                                    <li><strong>Thời gian giới hạn</strong>: 2 giờ sau đợt xuất phát cuối cùng.</li>
+                                    <li><strong>Độ tuổi quy định của Kids trai</strong>l: Từ 6 tuổi trở lên.</li>
+                                    <li><strong>Độ tuổi quy định của Family Trail Run</strong>: Từ 16 tuổi trở lên.</li>
+                                    </ul>
+                                    <br>
+                                    <p><img src="https://irace.vn/wp-content/uploads/2023/09/ban-do-duong-chay-lam-dong-trail-2.png" alt="Bản đồ đường chạy Lâm Đồng Trail 2023 - Cự ly 5KM" width="100%"></p>
+                                    <p></p>
+                                    <p><strong>15km</strong> | Nếu bạn mới bắt đầu tập chạy, đây là cự ly hoàn toàn thích hợp để trải nghiệm. Đặc biệt, cự ly 15km là vừa đủ để rủ gia đình, bạn bè, đồng nghiệp cùng nhau trải nghiệm môn chạy bộ và gắn kết mối quan hệ tích cực hơn.</p>
+                                    <ul>
+                                    <li><strong>Ngày thi đấu:</strong> 11/11/2023&nbsp;&nbsp;</li>
+                                    <li><strong>Điểm xuất phát</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li><strong>Điểm về đích</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li>
+                                    <p><strong>Thời gian bắt đầu</strong>: 08h30</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Thời gian kết thúc</strong>: 15h00</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Thời gian giới hạn (COT)</strong>: 6 tiếng 30 phút</p>
+                                    </li>
+                                    <li>
+                                    <p></p>
+                                    <p></p>
+                                    <p><strong>Cự ly này sẽ chạy qua trạm dừng CP1 và CP9 </strong></p>
+                                    <ul>
+                                    <li>
+                                    <p><strong>COT tại CP1</strong>: 11h30</p>
+                                    </li>
+                                    </ul>
+                                    </li>
+                                    <li><strong>Độ tuổi quy định</strong>: Từ 14 tuổi trở lên&nbsp;</li>
+                                    <li><strong>Lưu ý</strong>: Thông tin được cập nhật vào ngày 06/09/2023. Thông tin có thể thay đổi theo tình hình thực tế.</li>
+                                    </ul>
+                                    <br>
+                                    <p><img src="https://irace.vn/wp-content/uploads/2023/09/ban-do-duong-chay-lam-dong-trail-3.png" alt="Bản đồ đường chạy Lâm Đồng Trail 2023 - Cự ly 15Km" width="100%"></p>
+                                    <p><strong>25km</strong> | Cự ly thách thức hơn và thú vị hơn với địa hình cao nguyên đa dạng rừng cây. Cự ly phù hợp cho bạn đã chạy bộ được một thời gian hoặc hoàn thành 25km đường nhựa và muốn thử thách ở địa hình tự nhiên. Thử đi, rồi bạn sẽ mê đấy.</p>
+                                    <ul>
+                                    <li><strong>Ngày thi đấu</strong>: 11/11/2023&nbsp; &nbsp;&nbsp;</li>
+                                    <li><strong>Điểm xuất phát</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li><strong>Điểm về đích</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li>
+                                    <p><strong>Thời gian bắt đầu</strong>: 07h00</p>
+                                    <p><strong>Thời gian kết thúc</strong>: 15h30</p>
+                                    <p><strong>Thời gian giới hạn (COT)</strong>: 8 tiếng 30 phút</p>
+                                    <p><strong>Cự ly này sẽ chạy qua trạm dừng CP1, CP8 và CP9</strong></p>
+                                    <p></p>
+                                    <ul>
+                                    <li>
+                                    <p>COT tại CP1: 10h00</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p>COT tại CP9: 13h30</p>
+                                    </li>
+                                    </ul>
+                                    </li>
+                                    <li><strong>Độ tuổi quy định</strong>: Từ 16 tuổi trở lên.</li>
+                                    </ul>
+                                    <br>
+                                    <p><img src="https://irace.vn/wp-content/uploads/2023/09/ban-do-duong-chay-lam-dong-trail-4.png" alt="Bản đồ đường chạy Lâm Đồng Trail 2023 - Cự ly 25Km" width="100%"></p>
+                                    <p>45km <strong>| Cự ly dành cho người có kinh nghiệm. Cung đường sẽ dẫn bạn đi sâu hơn vào trong rừng thông, rừng nguyên sinh của cao nguyên Lâm Đồng. Không khí lạnh mát,</strong> mùi hương đặc trưng của rừng thông, đất đỏ Bazan trải dài trên các con dốc lên xuống sẽ khiến hành trình đáng để chinh phục hơn nữa.</p>
+                                    <ul>
+                                    <li><strong>Ngày thi đấu</strong>: 11/11/2023&nbsp; &nbsp;</li>
+                                    <li><strong>Điểm xuất phá</strong>t: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li><strong>Điểm về đích</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li>
+                                    <p><strong>Thời gian bắt đầu:</strong> 05h00</p>
+                                    <p><strong></strong></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Thời gian kết thúc</strong>: 19h00</p>
+                                    <p><strong></strong></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Thời gian giới hạn (COT)</strong>: 14 tiếng</p>
+                                    <p><strong></strong></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Cự ly này sẽ chạy qua trạm dừng CP1, CP2, CP6, CP7, CP8 và CP9</strong></p>
+                                    <p></p>
+                                    <ul>
+                                    <li>
+                                    <p>COT tại CP1: 07h45</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p>COT tại CP2: 10h00</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p>COT tại CP7: 14h00</p>
+                                    </li>
+                                    </ul>
+                                    </li>
+                                    <li><strong>Độ tuổi quy định</strong>: Từ 18 tuổi trở lên</li>
+                                    </ul>
+                                    <br>
+                                    <p><img src="https://irace.vn/wp-content/uploads/2023/09/ban-do-duong-chay-lam-dong-trail-5.png" alt="Bản đồ đường chạy Lâm Đồng Trail 2023 - Cự ly 45KM" width="100%"></p>
+                                    <p><strong>75km</strong> | Cự ly siêu dài chỉ dành riêng cho các VĐV đã có kinh nghiệm &amp; thể lực tốt. Hãy chuẩn bị thật chu đáo trước khi bước vào cự ly thử thách nhất, khó nhất của Lâm Đồng Trail. Sức bền, đồ đạc, đồ ăn, nước uống là chưa đủ. Trên hết bạn cần một tinh thần thép để chinh phục cự ly siêu dài này.</p>
+                                    <ul>
+                                    <li><strong>Ngày thi đấu</strong>: 11/11/2023</li>
+                                    <li><strong>Điểm xuất phát</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li><strong>Điểm về đích</strong>: Thung Lũng Tình Yêu – TTC World</li>
+                                    <li>
+                                    <p><strong>Thời gian bắt đầu</strong>: 03h00</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Thời gian kết thú</strong>c: 21h30</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Thời gian giới hạn (COT)</strong>: 18 tiếng 30 phút</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p><strong>Cự ly này sẽ chạy qua trạm dừng CP1, CP2, CP3, CP4, CP5, CP6, CP7, CP8 và CP9</strong></p>
+                                    <p></p>
+                                    <ul>
+                                    <li>
+                                    <p>COT tại CP1: 05h00</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p>COT tại CP2: 06h30</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p>COT tại CP3: 09h00</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p>COT tại CP5: 13h00</p>
+                                    <p></p>
+                                    </li>
+                                    <li>
+                                    <p>COT tại CP7: 18h00</p>
+                                    </li>
+                                    </ul>
+                                    </li>
+                                    <li><strong>Độ tuổi quy định</strong>: Từ 18 tuổi trở lên</li>
+                                    </ul>
+                                    <br>
+                                    <p><img src="https://irace.vn/wp-content/uploads/2023/09/ban-do-duong-chay-lam-dong-trail-1.png" alt="Bản đồ đường chạy Lâm Đồng Trail 2023 - Cự ly 75" width="100%"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="reward">
+                            <div class="ticket-content-header">
+                                <h3>Giải thưởng</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="card-body">
+                                    <p>Bạn đang tìm động lực để tham gia?<br> Đây có thể là một trong những động lực của bạn, hãy tham khảo và cố gắng tập luyện để đạt được mục đích của bạn nhé.</p>
+                                    <table border="1" style="width: 100%;">
+                                        <tbody>
+                                        <tr>
+                                        <td rowspan="2">
+                                        <p style="text-align: center;"><strong>Distances</strong></p>
+                                        </td>
+                                        <td colspan="2">
+                                        <p style="text-align: center;"><strong>75Km</strong></p>
+                                        </td>
+                                        <td colspan="2">
+                                        <p style="text-align: center;"><strong>45Km&nbsp;</strong></p>
+                                        </td>
+                                        <td colspan="2">
+                                        <p style="text-align: center;"><strong>25Km</strong></p>
+                                        </td>
+                                        <td colspan="2">
+                                        <p style="text-align: center;"><strong>15Km</strong></p>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                        <p style="text-align: center;">USD</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">USD</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">USD</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">USD</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">VND</p>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                        <p style="text-align: center;">1st place (Male &amp; Female)</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$1,000</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">23,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$500</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">11,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$250</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">5,500,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$150</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">3,000,000 VND</p>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                        <p style="text-align: center;">2st place (Male &amp; Female)</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$750</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">17,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$350</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">8,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$200</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">4,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$100</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">2,000,000 VND</p>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                        <p style="text-align: center;">3st place (Male &amp; Female)</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$500</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">11,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$250</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">5,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$150</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">3,000,000 VND</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">$50</p>
+                                        </td>
+                                        <td>
+                                        <p style="text-align: center;">1,000,000VND</p>
+                                        </td>
+                                        </tr>
+                                        </tbody>
+                                        </table>
+                                        <p><strong>Giải Thưởng</strong></p>
+                                        <ul>
+                                            <li>Tổng giá trị tiền thưởng đã bao gồm thuế thu nhập cá nhân</li>
+                                            <li>VĐV phải có trách nhiệm nộp thuế thu nhập cá nhân. Ban Tổ chức sẽ có trách nhiệm đóng thuế thu nhập cá nhân cho VĐV.</li>
+                                            <li>Tiền thưởng sẽ được chuyển khoản qua tài khoản ngân hàng mà VĐV cung cấp trong vòng 15 ngày kể từ ngày Ban Tổ chức nhận đầy đủ thông tin của Vận động viên.</li>
+                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="rule">
+                            <div class="ticket-content-header">
+                                <h3>Quy định</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="card-body">
+                                    <h4 id="mcetoc_1f8s1l4m81">Quy định tham dự</h4>
+                                    <p>Nhằm tạo cho Vận Động Viên có giải chạy thuận lợi nhất, Ban tổ chức quy định các vận động viên phải có đầy đủ vật dụng bắt buộc. Ban tổ chức sẽ đi kiểm tra bất chợt tất cả các vật dụng bắt buộc của Vận động viên. Nếu Vận động viên không mang đầy đủ vật dụng bắt buộc sẽ bị cấm chạy hoặc hủy kết quả thi đấu.</p>
+                                    <h4 id="mcetoc_1f8s1mstp3">Độ tuổi tham dự</h4>
+                                    <p>Vận Động Viên phải chứng minh được mình đã đủ 18 tuổi, đảm bảo có đầy đủ năng lực pháp lý để hoàn tất đăng ký tham dự giải chạy, bao gồm nhưng không giới hạn ở, quyền sử dụng thẻ tín dụng hoặc thẻ ghi nợ để thanh toán các lệ phí tham gia sự kiện.</p>
+                                    <p>Nếu Vận Động Viên dưới 18 tuổi hoặc là người mất năng lực hành vi dân sự, Vận Động Viên phải có cha, mẹ hoặc người giám hộ hợp pháp thay mặt Vận Động Viên đồng ý với các điều khoản và điều kiện được áp dụng như nhau đối với tất cả những người đăng ký thông qua đơn Đăng ký tham gia này.</p>
+                                    <p>Đối tượng tham dự là những vận động viên chuyên nghiệp, thành viên các câu lạc bộ chạy địa phương, doanh nghiệp Việt Nam và Quốc tế, các trường học, người dân địa phương có tinh thần yêu chạy bộ và chạy địa hình. Người nước ngoài đáp ứng đầy đủ quy định về phòng chống dịch bệnh Covid-19, không trong thời gian bị Liên đoàn, hiệp hội quốc gia, quốc tế hoặc cơ quan quản lý kỷ luật, cấm thi đấu được tham gia giải.</p>
+                                    <ul>
+                                    <li>Vận Động Viên tham gia chạy các cự ly&nbsp;<strong>75km</strong>,&nbsp;<strong>45km</strong>&nbsp;phải từ&nbsp;<strong>18 tuổi trở lên</strong>.</li>
+                                    <li>Vận Động Viên tham gia cự ly&nbsp;<strong>25km</strong>&nbsp;phải từ&nbsp;<strong>16 tuổi trở lên</strong>.</li>
+                                    <li>Vận Động Viên tham gia cự ly&nbsp;<strong>15km</strong>&nbsp;từ&nbsp;<strong>14 tuổi trở lên</strong>.</li>
+                                    <li>Vận Động Viên tham gia cự ly&nbsp;<strong>Kids Trail</strong>&nbsp;<strong>và&nbsp;Family Trail Run</strong>&nbsp;từ&nbsp;<strong>6 tuổi trở lên</strong>.</li>
+                                    </ul>
+                                    <br>
+                                    <h4 id="mcetoc_1f8s1pfca4">Quy định và điều khoản</h4>
+                                    <p>Vui lòng xem chi tiết&nbsp;<a href="https://lamdongtrail.vn/lam-dong-trail/athlete-information?tab=%C4%90i%E1%BB%81u-l%E1%BB%87" target="_blank" rel="noopener">tại đây</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="reward">
+                            <div class="ticket-content-header">
+                                <h3>Ban tổ chức</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="card-body">
+                                    <p><img src="https://irace.vn/wp-content/uploads/2023/09/btc-ldt-1-1.png" alt="BTC giải Lâm Đồng Trail 2023" width="100%" caption="false"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-0 order-md-1" id="menu-action-sticky">
+                        <div class="ticket-content-action">
+                            <div class="ticket-content-header">
+                                <h3>Lâm Đồng Trail 2023</h3>
+                            </div>
+                            <div id="timer" data-endtime="30 October 2023"></div>
+                            <div class="ticket-content-body">
+                                <div class="list-info">
+                                    <ul>
+                                        <li><i class="far fa-calendar-alt"></i>10 - 12/11/2023</li>
+                                        <li><i class="far fa-map-marker-alt"></i>Da Lat, Lam Dong</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ticket-content-price">
+                                <div class="price">From 666,000đ</div>
+                                <div class="btn-group">
+                                    <a href="#personal" class="btn"><span>Personal buy</span></a>
+                                    <a href="#group" class="btn"><span>Group buy</span></a>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-content-action _mobile">
+                <div class="ticket-content-header">
+                    <h3>Lâm Đồng Trail 2023</h3>
+                </div>
+                <div class="ticket-content-price">
+                    <div class="price">From 666,000đ</div>
+                    <div class="btn-group">
+                        <a href="#personal" class="btn"><span>Personal buy</span></a>
+                        <a href="#group" class="btn"><span>Group buy</span></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+
+
+        
+
+
+       
+  
+    </main>
+
+ 
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="footer-text">
+                        <h2>We Are Always at The
+                            Forefront of The Business Conference !</h2>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-link">
+                        <h4>Sitemap</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Buy Tickets</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h4>newsletter</h4>
+                        <form action="">
+                            <div class="footer-form">
+                                <input type="email" name="" id="" placeholder="Enter you email address">
+                                <button type="submit">subscribe <i class="fal fa-chevron-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row row-footer-bottom">
+                <div class="col-md-7">
+                    <p class="footer-copyright">
+                        Copyright @2023 DotGreen
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-link-bottom">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- Script -->
+   
+    <script src="assets/packages/jquery-3.5.1.min.js"></script>
+    <script src="assets/packages/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="assets/packages/select2.min.js"></script>
+    <script src="assets/packages/swiper6.1.1/swiper.min.js"></script>
+    <script src="assets/packages/wow.min.js"></script>
+    <script src="assets/packages/anime.min.js"></script>
+    <!-- <script src="assets/packages/gsap/gsap.min.js"></script>
+    <script src="assets/packages/TweenMax.js"></script> -->
+    <script src="assets/packages/locomotive-scroll.min.js"></script>
+    
+    <!-- <script src="assets/packages/ScrollMagic.min.js"></script>
+    <script src="assets/packages/debug.addIndicators.min.js"></script>
+    <script src="assets/packages/gsap/animation.gsap.js"></script> -->
+    
+    <script src="assets/packages/lightgallery/js/lightgallery-all.min.js"></script>
+
+    <script src="assets/packages/jquery.meanmenu.min.js"></script>
+    <script src="assets/packages/jquery.sticky-kit.min.js"></script>
+    <!-- Page Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

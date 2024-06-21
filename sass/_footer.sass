@@ -1,0 +1,93 @@
+.site-footer
+    background-color: $color-primary
+    color: #fff
+    padding: size-pc(100,rem) 0 0
+    font-size: size-pc(20,rem)
+    position: relative
+    z-index: 9999
+    @media screen and ( max-width: 767.82px )
+        padding: size-pc(70,rem) 0 0
+    .row-footer-bottom
+        margin-top: size-pc(80,rem)
+        padding-bottom: size-pc(40,rem)
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(0,rem)
+            flex-direction: column-reverse
+    .footer
+        &-copyright
+            margin-bottom: 0
+            font-size: size-pc(20,rem)
+            @media screen and ( max-width: 767.82px )
+                margin-top: size-pc(40,rem)
+        &-text
+            max-width: size-pc(950,rem )
+            @media screen and ( max-width: 767.82px )
+                margin-bottom: size-pc(50,rem )
+            h2 
+                text-transform: uppercase
+                font-size: size-pc(60,rem)
+        &-link 
+            margin-bottom: size-pc(50,rem)
+            h4 
+                color: $color-2 
+                text-transform: uppercase
+                font-size: size-pc(30,rem)
+                margin-bottom: size-pc(30,rem)
+            ul 
+                display: flex
+                justify-content: space-between
+                li 
+                    a 
+                        color: #fff
+                        &:hover 
+                            color: $color-2 
+            &-bottom 
+                ul 
+                    display: flex
+                    li 
+                        flex: 0  0 50%
+                        a 
+                            color: #fff
+                            &:hover 
+                                color: $color-2 
+        &-form 
+            border-bottom: 1px solid #fff
+            display: flex
+            justify-content: space-between
+            
+            input 
+                background-color: transparent
+                border: unset
+                box-shadow: unset
+                width: 100%
+                padding: 10px 0
+                color: #fff
+                &:active,&:focus
+                    outline: none
+                    box-shadow: unset
+                    border: unset
+                    
+                &::placeholder
+                    color: #fff
+                    opacity: 0.5
+            button,input[type='submit']
+                background-color: transparent
+                color: #fff
+                border: unset
+                box-shadow: unset
+                font-family: $font-title
+                text-transform: uppercase
+                display: flex
+                align-items: center
+                font-size: size-pc(22,rem)
+                font-weight: 400
+                padding: 10px
+                transition: all .3s ease
+                i 
+                    margin-top: -2px
+                    margin-left: 10px
+                    font-size: size-pc(16,rem)
+                &:hover 
+                    background-color: $color-2
+        
+                    

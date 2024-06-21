@@ -1,0 +1,340 @@
+.parallax-container 
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    .fx-wrap 
+        position: absolute
+        .fx-target 
+            paint-order: stroke fill
+            -webkit-text-stroke-width: 4px 
+            -webkit-text-stroke-color: rgba(#EFEEE1,0.7)
+            // text-shadow: -4px -4px 0 #DEDCC4,0 -4px 0 #DEDCC4,4px -4px 0 #DEDCC4,4px  0   0 #DEDCC4,4px  4px 0 #DEDCC4,0    4px 0 #DEDCC4,-4px  4px 0 #DEDCC4,-4px  0   0 #DEDCC4
+            transition: none
+            font-size: size-pc(300,rem)
+            font-weight: 600
+            text-transform: uppercase
+            white-space: nowrap
+            color: transparent
+            margin: 0
+            line-height: 1
+            font-family: $font-slide
+            @media screen and ( max-width: 991.82px )
+                font-size: size-pc(200,rem)
+            @media screen and ( max-width: 767.82px )
+                -webkit-text-stroke-width: 2px 
+                
+section 
+    position: relative
+    overflow: hidden
+.container 
+    position: relative
+
+@import page-home
+@import page-about
+
+// @import page-contact
+// @import page-faq
+@import page-blog
+@import ticket-detail
+// @import page-team
+@import page-user
+@import page-checkout
+
+
+.loading-container
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #313131
+    z-index: 9999999
+    svg 
+        padding: 30px
+        max-width: 400px
+        max-height: 90%
+        opacity: 0
+        overflow: unset
+        * 
+            fill-opacity: 0
+            stroke: #fff
+            stroke-width: 2px
+
+.subpage
+    &-banner
+        position: relative
+        // min-height: 80vh
+        &._banner-nocontent
+            height: 40.5vw
+            max-height: 100vh
+            .subpage-banner-img
+                &::after
+                    display: none
+        &._ticket-detail
+            .content
+                h1 
+                    font-size: size-pc(80,rem)
+                    margin-bottom: 15px
+            .list-tag
+                ul 
+                    display: flex
+                    flex-wrap: wrap
+                    
+                    margin: 0 -5px
+                    margin-bottom: 15px
+                    li 
+                        margin: 0 5px
+                        margin-bottom: 10px
+                        a 
+                            padding: 5px 10px
+                            color: #fff
+                            font-size: size-pc(20,rem)
+                            border-radius: 5px
+                        .tag-color-1 
+                            background-color: $color-2
+                        .tag-color-2 
+                            background-color: $color-primary
+            .list-info
+                ul 
+                    li 
+                        color: #fff
+                        margin-bottom: 10px
+                        font-size: size-pc(22,rem)
+                        i 
+                            width: 30px
+                            color: $color-2
+            
+        .curve 
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            z-index: 8
+            svg 
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: size-pc(140,rem)
+                @media screen and ( max-width: 767.8px )
+                    min-width: size-pc(800,rem)
+                    height: size-pc(100,rem)
+                    
+        
+        .content
+            padding: size-pc(300,rem) 0 size-pc(230,rem)
+            position: relative
+            z-index: 3
+            .sub-title
+                color: #fff
+                font-family: $font-body
+                font-weight: 600
+                text-transform: uppercase
+                font-size: size-pc(18,rem)
+                margin-bottom: size-pc(40,rem)
+                a 
+                    color: #fff
+                span 
+                    margin: 0 20px
+                    &.page-current-title
+                        margin: 0
+                        color: $color-2
+            h1 
+                font-size: size-pc(150,rem)
+                color: #fff
+                font-weight: 600
+        &-img
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: 1
+            &::after
+                opacity: 0.7
+                background: #316b7f
+                mix-blend-mode: multiply
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                content: ''
+            img 
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                object-fit: cover
+                z-index: 1
+.banner-blog-detail
+    @include thumb-img(25%,cover)
+    padding-bottom: unset 
+    height: 50vw
+    max-height: 500px
+    &::after
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to top, #eee, transparent)
+        content: ''
+        z-index: 2
+    .content
+        padding: 20px
+        position: absolute
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: 1440px
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        z-index: 3
+        h1 
+            font-size: size-pc(50,rem)
+            text-shadow: -1px -1px 0 #fff, 0   -1px 0 #fff, 1px -1px 0 #fff, 1px  0   0 #fff, 1px  1px 0 #fff, 0    1px 0 #fff, -1px  1px 0 #fff, -1px  0   0 #fff
+            // text-shadow: 0px 0px 0px rgba(#fff,1)
+            filter: drop-shadow(-5px 5px 5px rgba(#000,15%))
+        .date-blog
+            font-size: size-pc(22,rem)
+.title-page
+    padding: size-pc(50,rem) 0
+    text-align: center
+    background-color: #eee
+    box-shadow: inset 0 6px 15px -6px #0003, 0 6px 15px -6px #0003
+    h1 
+        font-size: size-pc(50,rem)
+        
+    p 
+        font-size: size-pc(22,rem)
+    img 
+        width: 100%
+        margin-bottom: 30px
+
+
+.product__block
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -5px
+    margin-top: 20px
+    margin-bottom: 20px
+    .product__item
+        // flex: 1
+        width: fit-content
+        display: flex
+        align-items: center
+        border: 1px solid $color-text
+        padding: 10px
+        margin: 0 5px
+        border-radius: 10px
+        font-size: 14px
+        .icon
+            svg,img 
+                width: 40px
+                height: 40px
+                object-fit: contain
+                margin-right: 5px
+                @media screen and ( max-width: 575.82px )
+                    width: 30px
+                    height: 30px
+                    
+.btn-group-product 
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -5px
+    .single-product-adc-button
+        padding-left: 0
+        flex: 1
+        margin: 0 5px
+        @media screen and ( max-width: 575.82px )
+            flex: 0 0 100%
+    .sp-adc-btn
+        margin-bottom: 15px
+        &._buy
+            background-color: $color-text
+            .sp-adc-btn-icon
+                &::before
+                    content: '\f53c'
+
+.stagger-fade-rotate-words
+    
+    transform: rotateX(-90deg)
+    transition: all 1s ease
+    transform-origin: top
+    &.is-inview 
+        transform: rotateX(0deg)
+
+.is-inview 
+    .stagger-fade-rotate-words
+        transform: rotateX(0deg)
+.text-animation
+    perspective: 40vw
+    font-size: size-pc(180,rem)
+    font-weight: 400
+    line-height: 1
+    letter-spacing: size-pc(28,rem)
+    @media screen and ( max-width: 991.82px )
+        font-size: size-pc(140,rem)
+    @media screen and ( max-width: 767.82px )
+        font-size: size-pc(90,rem)
+    @media screen and ( max-width: 575.82px )
+        font-size: size-pc(60,rem)
+//     .stagger-fade-rotate-words
+//         &:nth-child(2)
+//             transform: rotateX(-70deg) 
+//             &.is-inview 
+//                 transform: rotateX(0deg)
+.ticket-title
+    .select2-container--default .select2-selection--single
+        padding: size-pc(14, rem) size-pc(40, rem) size-pc(14, rem) size-pc(20, rem)
+        border: 1px solid 
+        border-radius: size-pc(40, rem)
+        font-size: size-pc(20, rem)
+        font-weight: 700
+        font-family: $font-link
+        background-color: $color-btn
+        color: #fff
+        border-color: $color-btn
+        transition: all .3s ease
+        white-space: nowrap
+        width: fit-content
+        height: unset
+        position: relative
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+        color: #fff
+    .select2-container .select2-selection--single .select2-selection__rendered
+        overflow: unset
+    .select2-container--default .select2-selection--single .select2-selection__arrow
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        color: #fff
+        b 
+            border-color: #fff transparent transparent transparent
+    .select2-container--default .select2-selection--single,.select-2
+        width: 100%
+    .select2-container
+        width: 100%!important
+        min-width: 150px
+    .select2-container--default .select2-results__option
+        background-color: $color-primary
+        color: #fff
+    .select2-container--default .select2-results__option--selected
+        background-color: $color-2 
+        color: #fff
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+        background-color: $color-2 
+.select-2-no-search
+    background-color: $color-primary

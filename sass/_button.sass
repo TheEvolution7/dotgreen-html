@@ -1,0 +1,269 @@
+.btn
+    display: block
+    padding: size-pc(14, rem) size-pc(40, rem)
+    border: 1px solid 
+    border-radius: size-pc(40, rem)
+    font-size: size-pc(20, rem)
+    font-weight: 400
+    font-family: $font-link
+    background-color: $color-btn
+    color: #fff
+    border-color: $color-btn
+    transition: all .3s ease
+    white-space: nowrap
+    margin-bottom: 20px
+    position: relative
+    overflow: hidden
+    text-transform: uppercase
+    width: fit-content
+    @media screen and ( max-width: 767.82px )
+        padding: size-pc(10, rem) size-pc(20, rem)
+    // &::before
+    //     position: absolute
+    //     left: 0
+    //     height: 100%
+    //     top: 0
+    //     content: ''
+    //     background-color: $color-2
+    //     width: 0
+    //     border-radius: size-pc(40, rem)
+    //     z-index: 0
+    //     transition: all .5s ease
+    // > * 
+    //     position: relative
+    //     z-index: 2
+    &:before, &:after
+        position: absolute
+        top: 50%
+        content: ""
+        width: 20px
+        height: 20px
+        background-color: $color-2
+        border-radius: 50%
+        z-index: 0
+    span 
+        z-index: 1
+        position: relative
+    &:before
+        left: -20px
+        transform: translate(-50%, -50%)
+
+    &:after
+        right: -20px
+        transform: translate(50%, -50%)
+
+    &:hover
+        color: #fff
+        border-color: $color-2
+        transition-delay: .3s
+        &:before
+            animation: criss-cross-left 0.8s both
+            animation-direction: alternate
+
+        &:after
+            animation: criss-cross-right 0.8s both
+            animation-direction: alternate
+    
+        // background-color: $color-2
+        
+    &-light
+        &-outline
+            background-color: transparent
+            border-color: #fff
+            color: #fff
+            &:hover 
+                // background-color: $color-2
+                color: #fff
+                border-color: $color-2
+    &-circle 
+        border-radius: 100%
+        width: size-pc(150, rem)
+        height: size-pc(150, rem)
+        display: flex
+        align-items: center
+        justify-content: center
+        text-transform: uppercase
+        background-color: $color-2
+        border-color: $color-2
+        color: $color-primary
+        
+        &:before, &:after
+            background-color: $color-primary
+        &:hover 
+            transition-delay: .4s
+            // background-color: $color-primary
+            color: #fff
+            border-color: $color-primary
+    
+    &-site
+        width: fit-content
+        display: block
+        padding: size-pc(18, rem) size-pc(40, rem)
+        border: 1px solid 
+        border-radius: size-pc(40, rem)
+        font-size: size-pc(20, rem)
+        font-weight: 700
+        font-family: $font-link
+        background-color: $color-btn
+        color: #fff
+        border-color: $color-btn
+        transition: all .3s ease
+        white-space: nowrap
+        box-shadow: 5px 5px 13px rgba(#000,0.3)
+        margin-bottom: 20px
+        &:hover 
+            background-color: #333
+            border-color: #333
+            color: $color-btn
+            box-shadow: 5px 5px 13px rgba(#000,0)
+        i 
+            margin-right: 8px
+    &-white 
+        border-color: #fff
+        background-color: transparent
+        color: #fff
+        &:hover
+            background-color: $color-btn
+            color: #fff
+            border-color: $color-btn
+    &-dark
+        border-color: $color-text
+        background-color: $color-text
+        color: #fff
+        &-outline
+            background-color: transparent
+            border-color: $color-text
+            color: $color-text
+            &:hover 
+                // background-color: $color-2
+                color: #fff
+                border-color: $color-2
+        &:hover
+            background-color: #fff
+            color: $color-text
+            border-color: $color-btn
+
+.link-read 
+    color: $color-btn
+    font-weight: 600
+    width: fit-content
+    position: relative
+    text-align: center
+    padding: 0 size-pc(40, rem) size-pc(20, rem)
+    span
+        display: block
+        position: absolute
+        bottom: 0
+        width: 100%
+        height: 1px 
+        left: 0
+        background-color: $color-btn
+        &::before,&::after
+            
+            content: ''
+            background-color: $color-btn
+            width: 11px
+            height: 10px
+            position: absolute
+            
+            top: 50%
+            transform: translateY(-50%)
+        &::before
+            clip-path: polygon(0 0, 0% 100%, 100% 50%)
+            left: 0
+        &::after
+            clip-path: polygon(100% 0, 100% 100%, 0 50%)
+            right: 0
+
+
+@-webkit-keyframes criss-cross-left
+  0%
+    left: -20px
+
+  50%
+    left: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    left: 50%
+    width: 40vw
+    height: 40vw
+
+@keyframes criss-cross-left
+  0%
+    left: -20px
+
+  50%
+    left: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    left: 50%
+    width: 40vw
+    height: 40vw
+
+@-webkit-keyframes criss-cross-right
+  0%
+    right: -20px
+
+  50%
+    right: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    right: 50%
+    width: 40vw
+    height: 40vw
+
+@keyframes criss-cross-right
+  0%
+    right: -20px
+
+  50%
+    right: 50%
+    width: 20px
+    height: 20px
+
+  100%
+    right: 50%
+    width: 40vw
+    height: 40vw
+
+.btn-11
+  position: relative
+  color: #91cfc9
+
+  &:before, &:after
+    position: absolute
+    top: 50%
+    content: ""
+    width: 20px
+    height: 20px
+    background-color: #7dc7c0
+    border-radius: 50%
+
+  &:before
+    left: -20px
+    transform: translate(-50%, -50%)
+
+  &:after
+    right: -20px
+    transform: translate(50%, -50%)
+
+  &:hover
+    color: #dff1ef
+
+    &:before
+      -webkit-animation: criss-cross-left 0.8s both
+      animation: criss-cross-left 0.8s both
+      -webkit-animation-direction: alternate
+      animation-direction: alternate
+
+    &:after
+      -webkit-animation: criss-cross-right 0.8s both
+      animation: criss-cross-right 0.8s both
+      -webkit-animation-direction: alternate
+      animation-direction: alternate

@@ -1,0 +1,73 @@
+
+.content 
+    &.text-center 
+        h2 
+            margin-left: auto
+            margin-right: auto
+    h2
+        color: $color-title
+        font-weight: 300
+        font-family: $font-title
+        margin-bottom: size-pc(30,rem)
+        font-size: size-pc(48,rem)
+        position: relative
+        // width: fit-content
+        letter-spacing: size-pc(4,rem)
+        @media screen and ( max-width: 767.82px )
+            font-size: size-pc(32,rem)
+        &::before
+            position: absolute
+            content: attr(data-bg)
+            font-family: $font-before
+            font-weight: 100
+            color: #DCDCDC
+            opacity: 0.6
+            font-size: size-pc(140,rem)
+            z-index: -1
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            white-space: nowrap
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(130,rem)
+            @media screen and ( max-width: 575.82px )
+                font-size: size-pc(100,rem)
+        span 
+            color: $color-title-span
+        &.title-big 
+            font-size: size-pc(74,rem)
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(54,rem)
+    p 
+        font-size: size-pc(22,rem)
+    h3 
+        font-size: size-pc(22,rem)
+        font-family: $font-body
+        font-weight: 400
+        color: $color-2
+        letter-spacing: size-pc(4,rem)
+        margin-bottom: size-pc(25,rem)
+    .quote 
+        padding-left: 30px
+        position: relative
+        &::before
+            position: absolute
+            width: 3px
+            height: 90%
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            content: ''
+            background-color: $color-title-span
+    .list-contact
+        margin-bottom: size-pc(30,rem)
+        li 
+            margin: 10px 0
+            font-weight: $font-regular
+            a 
+                &:hover 
+                    color: $color-primary
+        i 
+            color: $color-primary
+            width: 30px
+            text-align: center
