@@ -1,448 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dot Green</title>
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Package -->
-    <link rel="stylesheet" href="assets/packages/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/packages/select2.min.css">
-    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css">
-    <link rel="stylesheet" href="assets/packages/animate.min.css">
-    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/packages/meanmenu.min.css">
-    <link rel="stylesheet" href="assets/packages/locomotive.min.css">
+    <link rel="stylesheet" href="packages/bootstrap.min.css" />
+    <link rel="stylesheet" href="packages/select2.min.css" />
+    <link rel="stylesheet" href="packages/swiper6.1.1/swiper.min.css" />
+    <link rel="stylesheet" href="packages/animate.min.css" />
+    <link rel="stylesheet" href="packages/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="packages/meanmenu.min.css" />
+    <link rel="stylesheet" href="packages/locomotive.min.css" />
     <!-- Style -->
-    
-    <link rel="stylesheet" href="assets/css/style.min.css">
-</head>
-<body>
 
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
     <header class="site-header">
-
-        <div class="logo-header container">
-            <div class="site-header-logo">
-                <a href="index.html">
-                    <img src="assets/images/logo/logo-w.svg" alt="" class="">
-                </a>
-            </div>
-            <div class="menu-left">
-                <div class="site-header-menu">
-                    <div class="site-header-link">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li class="has-submenu">
-                                <a href="#">Buy Tickets</a>
-                                <ul>
-                                    <li><a href="#">Virtual Race</a></li>
-                                    <li><a href="#">Events in Vietnam</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Infomation</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    
-                   
-                    
-                </div>
-                
-                
-                <div class="logo-header-menu">
-                    <ul>
-                        <li>
-                            <a class="btn btn-light-outline" href="#"><span>Login</span></a>
-                        </li>
-                        <li class="language-menu">
-                            <a href="#">Eng</a>
-                            <ul>
-                                <li><a href="#">Vn</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="site-header-ham">
-                        <a href="#" class="ham-btn">
-                          <i class="fas fa-bars"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
+      <div class="logo-header container">
+        <div class="site-header-logo">
+          <a href="index.html">
+            <img src="images/logo/logo-w.svg" alt="" class="" />
+          </a>
         </div>
+        <div class="menu-left">
+          <div class="site-header-menu">
+            <div class="site-header-link">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li class="has-submenu">
+                  <a href="#">Buy Tickets</a>
+                  <ul>
+                    <li><a href="#">Virtual Race</a></li>
+                    <li><a href="#">Events in Vietnam</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Infomation</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="logo-header-menu">
+            <ul>
+              <li>
+                <a class="btn btn-light-outline" href="#"><span>Login</span></a>
+              </li>
+              <li class="language-menu">
+                <a href="#">Eng</a>
+                <ul>
+                  <li><a href="#">Vn</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="site-header-ham">
+              <a href="#" class="ham-btn">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div class="menu-mobile-container">
-        <button class="mobile__close-btn" id="mobile__close-btn">
-            <span><i class="fal fa-times"></i></span>
-        </button>
-        <div class="logo mb-40">
-            <a href="index.html">
-                <img src="assets/images/logo/logo-w.svg" alt="logo">
-            </a>
-        </div>
-        <div class="mobile-menu">
-        
-        </div>
+      <button class="mobile__close-btn" id="mobile__close-btn">
+        <span><i class="fal fa-times"></i></span>
+      </button>
+      <div class="logo mb-40">
+        <a href="index.html">
+          <img src="images/logo/logo-w.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="mobile-menu"></div>
     </div>
 
-  
     <div class="body-overlay"></div>
 
-
-
     <main id="scrollable">
-        <section class="subpage-banner _ticket-detail _banner-nocontent">
-            <div class="subpage-banner-img">
-                <img src="assets/images/ticket/bn-2.jpeg" alt="">
-            </div>
-            
-            
-            <div class="curve">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 0 0 C15 120 35 120 100 0 L 100 100 Z" fill="#fff"></path></svg>
-            </div>
-        </section>
+      <section class="subpage-banner _ticket-detail _banner-nocontent">
+        <div class="subpage-banner-img">
+          <img src="images/ticket/bn-2.jpeg" alt="" />
+        </div>
 
+        <div class="curve">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100%"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0 100 0 0 C15 120 35 120 100 0 L 100 100 Z"
+              fill="#fff"
+            ></path>
+          </svg>
+        </div>
+      </section>
 
-        <section class="checkout-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="checkout-step-container">
-                            <div class="steps-main">
-                                <div class="tabs">
-                                    <div aria-label="Basic example" role="group" class="btn-group">
-                                        <button type="button" class="active btn-step btn-secondary" data-node-index="0">
-                                            <img src="assets/images/checkout/1.svg" alt="tab-icon">
-                                            <div>
-                                                Select Ticket
-                                                <p>Select ticket type and quantity</p>
-                                            </div>
-                                        </button>
-                                        <button type="button" class="btn-step btn-secondary" data-node-index="1">
-                                            <img src="assets/images/checkout/2.svg" alt="tab-icon">
-                                            <div>
-                                                Payment info
-                                                <p>Fill in payment information</p>
-                                            </div>
-                                        </button>
-                                        <button type="button" class="btn-step btn-secondary" data-node-index="2">
-                                            <img src="assets/images/checkout/3.svg" alt="tab-icon">
-                                            <div>
-                                                Finish
-                                                <p>Current opportunities</p>
-                                            </div>
-                                        </button>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+      <section class="checkout-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="checkout-step-container">
+                <div class="steps-main">
+                  <div class="tabs">
+                    <div
+                      aria-label="Basic example"
+                      role="group"
+                      class="btn-group"
+                    >
+                      <button
+                        type="button"
+                        class="active btn-step btn-secondary"
+                        data-node-index="0"
+                      >
+                        <img src="images/checkout/1.svg" alt="tab-icon" />
+                        <div>
+                          Select Ticket
+                          <p>Select ticket type and quantity</p>
                         </div>
-                    </div>
-
-                    <div class="col-md-12">
-                        <div class="checkout-list-ticket">
-                            <div class="checkout-ticket-info">
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-bordered table-price table-discount-group">
-                                        <thead>
-                                            <tr>
-                                                <th>Thành viên</th>
-                                                <th>Tặng thêm</th>
-                                                <th>Giảm giá</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="item-discount-group" data-min="10" data-max="20" data-amount="10">
-                                                <td>
-                                                    <span>From <b>10</b> to <b>20</b></span>
-                                                </td>
-                                                <td>
-                                                    <!-- 01/07/2023, 00:00 - 01/11/2023, 23:59 -->
-                                                </td>
-                                                <td>10%</td>
-                                            </tr>
-                                            <tr class="item-discount-group" data-min="21" data-max="30" data-amount="15">
-                                                <td>
-                                                    <span>From <b>21</b> to <b>30</b></span>
-                                                </td>
-                                                <td>
-                                                    <div class="description">
-                                                        - 01 vé tặng cự ly 15km hoặc 25km <br> 
-                                                        - In Logo CLB trên BIB
-                                                    </div>
-                                                </td>
-                                                <td>15%</td>
-                                            </tr>
-                                            <tr class="item-discount-group" data-min="31" data-max="1500" data-amount="20">
-                                                <td>
-                                                    <span>From <b>31+</b></span>
-                                                </td>
-                                                <td>
-                                                    <div class="description">- 02 vé tặng cự ly 15km hoặc 25km  <br> - In Logo CLB trên BIB<br> - Bài truyền thông giới thiệu về CLB trên fanpage<br> - Logo CLB có trên backdrop sự kiện</div>
-                                                </td>
-                                                <td>20%</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-
-                            <table class="tt-table shop-cart-table">
-                                <thead class="shop-cart-table-head">
-                                    <tr>
-                                        <th class="scth-product-title" colspan="1">
-                                            Loại vé
-                                        </th>
-                                        <th class="scth-price">
-                                            Đơn giá
-                                        </th>
-                                        <th class="scth-quantity">
-                                            Số lượng
-                                        </th>
-                                        <th class="scth-subtotal">
-                                            Tổng giá
-                                        </th>
-                                    </tr>
-                                </thead>
-
-                                <tbody class="shop-cart-table-body">
-
-                                    <tr class="shop-cart-table-item" data-type="Family Trail Run (5Km)" data-price="499000" id="ticket-type-1">
-                                       
-                                        
-                                        <td class="cti-product-title" data-title="Loại vé">
-                                            <div class="cti-product-title-inner">
-                                                Family Trail Run (5Km)
-                                            </div>
-                                            
-                                        </td>
-                                        <td class="cti-price" data-title="Đơn giá">
-                                            <bdi>499,000VND</bdi>
-                                        </td>
-                                        <td class="cti-quantity" data-title="Số lượng">
-                                   
-                                            <div class="single-product-quantity item-catalog hide-cursor" title="Quantity">
-                                                <div class="qtybutton inc">+</div>
-                                                <input type="number" value="10" class="cart-plus-minus-box" step="1" min="0" max="1500" name="quantity">
-                                                <div class="qtybutton dec">-</div>
-                                            </div>
-                                          
-                                        </td>
-                                        <td class="cti-subtotal" data-title="Tổng giá">
-                                            <bdi>0VND</bdi>
-                                        </td>
-                                    </tr>
-                                    <tr class="ticket-c-info">
-                                        <td colspan="4">
-                                            <div class="ticket-c-info-content"><i class="fad fa-info-circle"></i> Check in before 4:00 p.m., once you have checked out, you will not be able to re-enter</div>
-                                        </td>
-                                        
-                                    </tr>
-                                    <tr class="shop-cart-table-item" data-type="Kids Trail (5Km)" data-price="499000"  id="ticket-type-2">
-                                       
-                                        
-                                        <td class="cti-product-title" data-title="Loại vé">
-                                            <div class="cti-product-title-inner">
-                                                Kids Trail (5Km)
-                                            </div> 
-                                            <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
-                                        </td>
-                                        <td class="cti-price" data-title="Đơn giá">
-                                            <bdi>499,000VND</bdi>
-                                        </td>
-                                        <td class="cti-quantity" data-title="Số lượng">
-                                   
-                                            <div class="single-product-quantity item-catalog hide-cursor" title="Quantity">
-                                                <div class="qtybutton inc">+</div>
-                                                <input type="number" value="0" class="cart-plus-minus-box" step="1" min="0" max="1500" name="quantity">
-                                                <div class="qtybutton dec">-</div>
-                                            </div>
-                                          
-                                        </td>
-                                        <td class="cti-subtotal" data-title="Tổng giá">
-                                            <bdi>0VND</bdi>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ticket-c-info">
-                                        <td colspan="4">
-                                            <div class="ticket-c-info-content"><i class="fad fa-info-circle"></i> Checkin, checkout anytime</div>
-                                        </td>
-                                        
-                                    </tr>
-                                    <tr class="shop-cart-table-item" data-type="15km" data-price="777000"  id="ticket-type-3">
-                                       
-                                        
-                                        <td class="cti-product-title" data-title="Loại vé">
-                                            <div class="cti-product-title-inner">
-                                                15km
-                                            </div> 
-                                            <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
-                                        </td>
-                                        <td class="cti-price" data-title="Đơn giá">
-                                            <bdi>777,000VND</bdi>
-                                        </td>
-                                        <td class="cti-quantity" data-title="Số lượng">
-                                   
-                                            <div class="single-product-quantity item-catalog hide-cursor" title="Quantity">
-                                                <div class="qtybutton inc">+</div>
-                                                <input type="number" value="0" class="cart-plus-minus-box" step="1" min="0" max="1500" name="quantity">
-                                                <div class="qtybutton dec">-</div>
-                                            </div>
-                                          
-                                        </td>
-                                        <td class="cti-subtotal" data-title="Tổng giá">
-                                            <bdi>0VND</bdi>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ticket-c-info">
-                                        <td colspan="4">
-                                            <div class="ticket-c-info-content"><i class="fad fa-info-circle"></i> Checkin, checkout anytime</div>
-                                        </td>
-                                        
-                                    </tr>
-
-                                    <tr class="shop-cart-table-item" data-type="25km" data-price="1444000"  id="ticket-type-4">
-                                       
-                                        
-                                        <td class="cti-product-title" data-title="Loại vé">
-                                            <div class="cti-product-title-inner">
-                                                25km
-                                            </div> 
-                                            <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
-                                        </td>
-                                        <td class="cti-price" data-title="Đơn giá">
-                                            <bdi>1,444,000VND</bdi>
-                                        </td>
-                                        <td class="cti-quantity" data-title="Số lượng">
-                                   
-                                            <div class="single-product-quantity item-catalog hide-cursor" title="Quantity">
-                                                <div class="qtybutton inc">+</div>
-                                                <input type="number" value="0" class="cart-plus-minus-box" step="1" min="0" max="1500" name="quantity">
-                                                <div class="qtybutton dec">-</div>
-                                            </div>
-                                          
-                                        </td>
-                                        <td class="cti-subtotal" data-title="Tổng giá">
-                                            <bdi>0VND</bdi>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ticket-c-info">
-                                        <td colspan="4">
-                                            <div class="ticket-c-info-content"><i class="fad fa-info-circle"></i> Checkin, checkout anytime</div>
-                                        </td>
-                                        
-                                    </tr>
-
-                                    <tr class="shop-cart-table-item" data-type="45km" data-price="1666000"  id="ticket-type-5">
-                                       
-                                        
-                                        <td class="cti-product-title" data-title="Loại vé">
-                                            <div class="cti-product-title-inner">
-                                                45km
-                                            </div> 
-                                            <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
-                                        </td>
-                                        <td class="cti-price" data-title="Đơn giá">
-                                            <bdi>1,666,000VND</bdi>
-                                        </td>
-                                        <td class="cti-quantity" data-title="Số lượng">
-                                   
-                                            <div class="single-product-quantity item-catalog hide-cursor" title="Quantity">
-                                                <div class="qtybutton inc">+</div>
-                                                <input type="number" value="0" class="cart-plus-minus-box" step="1" min="0" max="1500" name="quantity">
-                                                <div class="qtybutton dec">-</div>
-                                            </div>
-                                          
-                                        </td>
-                                        <td class="cti-subtotal" data-title="Tổng giá">
-                                            <bdi>0VND</bdi>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ticket-c-info">
-                                        <td colspan="4">
-                                            <div class="ticket-c-info-content"><i class="fad fa-info-circle"></i> Checkin, checkout anytime</div>
-                                        </td>
-                                        
-                                    </tr>
-
-                                    <tr class="shop-cart-table-item" data-type="75km" data-price="2222000"  id="ticket-type-6">
-                                       
-                                        
-                                        <td class="cti-product-title" data-title="Loại vé">
-                                            <div class="cti-product-title-inner">
-                                                75km
-                                            </div> 
-                                            <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
-                                        </td>
-                                        <td class="cti-price" data-title="Đơn giá">
-                                            <bdi>2,222,000VND</bdi>
-                                        </td>
-                                        <td class="cti-quantity" data-title="Số lượng">
-                                   
-                                            <div class="single-product-quantity item-catalog hide-cursor" title="Quantity">
-                                                <div class="qtybutton inc">+</div>
-                                                <input type="number" value="0" class="cart-plus-minus-box" step="1" min="0" max="1500" name="quantity">
-                                                <div class="qtybutton dec">-</div>
-                                            </div>
-                                          
-                                        </td>
-                                        <td class="cti-subtotal" data-title="Tổng giá">
-                                            <bdi>0VND</bdi>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ticket-c-info">
-                                        <td colspan="4">
-                                            <div class="ticket-c-info-content"><i class="fad fa-info-circle"></i> Checkin, checkout anytime</div>
-                                        </td>
-                                        
-                                    </tr>
-
-                                    <tr>
-                                        <td colspan="4">
-                                            <div class="sumary-price">
-                                                <h4>Tổng giá</h4>
-                                                <div class="price-total">
-                                                    0VND
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-               
-                                  
-
-                                    <tr class="shop-cart-table-buttons">
-                                        <td colspan="4">
-                                            <div class="btn-group">
-                                                <div class="tt-btn">
-                                                    <a href="product-list.html" class="btn"><span>Back to Buy ticket</span></a>
-                                                </div>
-                                                <div class="tt-btn">
-                                                    <button type="submit" class="btn btn-dark-outline"><span>Check Out</span></button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-step btn-secondary"
+                        data-node-index="1"
+                      >
+                        <img src="images/checkout/2.svg" alt="tab-icon" />
+                        <div>
+                          Payment info
+                          <p>Fill in payment information</p>
                         </div>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-step btn-secondary"
+                        data-node-index="2"
+                      >
+                        <img src="images/checkout/3.svg" alt="tab-icon" />
+                        <div>
+                          Finish
+                          <p>Current opportunities</p>
+                        </div>
+                      </button>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <!-- <div class="col-md-4">
+            <div class="col-md-12">
+              <div class="checkout-list-ticket">
+                <div class="checkout-ticket-info">
+                  <div class="table-responsive">
+                    <table
+                      class="table table-hover table-bordered table-price table-discount-group"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Thành viên</th>
+                          <th>Tặng thêm</th>
+                          <th>Giảm giá</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr
+                          class="item-discount-group"
+                          data-min="10"
+                          data-max="20"
+                          data-amount="10"
+                        >
+                          <td>
+                            <span>From <b>10</b> to <b>20</b></span>
+                          </td>
+                          <td>
+                            <!-- 01/07/2023, 00:00 - 01/11/2023, 23:59 -->
+                          </td>
+                          <td>10%</td>
+                        </tr>
+                        <tr
+                          class="item-discount-group"
+                          data-min="21"
+                          data-max="30"
+                          data-amount="15"
+                        >
+                          <td>
+                            <span>From <b>21</b> to <b>30</b></span>
+                          </td>
+                          <td>
+                            <div class="description">
+                              - 01 vé tặng cự ly 15km hoặc 25km <br />
+                              - In Logo CLB trên BIB
+                            </div>
+                          </td>
+                          <td>15%</td>
+                        </tr>
+                        <tr
+                          class="item-discount-group"
+                          data-min="31"
+                          data-max="1500"
+                          data-amount="20"
+                        >
+                          <td>
+                            <span>From <b>31+</b></span>
+                          </td>
+                          <td>
+                            <div class="description">
+                              - 02 vé tặng cự ly 15km hoặc 25km <br />
+                              - In Logo CLB trên BIB<br />
+                              - Bài truyền thông giới thiệu về CLB trên
+                              fanpage<br />
+                              - Logo CLB có trên backdrop sự kiện
+                            </div>
+                          </td>
+                          <td>20%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <table class="tt-table shop-cart-table">
+                  <thead class="shop-cart-table-head">
+                    <tr>
+                      <th class="scth-product-title" colspan="1">Loại vé</th>
+                      <th class="scth-price">Đơn giá</th>
+                      <th class="scth-quantity">Số lượng</th>
+                      <th class="scth-subtotal">Tổng giá</th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="shop-cart-table-body">
+                    <tr
+                      class="shop-cart-table-item"
+                      data-type="Family Trail Run (5Km)"
+                      data-price="499000"
+                      id="ticket-type-1"
+                    >
+                      <td class="cti-product-title" data-title="Loại vé">
+                        <div class="cti-product-title-inner">
+                          Family Trail Run (5Km)
+                        </div>
+                      </td>
+                      <td class="cti-price" data-title="Đơn giá">
+                        <bdi>499,000VND</bdi>
+                      </td>
+                      <td class="cti-quantity" data-title="Số lượng">
+                        <div
+                          class="single-product-quantity item-catalog hide-cursor"
+                          title="Quantity"
+                        >
+                          <div class="qtybutton inc">+</div>
+                          <input
+                            type="number"
+                            value="10"
+                            class="cart-plus-minus-box"
+                            step="1"
+                            min="0"
+                            max="1500"
+                            name="quantity"
+                          />
+                          <div class="qtybutton dec">-</div>
+                        </div>
+                      </td>
+                      <td class="cti-subtotal" data-title="Tổng giá">
+                        <bdi>0VND</bdi>
+                      </td>
+                    </tr>
+                    <tr class="ticket-c-info">
+                      <td colspan="4">
+                        <div class="ticket-c-info-content">
+                          <i class="fad fa-info-circle"></i> Check in before
+                          4:00 p.m., once you have checked out, you will not be
+                          able to re-enter
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="shop-cart-table-item"
+                      data-type="Kids Trail (5Km)"
+                      data-price="499000"
+                      id="ticket-type-2"
+                    >
+                      <td class="cti-product-title" data-title="Loại vé">
+                        <div class="cti-product-title-inner">
+                          Kids Trail (5Km)
+                        </div>
+                        <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
+                      </td>
+                      <td class="cti-price" data-title="Đơn giá">
+                        <bdi>499,000VND</bdi>
+                      </td>
+                      <td class="cti-quantity" data-title="Số lượng">
+                        <div
+                          class="single-product-quantity item-catalog hide-cursor"
+                          title="Quantity"
+                        >
+                          <div class="qtybutton inc">+</div>
+                          <input
+                            type="number"
+                            value="0"
+                            class="cart-plus-minus-box"
+                            step="1"
+                            min="0"
+                            max="1500"
+                            name="quantity"
+                          />
+                          <div class="qtybutton dec">-</div>
+                        </div>
+                      </td>
+                      <td class="cti-subtotal" data-title="Tổng giá">
+                        <bdi>0VND</bdi>
+                      </td>
+                    </tr>
+
+                    <tr class="ticket-c-info">
+                      <td colspan="4">
+                        <div class="ticket-c-info-content">
+                          <i class="fad fa-info-circle"></i> Checkin, checkout
+                          anytime
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      class="shop-cart-table-item"
+                      data-type="15km"
+                      data-price="777000"
+                      id="ticket-type-3"
+                    >
+                      <td class="cti-product-title" data-title="Loại vé">
+                        <div class="cti-product-title-inner">15km</div>
+                        <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
+                      </td>
+                      <td class="cti-price" data-title="Đơn giá">
+                        <bdi>777,000VND</bdi>
+                      </td>
+                      <td class="cti-quantity" data-title="Số lượng">
+                        <div
+                          class="single-product-quantity item-catalog hide-cursor"
+                          title="Quantity"
+                        >
+                          <div class="qtybutton inc">+</div>
+                          <input
+                            type="number"
+                            value="0"
+                            class="cart-plus-minus-box"
+                            step="1"
+                            min="0"
+                            max="1500"
+                            name="quantity"
+                          />
+                          <div class="qtybutton dec">-</div>
+                        </div>
+                      </td>
+                      <td class="cti-subtotal" data-title="Tổng giá">
+                        <bdi>0VND</bdi>
+                      </td>
+                    </tr>
+
+                    <tr class="ticket-c-info">
+                      <td colspan="4">
+                        <div class="ticket-c-info-content">
+                          <i class="fad fa-info-circle"></i> Checkin, checkout
+                          anytime
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr
+                      class="shop-cart-table-item"
+                      data-type="25km"
+                      data-price="1444000"
+                      id="ticket-type-4"
+                    >
+                      <td class="cti-product-title" data-title="Loại vé">
+                        <div class="cti-product-title-inner">25km</div>
+                        <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
+                      </td>
+                      <td class="cti-price" data-title="Đơn giá">
+                        <bdi>1,444,000VND</bdi>
+                      </td>
+                      <td class="cti-quantity" data-title="Số lượng">
+                        <div
+                          class="single-product-quantity item-catalog hide-cursor"
+                          title="Quantity"
+                        >
+                          <div class="qtybutton inc">+</div>
+                          <input
+                            type="number"
+                            value="0"
+                            class="cart-plus-minus-box"
+                            step="1"
+                            min="0"
+                            max="1500"
+                            name="quantity"
+                          />
+                          <div class="qtybutton dec">-</div>
+                        </div>
+                      </td>
+                      <td class="cti-subtotal" data-title="Tổng giá">
+                        <bdi>0VND</bdi>
+                      </td>
+                    </tr>
+
+                    <tr class="ticket-c-info">
+                      <td colspan="4">
+                        <div class="ticket-c-info-content">
+                          <i class="fad fa-info-circle"></i> Checkin, checkout
+                          anytime
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr
+                      class="shop-cart-table-item"
+                      data-type="45km"
+                      data-price="1666000"
+                      id="ticket-type-5"
+                    >
+                      <td class="cti-product-title" data-title="Loại vé">
+                        <div class="cti-product-title-inner">45km</div>
+                        <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
+                      </td>
+                      <td class="cti-price" data-title="Đơn giá">
+                        <bdi>1,666,000VND</bdi>
+                      </td>
+                      <td class="cti-quantity" data-title="Số lượng">
+                        <div
+                          class="single-product-quantity item-catalog hide-cursor"
+                          title="Quantity"
+                        >
+                          <div class="qtybutton inc">+</div>
+                          <input
+                            type="number"
+                            value="0"
+                            class="cart-plus-minus-box"
+                            step="1"
+                            min="0"
+                            max="1500"
+                            name="quantity"
+                          />
+                          <div class="qtybutton dec">-</div>
+                        </div>
+                      </td>
+                      <td class="cti-subtotal" data-title="Tổng giá">
+                        <bdi>0VND</bdi>
+                      </td>
+                    </tr>
+
+                    <tr class="ticket-c-info">
+                      <td colspan="4">
+                        <div class="ticket-c-info-content">
+                          <i class="fad fa-info-circle"></i> Checkin, checkout
+                          anytime
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr
+                      class="shop-cart-table-item"
+                      data-type="75km"
+                      data-price="2222000"
+                      id="ticket-type-6"
+                    >
+                      <td class="cti-product-title" data-title="Loại vé">
+                        <div class="cti-product-title-inner">75km</div>
+                        <!-- <div class="ticket-c-info">Checkin, checkout anytime</div> -->
+                      </td>
+                      <td class="cti-price" data-title="Đơn giá">
+                        <bdi>2,222,000VND</bdi>
+                      </td>
+                      <td class="cti-quantity" data-title="Số lượng">
+                        <div
+                          class="single-product-quantity item-catalog hide-cursor"
+                          title="Quantity"
+                        >
+                          <div class="qtybutton inc">+</div>
+                          <input
+                            type="number"
+                            value="0"
+                            class="cart-plus-minus-box"
+                            step="1"
+                            min="0"
+                            max="1500"
+                            name="quantity"
+                          />
+                          <div class="qtybutton dec">-</div>
+                        </div>
+                      </td>
+                      <td class="cti-subtotal" data-title="Tổng giá">
+                        <bdi>0VND</bdi>
+                      </td>
+                    </tr>
+
+                    <tr class="ticket-c-info">
+                      <td colspan="4">
+                        <div class="ticket-c-info-content">
+                          <i class="fad fa-info-circle"></i> Checkin, checkout
+                          anytime
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="4">
+                        <div class="sumary-price">
+                          <h4>Tổng giá</h4>
+                          <div class="price-total">0VND</div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr class="shop-cart-table-buttons">
+                      <td colspan="4">
+                        <div class="btn-group">
+                          <div class="tt-btn">
+                            <a href="product-list.html" class="btn"
+                              ><span>Back to Buy ticket</span></a
+                            >
+                          </div>
+                          <div class="tt-btn">
+                            <button type="submit" class="btn btn-dark-outline">
+                              <span>Check Out</span>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- <div class="col-md-4">
                         <div class="checkout-info">
                             <h3>THÔNG TIN ĐẶT VÉ</h3>
                             <div class="list-info-ticket">
@@ -481,90 +589,89 @@
                             </div>
                         </div>
                     </div> -->
-                </div>
-            </div>
-        </section>
-
-
-     
-  
+          </div>
+        </div>
+      </section>
     </main>
 
     <span class="awd-scrollbar"></span>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="footer-text">
-                        <h2>We Are Always at The
-                            Forefront of The Business Conference !</h2>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="footer-link">
-                        <h4>Sitemap</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Buy Tickets</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-link">
-                        <h4>newsletter</h4>
-                        <form action="">
-                            <div class="footer-form">
-                                <input type="email" name="" id="" placeholder="Enter you email address">
-                                <button type="submit">subscribe <i class="fal fa-chevron-right"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="footer-text">
+              <h2>
+                We Are Always at The Forefront of The Business Conference !
+              </h2>
             </div>
-            <div class="row row-footer-bottom">
-                <div class="col-md-7">
-                    <p class="footer-copyright">
-                        Copyright @2023 DotGreen
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <div class="footer-link-bottom">
-                        <ul>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-5">
+            <div class="footer-link">
+              <h4>Sitemap</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Buy Tickets</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
             </div>
+            <div class="footer-link">
+              <h4>newsletter</h4>
+              <form action="">
+                <div class="footer-form">
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Enter you email address"
+                  />
+                  <button type="submit">
+                    subscribe <i class="fal fa-chevron-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+        <div class="row row-footer-bottom">
+          <div class="col-md-7">
+            <p class="footer-copyright">Copyright @2023 DotGreen</p>
+          </div>
+          <div class="col-md-5">
+            <div class="footer-link-bottom">
+              <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    
-
 
     <!-- Script -->
-   
-    <script src="assets/packages/jquery-3.5.1.min.js"></script>
-    <script src="assets/packages/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
-    <script src="assets/packages/select2.min.js"></script>
-    <script src="assets/packages/swiper6.1.1/swiper.min.js"></script>
-    <script src="assets/packages/wow.min.js"></script>
-    <script src="assets/packages/anime.min.js"></script>
-    <!-- <script src="assets/packages/gsap/gsap.min.js"></script>
-    <script src="assets/packages/TweenMax.js"></script> -->
-    <script src="assets/packages/locomotive-scroll.min.js"></script>
-    
-    <!-- <script src="assets/packages/ScrollMagic.min.js"></script>
-    <script src="assets/packages/debug.addIndicators.min.js"></script>
-    <script src="assets/packages/gsap/animation.gsap.js"></script> -->
-    
-    <script src="assets/packages/lightgallery/js/lightgallery-all.min.js"></script>
 
-    <script src="assets/packages/jquery.meanmenu.min.js"></script>
-    <script src="assets/packages/jquery.sticky-kit.min.js"></script>
+    <script src="packages/jquery-3.5.1.min.js"></script>
+    <script src="packages/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="packages/select2.min.js"></script>
+    <script src="packages/swiper6.1.1/swiper.min.js"></script>
+    <script src="packages/wow.min.js"></script>
+    <script src="packages/anime.min.js"></script>
+    <!-- <script src="packages/gsap/gsap.min.js"></script>
+    <script src="packages/TweenMax.js"></script> -->
+    <script src="packages/locomotive-scroll.min.js"></script>
+
+    <!-- <script src="packages/ScrollMagic.min.js"></script>
+    <script src="packages/debug.addIndicators.min.js"></script>
+    <script src="packages/gsap/animation.gsap.js"></script> -->
+
+    <script src="packages/lightgallery/js/lightgallery-all.min.js"></script>
+
+    <script src="packages/jquery.meanmenu.min.js"></script>
+    <script src="packages/jquery.sticky-kit.min.js"></script>
     <!-- Page Js -->
-    <script src="assets/js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
