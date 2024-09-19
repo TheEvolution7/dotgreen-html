@@ -1,1368 +1,935 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dot Green</title>
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- Package -->
-    <link rel="stylesheet" href="assets/packages/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/packages/select2.min.css" />
-    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css" />
-    <link rel="stylesheet" href="assets/packages/animate.min.css" />
-    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/packages/meanmenu.min.css" />
-    <link rel="stylesheet" href="assets/packages/locomotive.min.css" />
+    <link rel="stylesheet" href="assets/packages/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/packages/select2.min.css">
+    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css">
+    <link rel="stylesheet" href="assets/packages/animate.min.css">
+    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/packages/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/packages/locomotive.min.css">
     <!-- Style -->
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body class="subpage-body">
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-  </head>
-  <body class="subpage-body">
     <header class="site-header">
-      <div class="logo-header container">
-        <div class="site-header-logo">
-          <a href="index.html">
-            <img src="assets/images/logo/logo-w.svg" alt="" class="" />
-          </a>
-        </div>
-        <div class="menu-left">
-          <div class="site-header-menu">
-            <div class="site-header-link">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li class="has-submenu">
-                  <a href="#">Buy Tickets</a>
-                  <ul>
-                    <li><a href="#">Virtual Race</a></li>
-                    <li><a href="#">Events in Vietnam</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Infomation</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="logo-header-menu">
-            <ul>
-              <li>
-                <a class="btn btn-light-outline" href="#"><span>Login</span></a>
-              </li>
-              <li class="language-menu">
-                <a href="#">Eng</a>
-                <ul>
-                  <li><a href="#">Vn</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="site-header-ham">
-              <a href="#" class="ham-btn">
-                <i class="fas fa-bars"></i>
-              </a>
+        <div class="logo-header container">
+            <div class="site-header-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo-w.svg" alt="" class="">
+                </a>
             </div>
-          </div>
+            <div class="menu-left">
+                <div class="site-header-menu">
+                    <div class="site-header-link">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Buy Tickets</a>
+                                <ul>
+                                    <li><a href="#">Virtual Race</a></li>
+                                    <li><a href="#">Events in Vietnam</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Infomation</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                   
+                    
+                </div>
+                
+                
+                <div class="logo-header-menu">
+                    <ul>
+                        <li>
+                            <a class="btn btn-light-outline" href="#"><span>Login</span></a>
+                        </li>
+                        <li class="language-menu">
+                            <a href="#">Eng</a>
+                            <ul>
+                                <li><a href="#">Vn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="site-header-ham">
+                        <a href="#" class="ham-btn">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-      </div>
     </header>
 
     <div class="menu-mobile-container">
-      <button class="mobile__close-btn" id="mobile__close-btn">
-        <span><i class="fal fa-times"></i></span>
-      </button>
-      <div class="logo mb-40">
-        <a href="index.html">
-          <img src="assets/images/logo/logo-w.svg" alt="logo" />
-        </a>
-      </div>
-      <div class="mobile-menu"></div>
+        <button class="mobile__close-btn" id="mobile__close-btn">
+            <span><i class="fal fa-times"></i></span>
+        </button>
+        <div class="logo mb-40">
+            <a href="index.html">
+                <img src="assets/images/logo/logo-w.svg" alt="logo">
+            </a>
+        </div>
+        <div class="mobile-menu">
+        
+        </div>
     </div>
 
+  
     <div class="body-overlay"></div>
 
-    <main>
-      <section class="subpage-banner _ticket-detail">
-        <div class="subpage-banner-img">
-          <img src="assets/images/home/11.jpg" alt="" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="content">
-                <div class="list-tag">
-                  <ul>
-                    <li><a class="tag-color-1" href="#">On sale</a></li>
-                    <li><a class="tag-color-2" href="#">Marathon</a></li>
-                  </ul>
-                </div>
-                <h1>Trang An Marathon 2023</h1>
-                <div class="list-info">
-                  <ul>
-                    <li><i class="far fa-calendar-alt"></i>12/11/2023</li>
-                    <li>
-                      <i class="far fa-map-marker-alt"></i>Hoa Lu Ancient
-                      Capital, Ninh Binh
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- <div class="curve">
+
+    <main>
+
+        <section class="subpage-banner _ticket-detail">
+            <div class="subpage-banner-img">
+                <img src="assets/images/home/11.jpg" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <div class="list-tag">
+                                <ul>
+                                    <li><a class="tag-color-1" href="#">On sale</a></li>
+                                    <li><a class="tag-color-2" href="#">Marathon</a></li>
+                                </ul>
+                            </div>
+                            <h1>Trang An Marathon 2023</h1>
+                            <div class="list-info">
+                                <ul>
+                                    <li><i class="far fa-calendar-alt"></i>12/11/2023</li>
+                                    <li><i class="far fa-map-marker-alt"></i>Hoa Lu Ancient Capital, Ninh Binh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="curve">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 0 0 C15 120 35 120 100 0 L 100 100 Z" fill="#fff"></path></svg>
             </div> -->
-      </section>
-      <section class="ticket-detail-menu">
-        <ul>
-          <li>
-            <a
-              class="ticket-detail-menu-link"
-              href="#introduce"
-              data-id="introduce"
-            >
-              Introduce
-            </a>
-          </li>
+        </section>
+        <section class="ticket-detail-menu">
+            <ul>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#introduce" data-id="introduce">
+                        Introduce
+                    </a>
+                </li>
 
-          <li>
-            <a
-              class="ticket-detail-menu-link"
-              href="#personal"
-              data-id="personal"
-            >
-              Personal buy
-            </a>
-          </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#personal" data-id="personal">
+                        Personal buy
+                    </a>
+                </li>
 
-          <li>
-            <a class="ticket-detail-menu-link" href="#group" data-id="group">
-              Group buy
-            </a>
-          </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#group" data-id="group">
+                        Group buy
+                    </a>
+                </li>
 
-          <li>
-            <a
-              class="ticket-detail-menu-link"
-              href="#table-price"
-              data-id="table-price"
-            >
-              Table Price
-            </a>
-          </li>
-          <li>
-            <a
-              class="ticket-detail-menu-link"
-              href="#timeline"
-              data-id="timeline"
-            >
-              Timeline
-            </a>
-          </li>
-          <li>
-            <a
-              class="ticket-detail-menu-link"
-              href="#racekit"
-              data-id="racekit"
-            >
-              Racekit
-            </a>
-          </li>
-          <li>
-            <a
-              class="ticket-detail-menu-link"
-              href="#regulations-charter"
-              data-id="regulations-charter"
-            >
-              Regulations & Charter
-            </a>
-          </li>
-        </ul>
-      </section>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#table-price" data-id="table-price">
+                        Table Price
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#timeline" data-id="timeline">
+                        Timeline
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#racekit" data-id="racekit">
+                        Racekit
+                    </a>
+                </li>
+                <li>
+                    <a class="ticket-detail-menu-link" href="#regulations-charter" data-id="regulations-charter">
+                        Regulations & Charter
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-      <section class="ticket-content">
-        <div class="container">
-          <div class="row" id="menu-action-container">
-            <div class="col-md-8 order-1 order-md-0">
-              <div class="ticket-content-text card" id="introduce">
-                <div class="ticket-content-header">
-                  <h3>Introduce</h3>
-                </div>
-                <div class="ticket-content-body">
-                  <p>
-                    Thank you for the companionship of all athletes and partners
-                    of Trang An Marathon during the past 2 seasons.
-                  </p>
-                  <p>
-                    Trang An Marathon season 3 will be officially organized by
-                    Ninh Binh Provincial People's Committee in collaboration
-                    with Vu Media Joint Stock Company (VRace), promising to
-                    bring athletes an exciting season and unforgettable memories
-                    when visiting here..
-                  </p>
-                  <p>
-                    WITH TRANG AN MARATHON 2023 CREATING FOOTSTRIKE FROM THE
-                    HERITAGE
-                  </p>
-                  <p>
-                    Trang An is always likened to "Ha Long on land" with the
-                    magnificent beauty of nature. From majestic mountain ranges,
-                    surrounded by clear water, mysterious caves to idyllic
-                    beautiful streamside rice fields. All create a dreamy,
-                    beautiful picture frame that gradually opens up in front of
-                    our eyes.
-                  </p>
-                  <p>
-                    Trang An Marathon 2023 hopes that the runners will not only
-                    run on the beautiful route with our race, but those legs
-                    will also roam, releasing their souls with the sun and wind,
-                    creating long runs in the distance heritage when coming to
-                    Trang An Cultural and Natural Heritage Complex.
-                  </p>
-                  <p>Let's visit Trang An and admire the beauty here!</p>
-                </div>
-              </div>
-              <div class="ticket-content-text card" id="personal">
-                <div class="ticket-content-header">
-                  <h3>Personal buy</h3>
-                </div>
-                <div class="ticket-content-body">
-                  <div class="table-responsive">
-                    <table class="table table-hover table-bordered table-price">
-                      <thead>
-                        <tr>
-                          <th>Distance</th>
-                          <th class="current-period">
-                            Regular
-                            <br />
-                            <small><i>(01/07 - 09/10)</i></small>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th>5km</th>
-                          <td class="current-period">599,000đ</td>
-                        </tr>
-                        <tr>
-                          <th>10km</th>
-                          <td class="current-period">729,000đ</td>
-                        </tr>
-                        <tr>
-                          <th>21km</th>
-                          <td class="current-period">929,000đ</td>
-                        </tr>
-                        <tr>
-                          <th>42km</th>
-                          <td class="current-period">1,299,000đ</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="row mt-3 wrap-price-personal">
-                    <div class="item-catalog col-md-3 col-6">
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>5km</span>
+        <section class="ticket-content">
+            <div class="container">
+                <div class="row" id="menu-action-container">
+                    <div class="col-md-8 order-1 order-md-0">
+                        <div class="ticket-content-text card" id="introduce">
+                            <div class="ticket-content-header">
+                                <h3>Introduce</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <p>Thank you for the companionship of all athletes and partners of Trang An Marathon during the past 2 seasons.</p>
+                                <p>Trang An Marathon season 3 will be officially organized by Ninh Binh Provincial People's Committee in collaboration with Vu Media Joint Stock Company (VRace), promising to bring athletes an exciting season and unforgettable memories when visiting here..</p>
+                                <p>WITH TRANG AN MARATHON 2023 CREATING FOOTSTRIKE FROM THE HERITAGE</p>
+                                <p>Trang An is always likened to "Ha Long on land" with the magnificent beauty of nature. From majestic mountain ranges, surrounded by clear water, mysterious caves to idyllic beautiful streamside rice fields. All create a dreamy, beautiful picture frame that gradually opens up in front of our eyes.</p>
+                                <p>Trang An Marathon 2023 hopes that the runners will not only run on the beautiful route with our race, but those legs will also roam, releasing their souls with the sun and wind, creating long runs in the distance heritage when coming to Trang An Cultural and Natural Heritage Complex.</p>
+                                <p>Let's visit Trang An and admire the beauty here!</p>
+                            </div>
                         </div>
-                        <div class="price">599,000đ</div>
-                        <hr class="hr-css" />
-                        <div class="btn-buy-now-personal" data-id="31900">
-                          <a class="btn"><span>Buy now</span></a>
+                        <div class="ticket-content-text card" id="personal">
+                            <div class="ticket-content-header">
+                                <h3>Personal buy</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered table-price">
+                                        <thead>
+                                            <tr>
+                                                <th>Distance</th>
+                                                <th class="current-period">
+                                                    Regular
+                                                    <br>
+                                                    <small><i>(01/07 - 09/10)</i></small>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>5km</th>
+                                                <td class="current-period">
+                                                    599,000đ
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>10km</th>
+                                                <td class="current-period">
+                                                    729,000đ
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>21km</th>
+                                                <td class="current-period">
+                                                    929,000đ
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>42km</th>
+                                                <td class="current-period">
+                                                    1,299,000đ
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-3 wrap-price-personal">
+                                    <div class="item-catalog col-md-3 col-6">
+                                        <div class="card text-center">
+                                            <div class="text-chose">
+                                                <span>5km</span>
+                                            </div>
+                                            <div class="price">599,000đ</div>
+                                            <hr class="hr-css">
+                                            <div class="btn-buy-now-personal" data-id="31900">
+                                                <a class="btn"><span>Buy now</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-catalog col-md-3 col-6">
+                                        <div class="card text-center">
+                                            <div class="text-chose">
+                                                <span>10km</span>
+                                            </div>
+                                            <div class="price">729,000đ</div>
+                                            <hr class="hr-css">
+                                            <div class="btn-buy-now-personal" data-id="31901">
+                                                <a class="btn"><span>Buy now</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-catalog col-md-3 col-6">
+                                        <div class="card text-center">
+                                            <div class="text-chose">
+                                                <span>21km</span>
+                                            </div>
+                                            <div class="price">929,000đ</div>
+                                            <hr class="hr-css">
+                                            <div class="btn-buy-now-personal" data-id="31902">
+                                                <a class="btn"><span>Buy now</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item-catalog col-md-3 col-6">
+                                        <div class="card text-center">
+                                            <div class="text-chose">
+                                                <span>42km</span>
+                                            </div>
+                                            <div class="price">1,299,000đ</div>
+                                            <hr class="hr-css">
+                                            <div class="btn-buy-now-personal" data-id="31903">
+                                                <a class="btn"><span>Buy now</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="ticket-content-text card" id="group">
+                            <div class="ticket-content-header">
+                                <h3>Group buy</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered table-price table-discount-group">
+                                        <thead>
+                                            <tr>
+                                                <th>Members</th>
+                                                <th>Time</th>
+                                                <th>Discount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="item-discount-group" data-min="10" data-max="30" data-amount="5"
+                                                data-from_date="2023-07-01 00:00:00" data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>10</b> to <b>30</b></span>
+                                                </td>
+                                                <td>
+                                                    01/07/2023, 00:00 - 01/11/2023, 23:59
+                                                </td>
+                                                <td>5%</td>
+                                            </tr>
+                                            <tr class="item-discount-group" data-min="31" data-max="50" data-amount="10"
+                                                data-from_date="2023-07-01 00:00:00" data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>31</b> to <b>50</b></span>
+                                                </td>
+                                                <td>
+                                                    01/07/2023, 00:00 - 01/11/2023, 23:59
+                                                </td>
+                                                <td>10%</td>
+                                            </tr>
+                                            <tr class="item-discount-group" data-min="51" data-max="100"
+                                                data-amount="15" data-from_date="2023-07-01 00:00:00"
+                                                data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>51</b> to <b>100</b></span>
+                                                </td>
+                                                <td>
+                                                    01/07/2023, 00:00 - 01/11/2023, 23:59
+                                                </td>
+                                                <td>15%</td>
+                                            </tr>
+                                            <tr class="item-discount-group" data-min="101" data-max="400"
+                                                data-amount="20" data-from_date="2023-07-01 00:00:00"
+                                                data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>101</b> to <b>400</b></span>
+                                                </td>
+                                                <td>
+                                                    01/07/2023, 00:00 - 01/11/2023, 23:59
+                                                </td>
+                                                <td>20%</td>
+                                            </tr>
+                                            <tr class="item-discount-group" data-min="401" data-max="1000"
+                                                data-amount="25" data-from_date="2023-07-01 00:00:00"
+                                                data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>401</b> to <b>1,000</b></span>
+                                                </td>
+                                                <td>
+                                                    01/07/2023, 00:00 - 01/11/2023, 23:59
+                                                </td>
+                                                <td>25%</td>
+                                            </tr>
+                                            <tr class="item-discount-group" data-min="1001" data-max="10000"
+                                                data-amount="30" data-from_date="2023-07-01 00:00:00"
+                                                data-to_date="2023-11-01 23:59:59">
+                                                <td>
+                                                    <span>From <b>1,001</b> to <b>10,000</b></span>
+                                                </td>
+                                                <td>
+                                                    01/07/2023, 00:00 - 01/11/2023, 23:59
+                                                </td>
+                                                <td>30%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-3 wrap-price-personal">
+
+                  
+                  
+                                    <div class="item-catalog col-md-3 col-6" data-id="31900" data-price="599000">
+                                      <div class="card text-center">
+                                        <div class="text-chose">
+                                          <span>5km</span>
+                                        </div>
+                                      
+                                        <div class="price">599,000đ</div>
+                          
+                                        <hr class="hr-css">
+                          
+                                        <div class="select-quantity text-center">
+                                          <button class="subtract-button pull-left btn btn-primary">-</button>   
+                                          <input class="form-control quantity-set text-center" name="quantity" type="number" value="0"> 
+                                          <button class="add-button pull-right btn btn-primary">+</button>
+                                        </div>
+                    
+                                      </div>
+                                    </div>
+                          
+                                      
+                                    <div class="item-catalog col-md-3 col-6" data-id="31901" data-price="729000">
+                                      <div class="card text-center">
+                                        <div class="text-chose">
+                                          <span>10km</span>
+                                        </div>
+                                      
+                                        <div class="price">729,000đ</div>
+                          
+                                        <hr class="hr-css">
+                          
+                                        <div class="select-quantity text-center">
+                                          <button class="subtract-button pull-left btn btn-primary">-</button>   
+                                          <input class="form-control quantity-set text-center" name="quantity" type="number" value="0"> 
+                                          <button class="add-button pull-right btn btn-primary">+</button>
+                                        </div>
+                    
+                                      </div>
+                                    </div>
+                          
+                                      
+                                    <div class="item-catalog col-md-3 col-6" data-id="31902" data-price="929000">
+                                      <div class="card text-center">
+                                        <div class="text-chose">
+                                          <span>21km</span>
+                                        </div>
+                                      
+                                        <div class="price">929,000đ</div>
+                          
+                                        <hr class="hr-css">
+                          
+                                        <div class="select-quantity text-center">
+                                          <button class="subtract-button pull-left btn btn-primary">-</button>   
+                                          <input class="form-control quantity-set text-center" name="quantity" type="number" value="0"> 
+                                          <button class="add-button pull-right btn btn-primary">+</button>
+                                        </div>
+                    
+                                      </div>
+                                    </div>
+                          
+                                      
+                                    <div class="item-catalog col-md-3 col-6" data-id="31903" data-price="1299000">
+                                      <div class="card text-center">
+                                        <div class="text-chose">
+                                          <span>42km</span>
+                                        </div>
+                                      
+                                        <div class="price">1,299,000đ</div>
+                          
+                                        <hr class="hr-css">
+                          
+                                        <div class="select-quantity text-center">
+                                          <button class="subtract-button pull-left btn btn-primary">-</button>   
+                                          <input class="form-control quantity-set text-center" name="quantity" type="number" value="0"> 
+                                          <button class="add-button pull-right btn btn-primary">+</button>
+                                        </div>
+                    
+                                      </div>
+                                    </div>
+                          
+                                
+                                <div class="col-12 text-end">
+                                  <p><span>Subtotal: <b class="font-size-18 text-danger sub-total-money-group">0đ</b></span></p>
+                                  <div><a class="btn btn-buy-now-group disabled"><span>Register now</span></a></div>
+                                </div>
+                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="table-price">
+                            <div class="ticket-content-header">
+                                <h3>Table Price</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <p><strong><img src="https://irace.vn/wp-content/uploads/2023/09/uu-dai-trung-thu-2.png" alt="" width="100%"></strong><strong></strong></p>
+                                <p><strong>PERSONAL TICKET PRICE LIST:</strong></p>
+                                <table border="1" cellspacing="0" cellpadding="5" width="100%"
+                                    style="margin-left: auto; margin-right: auto;">
+                                    <thead>
+                                        <tr>
+                                            <td width="187" valign="top">
+                                                <strong><span lang="vi">Distance<o:p></o:p>
+                                                            </span></strong>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <strong><span lang="vi">Standard<o:p></o:p>
+                                                            </span></strong>
+                                                <strong><span lang="vi">(1/7-9/10/2023)<o:p></o:p>
+                                                            </span></strong>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <strong><span lang="vi">Late<o:p></o:p>
+                                                            </span></strong>
+                                                <strong><span lang="vi">(10/10-1/11/2023)<o:p></o:p>
+                                                            </span></strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">5km<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">599.000<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">699.000<o:p></o:p></span>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">10km<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">729.000<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">999.000<o:p></o:p></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">21km<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">929.000<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">1.299.000<o:p></o:p></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">42km<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">1.299.000<o:p></o:p></span>
+                                            </td>
+                                            <td width="187" valign="top">
+                                                <span lang="vi">1.429.000<o:p></o:p></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p></p>
+                                <p><strong><span lang="vi">GROUP TICKET PRICE LIST:</span></strong></p>
+                                <table border="1" cellspacing="0" cellpadding="5" width="100%" style="margin-left: auto; margin-right: auto;">
+                                    <tbody>
+                                    <tr>
+                                    <td width="659" colspan="7">
+                                    <strong><span lang="vi">GROUP BENEFITS<o:p></o:p></span></strong>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="96">
+                                    <strong><span lang="vi">Number</span><span lang="vi"><o:p></o:p></span></strong>
+                                    </td>
+                                    <td width="96">
+                                    <strong><span lang="vi">Discount</span><span lang="vi"><o:p></o:p></span></strong>
+                                    </td>
+                                    <td width="104">
+                                    <strong><span lang="vi">Time application</span><span lang="vi"><o:p></o:p></span></strong>
+                                    </td>
+                                    <td width="92">
+                                    <strong><span lang="vi">Post on FB page introducing the group *</span><span lang="vi"><o:p></o:p></span></strong>
+                                    </td>
+                                    <td width="91">
+                                    <strong><span lang="vi">Group logo on one backdrop **</span><span lang="vi"><o:p></o:p></span></strong>
+                                    </td>
+                                    <td width="85">
+                                    <strong><span lang="vi">1 private backdrop for group *</span><span lang="vi"><o:p></o:p></span></strong>
+                                    </td>
+                                    <td width="94">
+                                    <strong><span lang="vi">2 media cards for photographer *</span><span lang="vi"><o:p></o:p></span></strong>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="96">
+                                    <span lang="vi">10-30 người<o:p></o:p></span>
+                                    </td>
+                                    <td width="96">
+                                    <span lang="vi">5%<o:p></o:p></span>
+                                    </td>
+                                    <td width="104">
+                                    <span lang="vi">All stages<o:p></o:p></span>
+                                    </td>
+                                    <td width="92">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="91">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="85">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="94">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="96">
+                                    <span lang="vi">31-50 người<o:p></o:p></span>
+                                    </td>
+                                    <td width="96">
+                                    <span lang="vi">10%<o:p></o:p></span>
+                                    </td>
+                                    <td width="104">
+                                    <span lang="vi">All stages<o:p></o:p></span>
+                                    </td>
+                                    <td width="92">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="91">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="85">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="94">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="96">
+                                    <span lang="vi">51-100 người<o:p></o:p></span>
+                                    </td>
+                                    <td width="96">
+                                    <span lang="vi">15%<o:p></o:p></span>
+                                    </td>
+                                    <td width="104">
+                                    <span lang="vi">All stages<o:p></o:p></span>
+                                    </td>
+                                    <td width="92">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="91">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="85">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="94">
+                                    <p><span lang="vi">&nbsp;</span>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="96">
+                                    <span lang="vi">101-400 người<o:p></o:p></span>
+                                    </td>
+                                    <td width="96">
+                                    <span lang="vi">20%<o:p></o:p></span>
+                                    </td>
+                                    <td width="104">
+                                    <span lang="vi">All stages<o:p></o:p></span>
+                                    </td>
+                                    <td width="92">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="91">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="85">
+                                    <span lang="vi">&nbsp;</span>
+                                    </td>
+                                    <td width="94">
+                                    <span lang="vi">&nbsp;</span>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="96">
+                                    <span lang="vi">401-1000 người<o:p></o:p></span>
+                                    </td>
+                                    <td width="96">
+                                    <span lang="vi">25%<o:p></o:p></span>
+                                    </td>
+                                    <td width="104">
+                                    <span lang="vi">All stages<o:p></o:p></span>
+                                    </td>
+                                    <td width="92">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="91">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="85">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="94">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="96">
+                                    <span lang="vi">&gt;1000 người<o:p></o:p></span>
+                                    </td>
+                                    <td width="96">
+                                    <span lang="vi">30%<o:p></o:p></span>
+                                    </td>
+                                    <td width="104">
+                                    <span lang="vi">All stages<o:p></o:p></span>
+                                    </td>
+                                    <td width="92" valign="bottom">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="91" valign="bottom">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="85" valign="bottom">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    <td width="94" valign="bottom">
+                                    <span lang="vi">Có<o:p></o:p></span>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <p></p>
+                                    <p><span lang="vi">&nbsp;</span><span lang="vi">The above benefits apply to groups that register and pay before October 20, 2023<o:p></o:p></span></p>
+                                    <p><span lang="vi">Group logo is on Group and Sponsor backdrop</span></p>
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="timeline">
+                            <div class="ticket-content-header">
+                                <h3>Timeline</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <p><img src="https://irace.vn/wp-content/uploads/2023/09/lich-en-1.png" alt="" width="100%"></p>
+                                <p><img src="https://irace.vn/wp-content/uploads/2023/09/raceday.png" alt="" width="100%"></p>
+
+                            </div>
+                        </div>
+                        <div class="ticket-content-text card" id="racekit">
+                            <div class="ticket-content-header">
+                                <h3>Racekit</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <p><img src="https://irace.vn/wp-content/uploads/2023/09/size-ao.png" width="100%" caption="false"></p>
+
+                            </div>
+
+                        </div>
+                        <div class="ticket-content-text card" id="regulations-charter">
+                            <div class="ticket-content-header">
+                                <h3>Regulations & Charter</h3>
+                            </div>
+                            <div class="ticket-content-body">
+                                <p>These rules and regulations are designed to help organize and manage the event on a large scale, ensuring the safety of event attendees in compliance with the provisions of the law of the Vietnam Athletics Federation. Nam about the recognition of participants' achievements and the responsibility of the event.</p>
+                                <p><strong>I. Conditions of participation</strong></p>
+                                <p><strong>1. Participants</strong></p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes voluntarily participating in Trang An Marathon 2023 have read, understood and agreed to the information, documents and competition rules set by the Organizer.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes are Vietnamese citizens and foreigners who fully meet the provisions of the Race’s Regulations, not during the period of being banned by the National and International Federation of Associations or the disciplinary management agency.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes participating the distance of 21km must be 16 or older and complete the registration with the Organizer.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes participating the distance of 42km must be 18 or older and complete the registration with the Organizer.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes under the age of 18 must have a responsible guardian and sign a "disclaimer".</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes under the age of 12 must have a parent or guardian to monitor and take responsibility for the duration of the race.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes understand that participating in Trang An Marathon 2023 is an activity that requires good physical strength and the athletes have to practice and prepare for the necessary health. The organizers will not be responsible if the athletes are physically, mentally injured during the race</p>
+                                <p><strong>2.Registration</strong></p>
+                                <p>-<span style="white-space: pre;"> </span>Online: <a href="https://ticket.irace.vn/trang-an-marathon-2023">https://ticket.irace.vn/trang-an-marathon-2023</a></p>
+                                <p>VuMedia Joint Stock Company. No. 10A1, lane 376, Khuong Dinh street, Ha Dinh, Thanh Xuan, Hanoi.</p>
+                                <p>-<span style="white-space: pre;"> </span>After the registration is properly processed, the Organizer will not refund the registration fee to the athletes for any reason.</p>
+                                <p>-<span style="white-space: pre;"> </span>The event participation fee will not be refunded in case the event is canceled due to force majeure (earthquake, flood, fire, war, strike, national mourning...)</p>
+                                <p><strong>3. Regulations</strong></p>
+                                <p>-<span style="white-space: pre;"> </span>For athletes of the provincial, city, branch, and federation teams: according to the form stamped with the certification of the governing body about their personnel issues.</p>
+                                <p>-<span style="white-space: pre;"> </span>For other athletes: Register according to the website: https://actiup.net/event/trang-an-marathon-2023&nbsp;&nbsp;</p>
+                                <p>-<span style="white-space: pre;"> </span>The time to complete the profile and the registration are informed on the Website.</p>
+                                <p>-<span style="white-space: pre;"> </span>Quantity: Expected 5,000 athletes.</p>
+                                <p></p>
+                                <p><strong>II. Time, place of the race</strong></p>
+                                <p><strong>1. Place (Expected)</strong></p>
+                                <p>Location: Hoa Lu ancient capital, Truong Yen, Hoa Lu, Ninh Binh, Viet Nam</p>
+                                <p><strong>2. (Expected)</strong></p>
+                                <p><strong>November 11th 2023, at 8am - 7pm</strong></p>
+                                <p>+<span style="white-space: pre;"> </span>3pm: Opening ceremony</p>
+                                <p>+<span style="white-space: pre;"> </span>Race Kit Pick-up Area opened</p>
+                                <p>+<span style="white-space: pre;"> </span>Booth activities provide information about the event</p>
+                                <p>+<span style="white-space: pre;"> </span>Other event activities</p>
+                                <p><strong>November 12th, 2023</strong></p>
+                                <p>+<span style="white-space: pre;"> </span>04:30 am: Athletes gather</p>
+                                <p>+<span style="white-space: pre;"> </span>05:30 am: 42km Athletes start&nbsp;</p>
+                                <p>+<span style="white-space: pre;"> </span>06:00 am: 21km Athletes start&nbsp;</p>
+                                <p>+<span style="white-space: pre;"> </span>06:30 am: 10km Athletes start&nbsp;</p>
+                                <p>+<span style="white-space: pre;"> </span>07:00 am: 5km Athletes start&nbsp;</p>
+                                <p>+<span style="white-space: pre;"> </span>10:00 am: Closing Ceremony&nbsp;</p>
+                                <p>+<span style="white-space: pre;"> </span>12:00 am: Course closed</p>
+                                <p>-<span style="white-space: pre;"> </span>Participants: Professional athletes, movement athletes and people in Hoa Lu district, Ninh Binh province.</p>
+                                <p>-<span style="white-space: pre;"> </span>Cut-off time: The athletes must be able to complete the race, from the start line to the finish line, within the time period below:</p>
+                                <p>+<span style="white-space: pre;"> </span>42km: maximum completion time is 6 hours 30 minutes.</p>
+                                <p>+<span style="white-space: pre;"> </span>21km: maximum completion time is 3 hours 30 minutes.</p>
+                                <p>+<span style="white-space: pre;"> </span>10km: maximum completion time is 2 hours.</p>
+                                <p>+<span style="white-space: pre;"> </span>5km: maximum completion time is 1 hour.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes must give priority to medical staff and ambulances throughout the race regardless of their position on the track.</p>
+                                <p>-<span style="white-space: pre;"> </span>During the race, all runners are expected to behave in a professional and courteous manner. Do not use profanity, quarrel, insult, have unsportsmanlike behavior towards other athletes. Anyone who violates will be disqualified.</p>
+                                <p>-<span style="white-space: pre;"> </span>All acts of littering, environmental damage, etc. are strictly prohibited. The athletes are responsible for protecting the environment around the race.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes must wear a shirt (including the BIB number) during the competition. It must be clear at all times.</p>
+                                <p></p>
+                                <p><strong>III. Prize and other regulations</strong></p>
+                                <p><strong>1. Prize: (updated later)</strong></p>
+                                <p><strong>2. Tthe track</strong></p>
+                                <p>-<span style="white-space: pre;"> </span> Athletes who leave the track will not be allowed to return for any purpose. Athletes who intentionally shorten track will be disqualified. The fraudulent acts are evidenced by the referee, members of the Organizer.</p>
+                                <p>-<span style="white-space: pre;"> </span> Athletes of the 42km, 21km, 10km, and 5km distances who participate in the race without the official BIB number, a chip time or a chip time that is not their own will be disqualified.</p>
+                                <p>-<span style="white-space: pre;"> </span>Athletes must not receive any assistance by means of wheeled or motorized vehicles during the competition. Except for disabled athletes with the permission of the Organizer.</p>
+                                <p>-<span style="white-space: pre;"> </span> Athletes are not allowed to bring animals, explosives, flammable substances, compressed air, toxic substances and anything that can cause danger or inconvenience to others during the race</p>
+                                <p><strong>3. Competition results</strong></p>
+                                <p>-<span style="white-space: pre;"> </span>Competition results will be recorded by a timekeeping device mounted on the BIB. Beginning when the athletes crosses the start line and stops when crosses the finish line.</p>
+                                <p>-<span style="white-space: pre;"> </span>An athlete may not be recognized as a finisher if:</p>
+                                <p>+<span style="white-space: pre;"> </span>Wearing more than 2 timekeeping devices.</p>
+                                <p>+<span style="white-space: pre;"> </span>The athlete's completion time exceeds the cut-off time.</p>
+                                <p>+<span style="white-space: pre;"> </span>Abnormal absences on the track confirmed by the referee and recording equipment evidence.</p>
+                                <p>-<span style="white-space: pre;"> </span>Official results will be announced by the Organizer on the website. Athletes have the right to complain, request verification of their own or other athletes' results, along with clear evidence. Complaint requests should be sent before November 21, 2023.</p>
+                                <p>-<span style="white-space: pre;"> </span> Prizes will be officially announced on the day of the competition. All complaints about the results of First, Second and Third prizes with all distances must be made before 09:00 am on November 12, 2023</p>
+                                <p>-<span style="white-space: pre;"> </span> Athletes are responsible for complying with the regulations and instructions of the Organizer on the track to ensure accurate results.</p>
+                                <p>-<span style="white-space: pre;"> </span>The decision of the Organizer is final</p>
+                                <p><strong>4. Discipline: </strong></p>
+                                <p>Violators will be handled according to Decree 158/2013/ND-CP dated&nbsp; November 12, 2013 of the Government on sanctioning of administrative violations in the fields of culture, sports, tourism and advertising.</p>
+                                <p><strong>5. Force majeure</strong></p>
+                                <p>-<span style="white-space: pre;"> </span>The Organizer is not responsible when the race is canceled or postponed due to force majeure.</p>
+                                <p>-<span style="white-space: pre;"> </span>The Organizer has the right to make changes to the rules and regulations of the race and will be notified to the athletes in writing, email or at the scene before the race takes place.</p>
+                                <p>-<span style="white-space: pre;"> </span>The Organizer has the full right to use the information provided by the participants and the images, videos of the race for legal purposes in advertising, exhibitions... to promote the race</p>
+                                <p>Each athlete is responsible for understanding and complying with the rules of the race, violation will be disqualified</p>
+                                <p>Only the Organizer has the right to update the Charter if necessary. For tenors not included in the charter, the final decision belongs to the Organizer.</p>
+                                <p></p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-md-4 order-0 order-md-1" id="menu-action-sticky">
+                        <div class="ticket-content-action">
+                            <div class="ticket-content-header">
+                                <h3>Trang An Marathon 2023</h3>
+                            </div>
+                            <div id="timer" data-endtime="30 October 2023"></div>
+                            <div class="ticket-content-body">
+                                <div class="list-info">
+                                    <ul>
+                                        <li><i class="far fa-calendar-alt"></i>12/11/2023</li>
+                                        <li><i class="far fa-map-marker-alt"></i>Hoa Lu Ancient Capital, Ninh Binh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ticket-content-price">
+                                <div class="price">From 599,000đ</div>
+                                <div class="btn-group">
+                                    <a href="#personal" class="btn"><span>Personal buy</span></a>
+                                    <a href="#group" class="btn"><span>Group buy</span></a>
+                                </div>
+                            </div>
 
-                    <div class="item-catalog col-md-3 col-6">
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>10km</span>
+                            
                         </div>
-                        <div class="price">729,000đ</div>
-                        <hr class="hr-css" />
-                        <div class="btn-buy-now-personal" data-id="31901">
-                          <a class="btn"><span>Buy now</span></a>
-                        </div>
-                      </div>
                     </div>
-
-                    <div class="item-catalog col-md-3 col-6">
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>21km</span>
-                        </div>
-                        <div class="price">929,000đ</div>
-                        <hr class="hr-css" />
-                        <div class="btn-buy-now-personal" data-id="31902">
-                          <a class="btn"><span>Buy now</span></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item-catalog col-md-3 col-6">
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>42km</span>
-                        </div>
-                        <div class="price">1,299,000đ</div>
-                        <hr class="hr-css" />
-                        <div class="btn-buy-now-personal" data-id="31903">
-                          <a class="btn"><span>Buy now</span></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="ticket-content-text card" id="group">
-                <div class="ticket-content-header">
-                  <h3>Group buy</h3>
-                </div>
-                <div class="ticket-content-body">
-                  <div class="table-responsive">
-                    <table
-                      class="table table-hover table-bordered table-price table-discount-group"
-                    >
-                      <thead>
-                        <tr>
-                          <th>Members</th>
-                          <th>Time</th>
-                          <th>Discount</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr
-                          class="item-discount-group"
-                          data-min="10"
-                          data-max="30"
-                          data-amount="5"
-                          data-from_date="2023-07-01 00:00:00"
-                          data-to_date="2023-11-01 23:59:59"
-                        >
-                          <td>
-                            <span>From <b>10</b> to <b>30</b></span>
-                          </td>
-                          <td>01/07/2023, 00:00 - 01/11/2023, 23:59</td>
-                          <td>5%</td>
-                        </tr>
-                        <tr
-                          class="item-discount-group"
-                          data-min="31"
-                          data-max="50"
-                          data-amount="10"
-                          data-from_date="2023-07-01 00:00:00"
-                          data-to_date="2023-11-01 23:59:59"
-                        >
-                          <td>
-                            <span>From <b>31</b> to <b>50</b></span>
-                          </td>
-                          <td>01/07/2023, 00:00 - 01/11/2023, 23:59</td>
-                          <td>10%</td>
-                        </tr>
-                        <tr
-                          class="item-discount-group"
-                          data-min="51"
-                          data-max="100"
-                          data-amount="15"
-                          data-from_date="2023-07-01 00:00:00"
-                          data-to_date="2023-11-01 23:59:59"
-                        >
-                          <td>
-                            <span>From <b>51</b> to <b>100</b></span>
-                          </td>
-                          <td>01/07/2023, 00:00 - 01/11/2023, 23:59</td>
-                          <td>15%</td>
-                        </tr>
-                        <tr
-                          class="item-discount-group"
-                          data-min="101"
-                          data-max="400"
-                          data-amount="20"
-                          data-from_date="2023-07-01 00:00:00"
-                          data-to_date="2023-11-01 23:59:59"
-                        >
-                          <td>
-                            <span>From <b>101</b> to <b>400</b></span>
-                          </td>
-                          <td>01/07/2023, 00:00 - 01/11/2023, 23:59</td>
-                          <td>20%</td>
-                        </tr>
-                        <tr
-                          class="item-discount-group"
-                          data-min="401"
-                          data-max="1000"
-                          data-amount="25"
-                          data-from_date="2023-07-01 00:00:00"
-                          data-to_date="2023-11-01 23:59:59"
-                        >
-                          <td>
-                            <span>From <b>401</b> to <b>1,000</b></span>
-                          </td>
-                          <td>01/07/2023, 00:00 - 01/11/2023, 23:59</td>
-                          <td>25%</td>
-                        </tr>
-                        <tr
-                          class="item-discount-group"
-                          data-min="1001"
-                          data-max="10000"
-                          data-amount="30"
-                          data-from_date="2023-07-01 00:00:00"
-                          data-to_date="2023-11-01 23:59:59"
-                        >
-                          <td>
-                            <span>From <b>1,001</b> to <b>10,000</b></span>
-                          </td>
-                          <td>01/07/2023, 00:00 - 01/11/2023, 23:59</td>
-                          <td>30%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="row mt-3 wrap-price-personal">
-                    <div
-                      class="item-catalog col-md-3 col-6"
-                      data-id="31900"
-                      data-price="599000"
-                    >
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>5km</span>
-                        </div>
-
-                        <div class="price">599,000đ</div>
-
-                        <hr class="hr-css" />
-
-                        <div class="select-quantity text-center">
-                          <button
-                            class="subtract-button pull-left btn btn-primary"
-                          >
-                            -
-                          </button>
-                          <input
-                            class="form-control quantity-set text-center"
-                            name="quantity"
-                            type="number"
-                            value="0"
-                          />
-                          <button class="add-button pull-right btn btn-primary">
-                            +
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="item-catalog col-md-3 col-6"
-                      data-id="31901"
-                      data-price="729000"
-                    >
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>10km</span>
-                        </div>
-
-                        <div class="price">729,000đ</div>
-
-                        <hr class="hr-css" />
-
-                        <div class="select-quantity text-center">
-                          <button
-                            class="subtract-button pull-left btn btn-primary"
-                          >
-                            -
-                          </button>
-                          <input
-                            class="form-control quantity-set text-center"
-                            name="quantity"
-                            type="number"
-                            value="0"
-                          />
-                          <button class="add-button pull-right btn btn-primary">
-                            +
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="item-catalog col-md-3 col-6"
-                      data-id="31902"
-                      data-price="929000"
-                    >
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>21km</span>
-                        </div>
-
-                        <div class="price">929,000đ</div>
-
-                        <hr class="hr-css" />
-
-                        <div class="select-quantity text-center">
-                          <button
-                            class="subtract-button pull-left btn btn-primary"
-                          >
-                            -
-                          </button>
-                          <input
-                            class="form-control quantity-set text-center"
-                            name="quantity"
-                            type="number"
-                            value="0"
-                          />
-                          <button class="add-button pull-right btn btn-primary">
-                            +
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="item-catalog col-md-3 col-6"
-                      data-id="31903"
-                      data-price="1299000"
-                    >
-                      <div class="card text-center">
-                        <div class="text-chose">
-                          <span>42km</span>
-                        </div>
-
-                        <div class="price">1,299,000đ</div>
-
-                        <hr class="hr-css" />
-
-                        <div class="select-quantity text-center">
-                          <button
-                            class="subtract-button pull-left btn btn-primary"
-                          >
-                            -
-                          </button>
-                          <input
-                            class="form-control quantity-set text-center"
-                            name="quantity"
-                            type="number"
-                            value="0"
-                          />
-                          <button class="add-button pull-right btn btn-primary">
-                            +
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12 text-end">
-                      <p>
-                        <span
-                          >Subtotal:
-                          <b
-                            class="font-size-18 text-danger sub-total-money-group"
-                            >0đ</b
-                          ></span
-                        >
-                      </p>
-                      <div>
-                        <a class="btn btn-buy-now-group disabled"
-                          ><span>Register now</span></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ticket-content-text card" id="table-price">
-                <div class="ticket-content-header">
-                  <h3>Table Price</h3>
-                </div>
-                <div class="ticket-content-body">
-                  <p>
-                    <strong
-                      ><img
-                        src="https://irace.vn/wp-content/uploads/2023/09/uu-dai-trung-thu-2.png"
-                        alt=""
-                        width="100%" /></strong
-                    ><strong></strong>
-                  </p>
-                  <p><strong>PERSONAL TICKET PRICE LIST:</strong></p>
-                  <table
-                    border="1"
-                    cellspacing="0"
-                    cellpadding="5"
-                    width="100%"
-                    style="margin-left: auto; margin-right: auto"
-                  >
-                    <thead>
-                      <tr>
-                        <td width="187" valign="top">
-                          <strong
-                            ><span lang="vi">Distance<o:p></o:p> </span
-                          ></strong>
-                        </td>
-                        <td width="187" valign="top">
-                          <strong
-                            ><span lang="vi">Standard<o:p></o:p> </span
-                          ></strong>
-                          <strong
-                            ><span lang="vi">(1/7-9/10/2023)<o:p></o:p> </span
-                          ></strong>
-                        </td>
-                        <td width="187" valign="top">
-                          <strong
-                            ><span lang="vi">Late<o:p></o:p> </span
-                          ></strong>
-                          <strong
-                            ><span lang="vi">(10/10-1/11/2023)<o:p></o:p> </span
-                          ></strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="187" valign="top">
-                          <span lang="vi">5km<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">599.000<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">699.000<o:p></o:p></span>
-                        </td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td width="187" valign="top">
-                          <span lang="vi">10km<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">729.000<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">999.000<o:p></o:p></span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="187" valign="top">
-                          <span lang="vi">21km<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">929.000<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">1.299.000<o:p></o:p></span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="187" valign="top">
-                          <span lang="vi">42km<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">1.299.000<o:p></o:p></span>
-                        </td>
-                        <td width="187" valign="top">
-                          <span lang="vi">1.429.000<o:p></o:p></span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p></p>
-                  <p>
-                    <strong
-                      ><span lang="vi">GROUP TICKET PRICE LIST:</span></strong
-                    >
-                  </p>
-                  <table
-                    border="1"
-                    cellspacing="0"
-                    cellpadding="5"
-                    width="100%"
-                    style="margin-left: auto; margin-right: auto"
-                  >
-                    <tbody>
-                      <tr>
-                        <td width="659" colspan="7">
-                          <strong
-                            ><span lang="vi">GROUP BENEFITS<o:p></o:p></span
-                          ></strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="96">
-                          <strong
-                            ><span lang="vi">Number</span
-                            ><span lang="vi"><o:p></o:p></span
-                          ></strong>
-                        </td>
-                        <td width="96">
-                          <strong
-                            ><span lang="vi">Discount</span
-                            ><span lang="vi"><o:p></o:p></span
-                          ></strong>
-                        </td>
-                        <td width="104">
-                          <strong
-                            ><span lang="vi">Time application</span
-                            ><span lang="vi"><o:p></o:p></span
-                          ></strong>
-                        </td>
-                        <td width="92">
-                          <strong
-                            ><span lang="vi"
-                              >Post on FB page introducing the group *</span
-                            ><span lang="vi"><o:p></o:p></span
-                          ></strong>
-                        </td>
-                        <td width="91">
-                          <strong
-                            ><span lang="vi">Group logo on one backdrop **</span
-                            ><span lang="vi"><o:p></o:p></span
-                          ></strong>
-                        </td>
-                        <td width="85">
-                          <strong
-                            ><span lang="vi"
-                              >1 private backdrop for group *</span
-                            ><span lang="vi"><o:p></o:p></span
-                          ></strong>
-                        </td>
-                        <td width="94">
-                          <strong
-                            ><span lang="vi"
-                              >2 media cards for photographer *</span
-                            ><span lang="vi"><o:p></o:p></span
-                          ></strong>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="96">
-                          <span lang="vi">10-30 người<o:p></o:p></span>
-                        </td>
-                        <td width="96">
-                          <span lang="vi">5%<o:p></o:p></span>
-                        </td>
-                        <td width="104">
-                          <span lang="vi">All stages<o:p></o:p></span>
-                        </td>
-                        <td width="92">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="91">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="85">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="94">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="96">
-                          <span lang="vi">31-50 người<o:p></o:p></span>
-                        </td>
-                        <td width="96">
-                          <span lang="vi">10%<o:p></o:p></span>
-                        </td>
-                        <td width="104">
-                          <span lang="vi">All stages<o:p></o:p></span>
-                        </td>
-                        <td width="92">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="91">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="85">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="94">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="96">
-                          <span lang="vi">51-100 người<o:p></o:p></span>
-                        </td>
-                        <td width="96">
-                          <span lang="vi">15%<o:p></o:p></span>
-                        </td>
-                        <td width="104">
-                          <span lang="vi">All stages<o:p></o:p></span>
-                        </td>
-                        <td width="92">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="91">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="85">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-
-                        <td width="94">
-                          <p><span lang="vi">&nbsp;</span></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="96">
-                          <span lang="vi">101-400 người<o:p></o:p></span>
-                        </td>
-                        <td width="96">
-                          <span lang="vi">20%<o:p></o:p></span>
-                        </td>
-                        <td width="104">
-                          <span lang="vi">All stages<o:p></o:p></span>
-                        </td>
-                        <td width="92">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="91">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="85">
-                          <span lang="vi">&nbsp;</span>
-                        </td>
-                        <td width="94">
-                          <span lang="vi">&nbsp;</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="96">
-                          <span lang="vi">401-1000 người<o:p></o:p></span>
-                        </td>
-                        <td width="96">
-                          <span lang="vi">25%<o:p></o:p></span>
-                        </td>
-                        <td width="104">
-                          <span lang="vi">All stages<o:p></o:p></span>
-                        </td>
-                        <td width="92">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="91">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="85">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="94">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="96">
-                          <span lang="vi">&gt;1000 người<o:p></o:p></span>
-                        </td>
-                        <td width="96">
-                          <span lang="vi">30%<o:p></o:p></span>
-                        </td>
-                        <td width="104">
-                          <span lang="vi">All stages<o:p></o:p></span>
-                        </td>
-                        <td width="92" valign="bottom">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="91" valign="bottom">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="85" valign="bottom">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                        <td width="94" valign="bottom">
-                          <span lang="vi">Có<o:p></o:p></span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p></p>
-                  <p>
-                    <span lang="vi">&nbsp;</span
-                    ><span lang="vi"
-                      >The above benefits apply to groups that register and pay
-                      before October 20, 2023<o:p></o:p
-                    ></span>
-                  </p>
-                  <p>
-                    <span lang="vi"
-                      >Group logo is on Group and Sponsor backdrop</span
-                    >
-                  </p>
-                </div>
-              </div>
-              <div class="ticket-content-text card" id="timeline">
-                <div class="ticket-content-header">
-                  <h3>Timeline</h3>
-                </div>
-                <div class="ticket-content-body">
-                  <p>
-                    <img
-                      src="https://irace.vn/wp-content/uploads/2023/09/lich-en-1.png"
-                      alt=""
-                      width="100%"
-                    />
-                  </p>
-                  <p>
-                    <img
-                      src="https://irace.vn/wp-content/uploads/2023/09/raceday.png"
-                      alt=""
-                      width="100%"
-                    />
-                  </p>
-                </div>
-              </div>
-              <div class="ticket-content-text card" id="racekit">
-                <div class="ticket-content-header">
-                  <h3>Racekit</h3>
-                </div>
-                <div class="ticket-content-body">
-                  <p>
-                    <img
-                      src="https://irace.vn/wp-content/uploads/2023/09/size-ao.png"
-                      width="100%"
-                      caption="false"
-                    />
-                  </p>
-                </div>
-              </div>
-              <div class="ticket-content-text card" id="regulations-charter">
-                <div class="ticket-content-header">
-                  <h3>Regulations & Charter</h3>
-                </div>
-                <div class="ticket-content-body">
-                  <p>
-                    These rules and regulations are designed to help organize
-                    and manage the event on a large scale, ensuring the safety
-                    of event attendees in compliance with the provisions of the
-                    law of the Vietnam Athletics Federation. Nam about the
-                    recognition of participants' achievements and the
-                    responsibility of the event.
-                  </p>
-                  <p><strong>I. Conditions of participation</strong></p>
-                  <p><strong>1. Participants</strong></p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes voluntarily
-                    participating in Trang An Marathon 2023 have read,
-                    understood and agreed to the information, documents and
-                    competition rules set by the Organizer.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes are
-                    Vietnamese citizens and foreigners who fully meet the
-                    provisions of the Race’s Regulations, not during the period
-                    of being banned by the National and International Federation
-                    of Associations or the disciplinary management agency.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes
-                    participating the distance of 21km must be 16 or older and
-                    complete the registration with the Organizer.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes
-                    participating the distance of 42km must be 18 or older and
-                    complete the registration with the Organizer.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes under the
-                    age of 18 must have a responsible guardian and sign a
-                    "disclaimer".
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes under the
-                    age of 12 must have a parent or guardian to monitor and take
-                    responsibility for the duration of the race.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes understand
-                    that participating in Trang An Marathon 2023 is an activity
-                    that requires good physical strength and the athletes have
-                    to practice and prepare for the necessary health. The
-                    organizers will not be responsible if the athletes are
-                    physically, mentally injured during the race
-                  </p>
-                  <p><strong>2.Registration</strong></p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Online:
-                    <a href="https://ticket.irace.vn/trang-an-marathon-2023"
-                      >https://ticket.irace.vn/trang-an-marathon-2023</a
-                    >
-                  </p>
-                  <p>
-                    VuMedia Joint Stock Company. No. 10A1, lane 376, Khuong Dinh
-                    street, Ha Dinh, Thanh Xuan, Hanoi.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>After the
-                    registration is properly processed, the Organizer will not
-                    refund the registration fee to the athletes for any reason.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>The event
-                    participation fee will not be refunded in case the event is
-                    canceled due to force majeure (earthquake, flood, fire, war,
-                    strike, national mourning...)
-                  </p>
-                  <p><strong>3. Regulations</strong></p>
-                  <p>
-                    -<span style="white-space: pre"> </span>For athletes of the
-                    provincial, city, branch, and federation teams: according to
-                    the form stamped with the certification of the governing
-                    body about their personnel issues.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>For other athletes:
-                    Register according to the website:
-                    https://actiup.net/event/trang-an-marathon-2023&nbsp;&nbsp;
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>The time to complete
-                    the profile and the registration are informed on the
-                    Website.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Quantity: Expected
-                    5,000 athletes.
-                  </p>
-                  <p></p>
-                  <p><strong>II. Time, place of the race</strong></p>
-                  <p><strong>1. Place (Expected)</strong></p>
-                  <p>
-                    Location: Hoa Lu ancient capital, Truong Yen, Hoa Lu, Ninh
-                    Binh, Viet Nam
-                  </p>
-                  <p><strong>2. (Expected)</strong></p>
-                  <p><strong>November 11th 2023, at 8am - 7pm</strong></p>
-                  <p>
-                    +<span style="white-space: pre"> </span>3pm: Opening
-                    ceremony
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>Race Kit Pick-up
-                    Area opened
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>Booth activities
-                    provide information about the event
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>Other event
-                    activities
-                  </p>
-                  <p><strong>November 12th, 2023</strong></p>
-                  <p>
-                    +<span style="white-space: pre"> </span>04:30 am: Athletes
-                    gather
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>05:30 am: 42km
-                    Athletes start&nbsp;
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>06:00 am: 21km
-                    Athletes start&nbsp;
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>06:30 am: 10km
-                    Athletes start&nbsp;
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>07:00 am: 5km
-                    Athletes start&nbsp;
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>10:00 am: Closing
-                    Ceremony&nbsp;
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>12:00 am: Course
-                    closed
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Participants:
-                    Professional athletes, movement athletes and people in Hoa
-                    Lu district, Ninh Binh province.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Cut-off time: The
-                    athletes must be able to complete the race, from the start
-                    line to the finish line, within the time period below:
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>42km: maximum
-                    completion time is 6 hours 30 minutes.
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>21km: maximum
-                    completion time is 3 hours 30 minutes.
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>10km: maximum
-                    completion time is 2 hours.
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>5km: maximum
-                    completion time is 1 hour.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes must give
-                    priority to medical staff and ambulances throughout the race
-                    regardless of their position on the track.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>During the race, all
-                    runners are expected to behave in a professional and
-                    courteous manner. Do not use profanity, quarrel, insult,
-                    have unsportsmanlike behavior towards other athletes. Anyone
-                    who violates will be disqualified.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>All acts of
-                    littering, environmental damage, etc. are strictly
-                    prohibited. The athletes are responsible for protecting the
-                    environment around the race.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes must wear a
-                    shirt (including the BIB number) during the competition. It
-                    must be clear at all times.
-                  </p>
-                  <p></p>
-                  <p><strong>III. Prize and other regulations</strong></p>
-                  <p><strong>1. Prize: (updated later)</strong></p>
-                  <p><strong>2. Tthe track</strong></p>
-                  <p>
-                    -<span style="white-space: pre"> </span> Athletes who leave
-                    the track will not be allowed to return for any purpose.
-                    Athletes who intentionally shorten track will be
-                    disqualified. The fraudulent acts are evidenced by the
-                    referee, members of the Organizer.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span> Athletes of the
-                    42km, 21km, 10km, and 5km distances who participate in the
-                    race without the official BIB number, a chip time or a chip
-                    time that is not their own will be disqualified.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Athletes must not
-                    receive any assistance by means of wheeled or motorized
-                    vehicles during the competition. Except for disabled
-                    athletes with the permission of the Organizer.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span> Athletes are not
-                    allowed to bring animals, explosives, flammable substances,
-                    compressed air, toxic substances and anything that can cause
-                    danger or inconvenience to others during the race
-                  </p>
-                  <p><strong>3. Competition results</strong></p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Competition results
-                    will be recorded by a timekeeping device mounted on the BIB.
-                    Beginning when the athletes crosses the start line and stops
-                    when crosses the finish line.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>An athlete may not
-                    be recognized as a finisher if:
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>Wearing more than 2
-                    timekeeping devices.
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>The athlete's
-                    completion time exceeds the cut-off time.
-                  </p>
-                  <p>
-                    +<span style="white-space: pre"> </span>Abnormal absences on
-                    the track confirmed by the referee and recording equipment
-                    evidence.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>Official results
-                    will be announced by the Organizer on the website. Athletes
-                    have the right to complain, request verification of their
-                    own or other athletes' results, along with clear evidence.
-                    Complaint requests should be sent before November 21, 2023.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span> Prizes will be
-                    officially announced on the day of the competition. All
-                    complaints about the results of First, Second and Third
-                    prizes with all distances must be made before 09:00 am on
-                    November 12, 2023
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span> Athletes are
-                    responsible for complying with the regulations and
-                    instructions of the Organizer on the track to ensure
-                    accurate results.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>The decision of the
-                    Organizer is final
-                  </p>
-                  <p><strong>4. Discipline: </strong></p>
-                  <p>
-                    Violators will be handled according to Decree 158/2013/ND-CP
-                    dated&nbsp; November 12, 2013 of the Government on
-                    sanctioning of administrative violations in the fields of
-                    culture, sports, tourism and advertising.
-                  </p>
-                  <p><strong>5. Force majeure</strong></p>
-                  <p>
-                    -<span style="white-space: pre"> </span>The Organizer is not
-                    responsible when the race is canceled or postponed due to
-                    force majeure.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>The Organizer has
-                    the right to make changes to the rules and regulations of
-                    the race and will be notified to the athletes in writing,
-                    email or at the scene before the race takes place.
-                  </p>
-                  <p>
-                    -<span style="white-space: pre"> </span>The Organizer has
-                    the full right to use the information provided by the
-                    participants and the images, videos of the race for legal
-                    purposes in advertising, exhibitions... to promote the race
-                  </p>
-                  <p>
-                    Each athlete is responsible for understanding and complying
-                    with the rules of the race, violation will be disqualified
-                  </p>
-                  <p>
-                    Only the Organizer has the right to update the Charter if
-                    necessary. For tenors not included in the charter, the final
-                    decision belongs to the Organizer.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
             </div>
-            <div class="col-md-4 order-0 order-md-1" id="menu-action-sticky">
-              <div class="ticket-content-action">
+            <div class="ticket-content-action _mobile">
                 <div class="ticket-content-header">
-                  <h3>Trang An Marathon 2023</h3>
-                </div>
-                <div id="timer" data-endtime="30 October 2023"></div>
-                <div class="ticket-content-body">
-                  <div class="list-info">
-                    <ul>
-                      <li><i class="far fa-calendar-alt"></i>12/11/2023</li>
-                      <li>
-                        <i class="far fa-map-marker-alt"></i>Hoa Lu Ancient
-                        Capital, Ninh Binh
-                      </li>
-                    </ul>
-                  </div>
+                    <h3>Trang An Marathon 2023</h3>
                 </div>
                 <div class="ticket-content-price">
-                  <div class="price">From 599,000đ</div>
-                  <div class="btn-group">
-                    <a href="#personal" class="btn"
-                      ><span>Personal buy</span></a
-                    >
-                    <a href="#group" class="btn"><span>Group buy</span></a>
-                  </div>
+                    <div class="price">From 599,000đ</div>
+                    <div class="btn-group">
+                        <a href="#personal" class="btn"><span>Personal buy</span></a>
+                        <a href="#group" class="btn"><span>Group buy</span></a>
+                    </div>
                 </div>
-              </div>
+
+                
             </div>
-          </div>
-        </div>
-        <div class="ticket-content-action _mobile">
-          <div class="ticket-content-header">
-            <h3>Trang An Marathon 2023</h3>
-          </div>
-          <div class="ticket-content-price">
-            <div class="price">From 599,000đ</div>
-            <div class="btn-group">
-              <a href="#personal" class="btn"><span>Personal buy</span></a>
-              <a href="#group" class="btn"><span>Group buy</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+
+
+
+        
+
+
+       
+  
     </main>
 
+ 
+
     <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="footer-text">
-              <h2>
-                We Are Always at The Forefront of The Business Conference !
-              </h2>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="footer-link">
-              <h4>Sitemap</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buy Tickets</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="footer-link">
-              <h4>newsletter</h4>
-              <form action="">
-                <div class="footer-form">
-                  <input
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Enter you email address"
-                  />
-                  <button type="submit">
-                    subscribe <i class="fal fa-chevron-right"></i>
-                  </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="footer-text">
+                        <h2>We Are Always at The
+                            Forefront of The Business Conference !</h2>
+                    </div>
                 </div>
-              </form>
+                <div class="col-md-5">
+                    <div class="footer-link">
+                        <h4>Sitemap</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Buy Tickets</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h4>newsletter</h4>
+                        <form action="">
+                            <div class="footer-form">
+                                <input type="email" name="" id="" placeholder="Enter you email address">
+                                <button type="submit">subscribe <i class="fal fa-chevron-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
             </div>
-          </div>
-        </div>
-        <div class="row row-footer-bottom">
-          <div class="col-md-7">
-            <p class="footer-copyright">Copyright @2023 DotGreen</p>
-          </div>
-          <div class="col-md-5">
-            <div class="footer-link-bottom">
-              <ul>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
+            <div class="row row-footer-bottom">
+                <div class="col-md-7">
+                    <p class="footer-copyright">
+                        Copyright @2023 DotGreen
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-link-bottom">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </footer>
+    
+
 
     <!-- Script -->
-
+   
     <script src="assets/packages/jquery-3.5.1.min.js"></script>
     <script src="assets/packages/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
     <script src="assets/packages/select2.min.js"></script>
@@ -1372,16 +939,16 @@
     <!-- <script src="assets/packages/gsap/gsap.min.js"></script>
     <script src="assets/packages/TweenMax.js"></script> -->
     <script src="assets/packages/locomotive-scroll.min.js"></script>
-
+    
     <!-- <script src="assets/packages/ScrollMagic.min.js"></script>
     <script src="assets/packages/debug.addIndicators.min.js"></script>
     <script src="assets/packages/gsap/animation.gsap.js"></script> -->
-
+    
     <script src="assets/packages/lightgallery/js/lightgallery-all.min.js"></script>
 
     <script src="assets/packages/jquery.meanmenu.min.js"></script>
     <script src="assets/packages/jquery.sticky-kit.min.js"></script>
     <!-- Page Js -->
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>

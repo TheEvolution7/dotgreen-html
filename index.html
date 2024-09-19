@@ -1,913 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dot Green</title>
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- Package -->
-    <link rel="stylesheet" href="assets/packages/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/packages/select2.min.css" />
-    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css" />
-    <link rel="stylesheet" href="assets/packages/animate.min.css" />
-    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/packages/meanmenu.min.css" />
-    <link rel="stylesheet" href="assets/packages/locomotive.min.css" />
+    <link rel="stylesheet" href="assets/packages/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/packages/select2.min.css">
+    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css">
+    <link rel="stylesheet" href="assets/packages/animate.min.css">
+    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/packages/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/packages/locomotive.min.css">
     <!-- Style -->
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-  </head>
-  <body>
     <header class="site-header">
-      <div class="logo-header container">
-        <div class="site-header-logo">
-          <a href="index.html">
-            <img src="images/logo/logo-w.svg" alt="" class="" />
-          </a>
-        </div>
-        <div class="menu-left">
-          <div class="site-header-menu">
-            <div class="site-header-link">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li class="has-submenu">
-                  <a href="#">Buy Tickets</a>
-                  <ul>
-                    <li><a href="#">Virtual Race</a></li>
-                    <li><a href="#">Events in Vietnam</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Infomation</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="logo-header-menu">
-            <ul>
-              <li>
-                <a class="btn btn-light-outline" href="#"><span>Login</span></a>
-              </li>
-              <li class="language-menu">
-                <a href="#">Eng</a>
-                <ul>
-                  <li><a href="#">Vn</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="site-header-ham">
-              <a href="#" class="ham-btn">
-                <i class="fas fa-bars"></i>
-              </a>
+        <div class="logo-header container">
+            <div class="site-header-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo-w.svg" alt="" class="">
+                </a>
             </div>
-          </div>
+            <div class="menu-left">
+                <div class="site-header-menu">
+                    <div class="site-header-link">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Buy Tickets</a>
+                                <ul>
+                                    <li><a href="#">Virtual Race</a></li>
+                                    <li><a href="#">Events in Vietnam</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Infomation</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                   
+                    
+                </div>
+                
+                
+                <div class="logo-header-menu">
+                    <ul>
+                        <li>
+                            <a class="btn btn-light-outline" href="#"><span>Login</span></a>
+                        </li>
+                        <li class="language-menu">
+                            <a href="#">Eng</a>
+                            <ul>
+                                <li><a href="#">Vn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="site-header-ham">
+                        <a href="#" class="ham-btn">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-      </div>
     </header>
 
     <div class="menu-mobile-container">
-      <button class="mobile__close-btn" id="mobile__close-btn">
-        <span><i class="fal fa-times"></i></span>
-      </button>
-      <div class="logo mb-40">
-        <a href="index.html">
-          <img src="assets/images/logo/logo-w.svg" alt="logo" />
-        </a>
-      </div>
-      <div class="mobile-menu"></div>
+        <button class="mobile__close-btn" id="mobile__close-btn">
+            <span><i class="fal fa-times"></i></span>
+        </button>
+        <div class="logo mb-40">
+            <a href="index.html">
+                <img src="assets/images/logo/logo-w.svg" alt="logo">
+            </a>
+        </div>
+        <div class="mobile-menu">
+        
+        </div>
     </div>
 
+  
     <div class="body-overlay"></div>
 
+
+
     <main id="scrollable">
-      <section class="home-banner">
-        <div class="swiper swiper-banner-img">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="banner-img">
-                <img src="assets/images/home/bn-1.jpg" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-img">
-                <img src="assets/images/home/bn-2.jpg" alt="" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-img">
-                <img src="assets/images/home/bn-3.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-banner">
-          <h3 class="sub-title" data-scroll data-scroll-speed="-0.05">
-            welcome to Dot Green
-          </h3>
-          <h1 class="title" data-scroll data-scroll-speed="-0.1">
-            Always smiling<br />
-            <span>Always DotGreen</span>
-          </h1>
-        </div>
-        <div class="descript-banner">
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores tempore rem, soluta eligendi porro doloribus autem
-              culpa delectus nesciunt cumque molestiae ab corporis ut aperiam
-              repellat sed amet. Quisquam, eligendi!
-            </p>
-            <div class="nav-banner">
-              <div class="btn-nav btn-nav-prev">
-                <i class="fal fa-long-arrow-left"></i>
-              </div>
-              <div class="btn-nav btn-nav-next">
-                <i class="fal fa-long-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          <div class="rec-end"></div>
-        </div>
-      </section>
-
-      <section class="adventure-section">
-        <div class="adventure-desc" data-scroll data-scroll-speed="-0.02">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
-          reprehenderit delectus amet dolorem doloremque reiciendis pariatur
-          sunt sit dicta odio! Id magnam impedit eum at provident rem facilis
-          quod totam.
-        </div>
-        <div class="adventure-img">
-          <h2
-            class="text-animation"
-            data-scroll
-            data-scroll-call="stagger-fade-rotate-words"
-            data-scroll-offset="20%"
-          >
-            <div class="stagger-fade-rotate-words">CREATIVE</div>
-            <div class="stagger-fade-rotate-words">CONFERENCE</div>
-          </h2>
-          <div class="col-img">
-            <div
-              class="adventure-img-box imago"
-              data-scroll
-              data-scroll-offset="20%"
-            >
-              <img
-                data-scroll
-                data-scroll-speed="-0.1"
-                src="images/home/1.jpg"
-                alt=""
-              />
-              <h2
-                class="text-animation"
-                data-scroll
-                data-scroll-call="stagger-fade-rotate-words"
-                data-scroll-offset="20%"
-              >
-                <div class="stagger-fade-rotate-words">CREATIVE</div>
-                <div class="stagger-fade-rotate-words">CONFERENCE</div>
-              </h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cate-section">
-        <div class="cate-item">
-          <a href="#" class="cate-item-content">
-            <div class="text-top">
-              <h3>Online Events</h3>
-            </div>
-            <div class="text-img imago" data-scroll data-scroll-offset="20%">
-              <img src="assets/images/home/hcm.jpg" alt="" />
-            </div>
-            <div class="text-bottom">
-              <h3>at <i>Ho Chi Minh</i></h3>
-            </div>
-          </a>
-          <div class="cate-item-bg">
-            <img
-              data-scroll
-              data-scroll-speed="-0.1"
-              src="assets/images/home/hcm.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="cate-item">
-          <a href="#" class="cate-item-content">
-            <div class="text-top">
-              <h3>Online Events</h3>
-            </div>
-            <div class="text-img imago" data-scroll data-scroll-offset="20%">
-              <img src="assets/images/home/hn.jpg" alt="" />
-            </div>
-            <div class="text-bottom">
-              <h3>at <i>Ha Noi</i></h3>
-            </div>
-          </a>
-          <div class="cate-item-bg">
-            <img
-              data-scroll
-              data-scroll-speed="-0.1"
-              src="assets/images/home/hn.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="tour-section">
-        <div class="tour-content">
-          <div class="content">
-            <h3>OUR SERVICES</h3>
-            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
-              recusandae praesentium aut explicabo, harum incidunt ratione
-              aliquid corporis eius labore ipsum.
-            </p>
-            <a href="#" class="btn btn-light-outline"><span>Book now</span></a>
-          </div>
-          <div class="tour-img imago" data-scroll data-scroll-offset="20%">
-            <h2
-              class="text-animation"
-              data-scroll
-              data-scroll-call="stagger-fade-rotate-words"
-              data-scroll-offset="20%"
-            >
-              <div class="stagger-fade-rotate-words">SERVICE</div>
-            </h2>
-            <div class="swiper swiper-img-tour">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="img">
-                    <img
-                      src="assets/images/home/2.jpg"
-                      alt=""
-                      data-scroll
-                      data-scroll-speed="-0.1"
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img">
-                    <img
-                      src="assets/images/home/2-2.jpg"
-                      alt=""
-                      data-scroll
-                      data-scroll-speed="-0.1"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="number-slide">
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="discover-section">
-        <div class="discover-title">
-          <h2
-            class="text-animation"
-            data-scroll
-            data-scroll-call="stagger-fade-rotate-words"
-            data-scroll-offset="20%"
-          >
-            <div class="stagger-fade-rotate-words">DISCOVER</div>
-            <div class="stagger-fade-rotate-words">THE TICKET</div>
-          </h2>
-          <div class="discover-img">
-            <div class="box-img imago" data-scroll data-scroll-offset="20%">
-              <img
-                data-scroll
-                data-scroll-speed="-0.1"
-                src="images/home/3.jpg"
-                alt=""
-              />
-            </div>
-            <div class="box-img imago" data-scroll data-scroll-offset="20%">
-              <img
-                data-scroll
-                data-scroll-speed="-0.1"
-                src="assets/images/home/4.jpg"
-                alt=""
-              />
-            </div>
-            <div class="box-img imago" data-scroll data-scroll-offset="20%">
-              <img
-                data-scroll
-                data-scroll-speed="-0.1"
-                src="assets/images/home/5.jpg"
-                alt=""
-              />
-            </div>
-
-            <h2
-              class="text-animation"
-              data-scroll
-              data-scroll-call="stagger-fade-rotate-words"
-              data-scroll-offset="20%"
-            >
-              <div class="stagger-fade-rotate-words">DISCOVER</div>
-              <div class="stagger-fade-rotate-words">THE TICKET</div>
-            </h2>
-          </div>
-        </div>
-
-        <div class="discover-content">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-            officiis doloremque facilis voluptate, quos magni deleniti cum error
-            laboriosam.
-          </p>
-          <a href="#" class="btn"><span>Learn more</span></a>
-        </div>
-      </section>
-
-      <section class="choose-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="content text-center">
-                <h3>OUR EVENTS</h3>
-                <h2 class="title-big">UPCOMING EVENTS</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row gx-5 row-item">
-            <div class="col-lg-4">
-              <div
-                class="choose-item imago"
-                data-scroll
-                data-scroll-offset="20%"
-              >
-                <img
-                  data-scroll
-                  data-scroll-speed="-0.1"
-                  src="assets/images/home/6.jpg"
-                  alt=""
-                />
-                <div class="choose-title">
-                  <h3>
-                    WINTER<br />
-                    EVENT
-                  </h3>
-                </div>
-                <div class="choose-content">
-                  <h3>WINTER EVENT</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime aperiam illum quo inventore quas.
-                  </p>
-                  <a href="#"
-                    ><i class="fal fa-long-arrow-right"></i> LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div
-                class="choose-item imago"
-                data-scroll
-                data-scroll-offset="20%"
-              >
-                <img
-                  data-scroll
-                  data-scroll-speed="-0.1"
-                  src="assets/images/home/7.jpg"
-                  alt=""
-                />
-                <div class="choose-title">
-                  <h3>
-                    PARTY <br />
-                    EVENT
-                  </h3>
-                </div>
-                <div class="choose-content">
-                  <h3>PARTY EVENT</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime aperiam illum quo inventore quas.
-                  </p>
-                  <a href="#"
-                    ><i class="fal fa-long-arrow-right"></i> LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div
-                class="choose-item imago"
-                data-scroll
-                data-scroll-offset="20%"
-              >
-                <img
-                  data-scroll
-                  data-scroll-speed="-0.1"
-                  src="assets/images/home/8.jpg"
-                  alt=""
-                />
-                <div class="choose-title">
-                  <h3>
-                    NEWYEAR<br />
-                    EVENT
-                  </h3>
-                </div>
-                <div class="choose-content">
-                  <h3>NEWYEAR EVENT</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime aperiam illum quo inventore quas.
-                  </p>
-                  <a href="#"
-                    ><i class="fal fa-long-arrow-right"></i> LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="choose-img-content">
-          <div class="choose-img-c">
-            <div class="swiper swiper-choose-content">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="content-box">
-                    <h3>Testimonial</h3>
-                    <p>
-                      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Error, magnam ullam deleniti voluptatum quas consectetur,
-                      tempore ab accusantium provident libero quisquam."
-                    </p>
-                    <h2>Alex Vu</h2>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="content-box">
-                    <h3>Testimonial</h3>
-                    <p>
-                      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Error, magnam ullam deleniti voluptatum quas consectetur,
-                      tempore ab accusantium provident libero quisquam."
-                    </p>
-                    <h2>Alex Vu</h2>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="content-box">
-                    <h3>Testimonial</h3>
-                    <p>
-                      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Error, magnam ullam deleniti voluptatum quas consectetur,
-                      tempore ab accusantium provident libero quisquam."
-                    </p>
-                    <h2>Alex Vu</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="nav-choose">
-                <div class="btn-nav btn-nav-prev">
-                  <i class="fal fa-long-arrow-left"></i>
-                </div>
-                <div class="btn-nav btn-nav-next">
-                  <i class="fal fa-long-arrow-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="choose-img-i imago" data-scroll data-scroll-offset="20%">
-            <div class="swiper swiper-choose-img">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="img-box">
-                    <img
-                      data-scroll
-                      data-scroll-speed="-0.1"
-                      src="assets/images/home/9.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img-box">
-                    <img
-                      data-scroll
-                      data-scroll-speed="-0.1"
-                      src="assets/images/home/10.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="img-box">
-                    <img
-                      data-scroll
-                      data-scroll-speed="-0.1"
-                      src="assets/images/home/11.jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--  -->
-
-      <section class="ticket-section">
-        <div class="container">
-          <div class="row justify-content-between ticket-title">
-            <div class="col-auto">
-              <div class="content">
-                <h2>Online Events</h2>
-              </div>
-            </div>
-            <div class="col-auto">
-              <a href="#" class="btn"><span>View All</span></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="swiper-container swiper swiper-activities">
+        <section class="home-banner">
+            <div class="swiper swiper-banner-img">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <div class="date">10/10/2023 - 6:00AM</div>
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
+                    <div class="swiper-slide">
+                        <div class="banner-img">
+                            <img src="assets/images/home/bn-1.jpg" alt="">
                         </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="assets/images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <div class="date">10/10/2023 - 6:00AM</div>
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-img">
+                            <img src="assets/images/home/bn-2.jpg" alt="">
                         </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="assets/images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <div class="date">10/10/2023 - 6:00AM</div>
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-img">
+                            <img src="assets/images/home/bn-3.jpg" alt="">
                         </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="assets/images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <div class="date">10/10/2023 - 6:00AM</div>
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+                    </div>
                 </div>
-                <div class="swiper-navigation-activities">
-                  <div class="swiper-btn swiper-prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </div>
-                  <div class="swiper-btn swiper-next">
-                    <i class="fas fa-chevron-right"></i>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+            <div class="content-banner">
+                <h3 class="sub-title" data-scroll data-scroll-speed="-0.05">welcome to Dot Green</h3>
+                <h1 class="title" data-scroll data-scroll-speed="-0.1">
+                    Always smiling<br>
+                    <span>Always DotGreen</span>
+                </h1>
+            </div>
+            <div class="descript-banner">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore rem, soluta eligendi porro doloribus autem culpa delectus nesciunt cumque molestiae ab corporis ut aperiam repellat sed amet. Quisquam, eligendi!</p>
+                    <div class="nav-banner">
+                        <div class="btn-nav btn-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
+                        <div class="btn-nav btn-nav-next"><i class="fal fa-long-arrow-right"></i></div>
+                    </div>
+                </div>
+                <div class="rec-end"></div>
+            </div>
+        </section>
 
-      <section class="ticket-section pt-0">
-        <div class="container">
-          <div class="row justify-content-between ticket-title">
-            <div class="col-auto">
-              <div class="content">
-                <h2>Offline Events</h2>
-              </div>
+        <section class="adventure-section">
+            <div class="adventure-desc" data-scroll data-scroll-speed="-0.02">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, reprehenderit delectus amet dolorem doloremque reiciendis pariatur sunt sit dicta odio! Id magnam impedit eum at provident rem facilis quod totam.
             </div>
-            <div class="col-auto">
-              <a href="#" class="btn"><span>View All</span></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="swiper-container swiper swiper-activities">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="assets/images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="assets/images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="assets/images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" class="ticket-box">
-                      <div class="thumb-img">
-                        <img src="assets/images/product/tk-1.jpg" alt="" />
-                      </div>
-                      <div class="content">
-                        <h5>Honolulu Running Ticket</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.
-                        </p>
-                        <div class="tag">
-                          <div class="tag-item">Running</div>
-                          <div class="tag-item">Online Event</div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-navigation-activities">
-                  <div class="swiper-btn swiper-prev">
-                    <i class="fas fa-chevron-left"></i>
-                  </div>
-                  <div class="swiper-btn swiper-next">
-                    <i class="fas fa-chevron-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="follow-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="follow-title">
-                <h2
-                  class="text-animation"
-                  data-scroll
-                  data-scroll-call="stagger-fade-rotate-words"
-                  data-scroll-offset="20%"
-                >
-                  <div class="stagger-fade-rotate-words">FOLLOW</div>
-                  <div class="stagger-fade-rotate-words">US NOW</div>
+            <div class="adventure-img">
+                <h2 class="text-animation" data-scroll data-scroll-call="stagger-fade-rotate-words" data-scroll-offset="20%">
+                     
+                    <div class="stagger-fade-rotate-words">
+                        CREATIVE
+                    </div>
+                    <div class="stagger-fade-rotate-words">
+                        CONFERENCE
+                    </div>
                 </h2>
+                <div class="col-img">
+                    <div class="adventure-img-box imago" data-scroll data-scroll-offset="20%">
+                        <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/1.jpg" alt="">
+                        <h2 class="text-animation" data-scroll data-scroll-call="stagger-fade-rotate-words" data-scroll-offset="20%">
+                            <div class="stagger-fade-rotate-words">
+                                CREATIVE
+                            </div>
+                            <div class="stagger-fade-rotate-words">
+                                CONFERENCE
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+            </div>
 
-                <div class="follow-btn">
-                  <a href="#" class="btn btn-light-outline"
-                    ><span>Instagram</span></a
-                  >
-                  <a href="#" class="btn btn-light-outline"
-                    ><span>Facebook</span></a
-                  >
+        </section>
+
+        <section class="cate-section">
+            <div class="cate-item">
+                <a href="#" class="cate-item-content">
+                    <div class="text-top">
+                        <h3>Online Events</h3>
+                    </div>
+                    <div class="text-img imago" data-scroll data-scroll-offset="20%">
+                        <img src="assets/images/home/hcm.jpg" alt="">
+                    </div>
+                    <div class="text-bottom">
+                        <h3>at <i>Ho Chi Minh</i></h3>
+                    </div>
+                </a>
+                <div class="cate-item-bg">
+                    <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/hcm.jpg" alt="">
                 </div>
-              </div>
+                
             </div>
-          </div>
-        </div>
-        <div class="follow-img">
-          <div class="container">
-            <div
-              class="follow-img-el"
-              data-scroll
-              data-scroll-offset="20%"
-            ></div>
-            <div class="row justify-content-end">
-              <div class="col-md-8 col-10">
-                <div class="row follow-img-row">
-                  <div class="col-6">
-                    <div
-                      class="follow-img-item imago"
-                      data-scroll
-                      data-scroll-offset="20%"
-                    >
-                      <img
-                        data-scroll
-                        data-scroll-speed="-0.05"
-                        src="assets/images/home/12.jpg"
-                        alt=""
-                      />
+            <div class="cate-item">
+                <a href="#" class="cate-item-content">
+                    <div class="text-top">
+                        <h3>Online Events</h3>
                     </div>
-                    <div
-                      class="follow-img-item imago"
-                      data-scroll
-                      data-scroll-offset="20%"
-                    >
-                      <img
-                        data-scroll
-                        data-scroll-speed="-0.05"
-                        src="assets/images/home/13.jpg"
-                        alt=""
-                      />
+                    <div class="text-img imago" data-scroll data-scroll-offset="20%">
+                        <img src="assets/images/home/hn.jpg" alt="">
                     </div>
-                  </div>
-                  <div class="col-6">
-                    <div
-                      class="follow-img-item imago"
-                      data-scroll
-                      data-scroll-offset="20%"
-                    >
-                      <img
-                        data-scroll
-                        data-scroll-speed="0.05"
-                        src="assets/images/home/14.jpg"
-                        alt=""
-                      />
+                    <div class="text-bottom">
+                        <h3>at <i>Ha Noi</i></h3>
                     </div>
-                    <div
-                      class="follow-img-item imago"
-                      data-scroll
-                      data-scroll-offset="20%"
-                    >
-                      <img
-                        data-scroll
-                        data-scroll-speed="0.05"
-                        src="assets/images/home/15.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
+                </a>
+                <div class="cate-item-bg">
+                    <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/hn.jpg" alt="">
                 </div>
-              </div>
+                
             </div>
-          </div>
-        </div>
-        <div class="follow-content">
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            animi accusamus, vitae eaque rem hic fuga tenetur.
-          </h3>
-          <a href="#" class="btn btn-circle"><span>Explore</span> </a>
-        </div>
-      </section>
+        </section>
+
+        <section class="tour-section">
+            <div class="tour-content">
+                <div class="content">
+                    <h3>OUR SERVICES</h3>
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias recusandae praesentium aut explicabo, harum incidunt ratione aliquid corporis eius labore ipsum.</p>
+                    <a href="#" class="btn btn-light-outline"><span>Book now</span></a>
+                </div>
+                <div class="tour-img imago" data-scroll data-scroll-offset="20%">
+                    <h2 class="text-animation" data-scroll data-scroll-call="stagger-fade-rotate-words" data-scroll-offset="20%">
+                        <div class="stagger-fade-rotate-words">
+                            SERVICE
+                        </div>
+                    </h2>
+                    <div class="swiper swiper-img-tour">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/images/home/2.jpg" alt="" data-scroll data-scroll-speed="-0.1">
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="assets/images/home/2-2.jpg" alt="" data-scroll data-scroll-speed="-0.1">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="number-slide">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discover-section">
+            <div class="discover-title">
+                <h2 class="text-animation" data-scroll data-scroll-call="stagger-fade-rotate-words" data-scroll-offset="20%">
+                    <div class="stagger-fade-rotate-words">
+                        DISCOVER
+                    </div>
+                    <div class="stagger-fade-rotate-words">
+                        THE TICKET
+                    </div>
+                </h2>
+                <div class="discover-img">
+                    <div class="box-img imago" data-scroll data-scroll-offset="20%">
+                        <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/3.jpg" alt="">
+                    </div>
+                    <div class="box-img imago" data-scroll data-scroll-offset="20%">
+                        <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/4.jpg" alt="">
+                    </div>
+                    <div class="box-img imago" data-scroll data-scroll-offset="20%">
+                        <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/5.jpg" alt="">
+                    </div>
+                    
+                    
+                    <h2 class="text-animation" data-scroll data-scroll-call="stagger-fade-rotate-words" data-scroll-offset="20%">
+                        <div class="stagger-fade-rotate-words">
+                            DISCOVER
+                        </div>
+                        <div class="stagger-fade-rotate-words">
+                            THE TICKET
+                        </div>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="discover-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum officiis doloremque facilis voluptate, quos magni deleniti cum error laboriosam.</p>
+                <a href="#" class="btn"><span>Learn more</span></a>
+            </div>
+            
+        </section>
+
+        
+
+        <section class="choose-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content text-center">
+                            <h3>OUR EVENTS</h3>
+                            <h2 class="title-big">UPCOMING EVENTS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 row-item">
+                    <div class="col-lg-4">
+                        <div class="choose-item imago" data-scroll data-scroll-offset="20%">
+                            <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/6.jpg" alt="">
+                            <div class="choose-title">
+                                <h3>WINTER<br> EVENT</h3>
+                            </div>
+                            <div class="choose-content">
+                                <h3>WINTER EVENT</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam illum quo inventore quas.</p>
+                                <a href="#"><i class="fal fa-long-arrow-right"></i> LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="choose-item imago" data-scroll data-scroll-offset="20%">
+                            <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/7.jpg" alt="">
+                            <div class="choose-title">
+                                <h3>PARTY <br> EVENT</h3>
+                            </div>
+                            <div class="choose-content">
+                                <h3>PARTY EVENT</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam illum quo inventore quas.</p>
+                                <a href="#"><i class="fal fa-long-arrow-right"></i> LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="choose-item imago" data-scroll data-scroll-offset="20%">
+                            <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/8.jpg" alt="">
+                            <div class="choose-title">
+                                <h3>NEWYEAR<br> EVENT</h3>
+                            </div>
+                            <div class="choose-content">
+                                <h3>NEWYEAR EVENT</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam illum quo inventore quas.</p>
+                                <a href="#"><i class="fal fa-long-arrow-right"></i> LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-img-content">
+                <div class="choose-img-c">
+                    
+                    <div class="swiper swiper-choose-content">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content-box">
+                                    <h3>Testimonial</h3>
+                                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, magnam ullam deleniti voluptatum quas consectetur, tempore ab accusantium provident libero quisquam."</p>
+                                    <h2>Alex Vu</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-box">
+                                    <h3>Testimonial</h3>
+                                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, magnam ullam deleniti voluptatum quas consectetur, tempore ab accusantium provident libero quisquam."</p>
+                                    <h2>Alex Vu</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-box">
+                                    <h3>Testimonial</h3>
+                                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, magnam ullam deleniti voluptatum quas consectetur, tempore ab accusantium provident libero quisquam."</p>
+                                    <h2>Alex Vu</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-choose">
+                            <div class="btn-nav btn-nav-prev"><i class="fal fa-long-arrow-left"></i></div>
+                            <div class="btn-nav btn-nav-next"><i class="fal fa-long-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-img-i imago" data-scroll data-scroll-offset="20%">
+                    <div class="swiper swiper-choose-img">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/10.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <img data-scroll data-scroll-speed="-0.1" src="assets/images/home/11.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--  -->
+
+        <section class="ticket-section">
+            <div class="container">
+                <div class="row justify-content-between ticket-title">
+                    <div class="col-auto">
+                        <div class="content">
+                            <h2>Online Events</h2>    
+                        </div>
+                               
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="btn"><span>View All</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper-container swiper swiper-activities">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <div class="date">
+                                                10/10/2023 - 6:00AM
+                                            </div>
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <div class="date">
+                                                10/10/2023 - 6:00AM
+                                            </div>
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <div class="date">
+                                                10/10/2023 - 6:00AM
+                                            </div>
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <div class="date">
+                                                10/10/2023 - 6:00AM
+                                            </div>
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-navigation-activities">
+                                <div class="swiper-btn swiper-prev"><i class="fas fa-chevron-left"></i></div> 
+                                <div class="swiper-btn swiper-next"><i class="fas fa-chevron-right"></i></div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                   
+        </section>
+
+        <section class="ticket-section pt-0">
+            <div class="container">
+                <div class="row justify-content-between ticket-title">
+                    <div class="col-auto">
+                        <div class="content">
+                            <h2>Offline Events</h2>    
+                        </div>
+                               
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="btn"><span>View All</span></a>
+                         
+                             
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper-container swiper swiper-activities">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="ticket-box">
+                                        <div class="thumb-img">
+                                            <img src="assets/images/product/tk-1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5>Honolulu Running Ticket</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            <div class="tag">
+                                                <div class="tag-item">Running</div>
+                                                <div class="tag-item">Online Event</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-navigation-activities">
+                                <div class="swiper-btn swiper-prev"><i class="fas fa-chevron-left"></i></div> 
+                                <div class="swiper-btn swiper-next"><i class="fas fa-chevron-right"></i></div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                   
+        </section>
+
+
+        
+
+        <section class="follow-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="follow-title">
+                            <h2 class="text-animation" data-scroll data-scroll-call="stagger-fade-rotate-words" data-scroll-offset="20%">
+                                <div class="stagger-fade-rotate-words">
+                                    FOLLOW
+                                </div>
+                                <div class="stagger-fade-rotate-words">
+                                    US NOW
+                                </div>
+                            </h2>
+
+                            <div class="follow-btn">
+                                <a href="#" class="btn btn-light-outline"><span>Instagram</span></a>
+                                <a href="#" class="btn btn-light-outline"><span>Facebook</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="follow-img">
+                <div class="container">
+                    <div class="follow-img-el" data-scroll data-scroll-offset="20%"></div>
+                    <div class="row justify-content-end">
+                        <div class="col-md-8 col-10">
+                            <div class="row follow-img-row">
+                                <div class="col-6">
+                                    <div class="follow-img-item imago" data-scroll data-scroll-offset="20%">
+                                        <img data-scroll data-scroll-speed="-0.05" src="assets/images/home/12.jpg" alt="">
+                                    </div>
+                                    <div class="follow-img-item imago" data-scroll data-scroll-offset="20%">
+                                        <img data-scroll data-scroll-speed="-0.05" src="assets/images/home/13.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="follow-img-item imago" data-scroll data-scroll-offset="20%">
+                                        <img data-scroll data-scroll-speed="0.05" src="assets/images/home/14.jpg" alt="">
+                                    </div>
+                                    <div class="follow-img-item imago" data-scroll data-scroll-offset="20%">
+                                        <img data-scroll data-scroll-speed="0.05" src="assets/images/home/15.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="follow-content">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati animi accusamus, vitae eaque rem hic fuga tenetur.</h3>
+                <a href="#" class="btn btn-circle"><span>Explore</span> </a>
+            </div>
+        </section>
+  
     </main>
 
     <span class="awd-scrollbar"></span>
 
     <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="footer-text">
-              <h2>
-                We Are Always at The Forefront of The Business Conference !
-              </h2>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="footer-link">
-              <h4>Sitemap</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buy Tickets</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="footer-link">
-              <h4>newsletter</h4>
-              <form action="">
-                <div class="footer-form">
-                  <input
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Enter you email address"
-                  />
-                  <button type="submit">
-                    subscribe <i class="fal fa-chevron-right"></i>
-                  </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="footer-text">
+                        <h2>We Are Always at The
+                            Forefront of The Business Conference !</h2>
+                    </div>
                 </div>
-              </form>
+                <div class="col-md-5">
+                    <div class="footer-link">
+                        <h4>Sitemap</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Buy Tickets</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link">
+                        <h4>newsletter</h4>
+                        <form action="">
+                            <div class="footer-form">
+                                <input type="email" name="" id="" placeholder="Enter you email address">
+                                <button type="submit">subscribe <i class="fal fa-chevron-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
             </div>
-          </div>
-        </div>
-        <div class="row row-footer-bottom">
-          <div class="col-md-7">
-            <p class="footer-copyright">Copyright @2023 DotGreen</p>
-          </div>
-          <div class="col-md-5">
-            <div class="footer-link-bottom">
-              <ul>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
+            <div class="row row-footer-bottom">
+                <div class="col-md-7">
+                    <p class="footer-copyright">
+                        Copyright @2023 DotGreen
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-link-bottom">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </footer>
+    
+
 
     <!-- Script -->
-
+   
     <script src="assets/packages/jquery-3.5.1.min.js"></script>
     <script src="assets/packages/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
     <script src="assets/packages/select2.min.js"></script>
@@ -917,16 +713,16 @@
     <!-- <script src="assets/packages/gsap/gsap.min.js"></script>
     <script src="assets/packages/TweenMax.js"></script> -->
     <script src="assets/packages/locomotive-scroll.min.js"></script>
-
+    
     <!-- <script src="assets/packages/ScrollMagic.min.js"></script>
     <script src="assets/packages/debug.addIndicators.min.js"></script>
     <script src="assets/packages/gsap/animation.gsap.js"></script> -->
-
+    
     <script src="assets/packages/lightgallery/js/lightgallery-all.min.js"></script>
 
     <script src="assets/packages/jquery.meanmenu.min.js"></script>
     <script src="assets/packages/jquery.sticky-kit.min.js"></script>
     <!-- Page Js -->
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
